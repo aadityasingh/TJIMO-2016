@@ -19,20 +19,7 @@
 }
 %\makeatother
 %Small commands
-%
-\begin{comment}
-\newcommand{\myqed}{\textsc{Q.e.d.}}
-\newcommand{\cbrt}[1]{\sqrt[3]{#1}}
-\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
-\newcommand{\ceiling}[1]{\left\lceil #1 \right\rceil}
-\newcommand{\mailto}[1]{\href{mailto:#1}{\texttt{#1}}}
-\newcommand{\ol}[1]{\overline{#1}}
-\newcommand{\ul}[1]{\underline{#1}}
-\newcommand{\eps}{\varepsilon}
-%\renewcommand{\iff}{\Leftrightarrow}
-%\renewcommand{\implies}{\Rightarrow}
-\end{comment}
-%
+
 \newcommand{\hrulebar}{
   \par\hspace{\fill}\rule{0.95\linewidth}{.7pt}\hspace{\fill}
   \par\nointerlineskip \vspace{\baselineskip}
@@ -69,11 +56,14 @@
 
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}
-\newtheorem{problem}{Problem}
-\newtheorem*{solution}{Solution}
+\newtheorem{problems}{Problem}
+\newtheorem*{solutions}{Solution}
 \newtheorem*{answer}{Answer}
 \newtheorem*{solutionone}{Solution 1}
 \newtheorem*{solutiontwo}{Solution 2}
+
+\newenvironment{problem}{\begin{problems}}{\newline \end{problems}} 
+\newenvironment{solution}{\begin{solutions}}{\newline \end{solutions}}
 
 \pagestyle{fancy}
 \cfoot{}
