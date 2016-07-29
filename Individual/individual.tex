@@ -30,19 +30,6 @@ We follow the order of operations to obtain \begin{align*} 2^{0 + 1 \cdot 6} - 2
 \end{solution}
 
 
-\begin{problem}%[Kyle]
-A certain circle has an area whose value is twice the value of its circumference. Compute the diameter of the circle.
-\end{problem}
-
-\begin{answer}
-$\boxed{8}$
-\end{answer}
-
-\begin{solution}
-The area of a circle with radius $r$ is $\pi r^2$, and its circumference is $2\pi r$. We have that $\pi r^2 = 2 \cdot 2\pi r$. Dividing by $\pi r$ on both sides leaves us with $r = 4$, so the diameter is $\boxed{8}$.
-\end{solution}
-
-
 \begin{problem}
 The sum of the digits of the year $2016$ is $2 + 0 + 1 + 6 = 9$. What is the next year for which the sum of the digits is also $9$?
 \end{problem}
@@ -69,6 +56,58 @@ Note that $1 + 63 = 64$, $2 + 62 = 64$, $3 + 61 = 64$, and so forth. Therefore $
 \end{solution}
 
 
+\begin{problem}%[Kyle]
+A certain circle has an area whose value is twice the value of its circumference. Compute the diameter of the circle.
+\end{problem}
+
+\begin{answer}
+$\boxed{8}$
+\end{answer}
+
+\begin{solution}
+The area of a circle with radius $r$ is $\pi r^2$, and its circumference is $2\pi r$. We have that $\pi r^2 = 2 \cdot 2\pi r$. Dividing by $\pi r$ on both sides leaves us with $r = 4$, so the diameter is $\boxed{8}$.
+\end{solution}
+
+
+\begin{problem}
+NAME has 5 shirts, each of a different color: red, green, blue, yellow, and black. He also has 4 pairs of pants of different colors: red, orange, yellow, green. If NAME does not want to wear pants of the same color as his shirt, compute the number of ways he can choose a shirt and a pair of pants.
+\end{problem}
+
+\begin{answer}
+$\boxed{17}$
+\end{answer}
+
+\begin{solution}
+Without the color restriction, there are simply $5 \cdot 4 = 20$ ways to choose a shirt and a pair of pants because there are $4$ pairs of pants from which to choose for each of $5$ shirts. There are $3$ invalid sets: red shirt/pants, yellow shirt/pants, and green shirt/pants. Hence there are $20 - 3 = \boxed{17}$ valid combinations.
+\end{solution}
+
+
+\begin{problem}
+NAME normally takes $30$ minutes to walk to school at $3$ miles per hour. One day, he left home $10$ minutes later than usual. Compute the speed, in miles per hour, at which he must travel to still get to school on time.
+\end{problem}
+
+\begin{answer}
+$\boxed{4.5}$ (miles per hour)
+\end{answer}
+
+\begin{solution}
+The distance from NAME's home to school is $\frac{1}{2} \text{hour} \cdot 3 \text{mph} = 1.5$ miles. If he leaves home $10$ minutes late, then he needs travel the same distance in $20$ minutes, or $\frac{1}{3}$ hour. Therefore he must travel at $\frac{1.5 \text{miles}}{\frac{1}{3} \text{hour}} = \boxed{4.5}$ mph.
+\end{solution}
+
+
+\begin{problem}
+Compute the number of positive divisors of $2016$.
+\end{problem}
+
+\begin{answer}
+$\boxed{36}$
+\end{answer}
+
+\begin{solution}
+The prime factorization of $2016$ is $2^5 \cdot 3^2 \cdot 7$. A divisor of $2016$ will have $0, 1, 2, 3, 4$, or $5$ factors of $2$, for $6$ choices. Similarly, there are $3$ choices for the number of factors of $3$, and $2$ for factors of $7$. Therefore there are $6 \cdot 3 \cdot 2 = \boxed{36}$ positive divisors of $2016$.
+\end{solution}
+
+
 \begin{problem}
 A regular $n$-sided polygon has $2015$ diagonals. Compute the number of diagonals in a regular $n+1$-sided polygon.
 \end{problem}
@@ -80,6 +119,46 @@ $\boxed{2079}$ (diagonals)
 \begin{solution}
 insert
 \end{solution}
+
+
+\begin{problem}
+logic/puzzle question
+\end{problem}
+
+\begin{answer}
+answer
+\end{answer}
+
+\begin{solution}
+solution
+\end{solution}
+
+
+\begin{problem}
+geometry
+\end{problem}
+
+\begin{answer}
+ans
+\end{answer}
+
+\begin{solution}
+sol
+\end{solution}
+
+
+\begin{problem}
+Two standard six-sided dice are rolled. Compute the probability that the product of the numbers rolled is divisible by $6$.
+\end{problem}
+
+\begin{answer}
+$\boxed{\frac{8}{9}}$
+\end{answer}
+
+\begin{solution}
+We will use complementary counting. That is, we compute the probability that the product of the numbers rolled is not divisible by $6$ and subtract that from $1$. In order to not be divisible by $6$, each die can either show a $1$ or $5$, for a $\frac{2}{6} = \frac{1}{3}$ chance each. For two independent dice, the probability is $\frac{1}{3} \cdot \frac{1}{3}$. Therefore the probability that the product is divisible by $6$ is $1 - \frac{1}{9} = \boxed{\frac{8}{9}}$.
+\end{solution}
+
 
 \begin{problem}%[Kyle]
 Two circles with equal radii are placed inside a $16 \times 18$ rectangular box as shown in the diagram. Each circle touches two walls of the box. The two circles are also touching each other at one point inside the box. What is the radius of both circles?
@@ -99,7 +178,7 @@ Two circles with equal radii are placed inside a $16 \times 18$ rectangular box 
 \end{problem}
 
 \begin{answer}
-5
+$\boxed{5}$
 \end{answer}
 
 \begin{solution}
@@ -133,7 +212,7 @@ If $\frac{1}{x} + \frac{1}{y} = 5$ and $x+y=10$, what is $x^2+y^2$?
 \end{problem}
 
 \begin{answer}
-96
+$\boxed{96}$
 \end{answer}
 
 \begin{solution}
@@ -142,7 +221,7 @@ Multiplying the two equations, we get $\frac{x}{y} + \frac{y}{x} + 2 = 50$. Subt
 
 
 \begin{problem}
-There are $2016$ mathematicians at the Annual Mathematics Conference, and each mathematician brought along a nonmathematician partner. NAME, a mathematician, brought NAME, a journalist, who asked each of the $4031$ people besides himself how many people they knew besides themselves and their partner. (Knowing is, so if person $A$ knows person $B$ then person $B$ knows person $A$.) NAME received a different answer from each person. Compute the number of people that NAME knows.
+There are $2016$ mathematicians at the Annual Mathematics Conference, and each mathematician brought along a nonmathematician partner. NAME1, a mathematician, brought NAME2, a journalist, who asked each of the $4031$ people besides himself how many people they knew besides themselves and their partner. (Knowing is mutual, so if person $A$ knows person $B$ then person $B$ knows person $A$.) NAME2 received a different answer from each person. Compute the number of people that NAME1 knows.
 \end{problem}
 
 \begin{answer}
@@ -169,7 +248,7 @@ Reflect the quadrilateral about side $AD$, and let $B'$ be the reflection of $B$
 
 
 \begin{problem}
-What is the probability that two randomly chosen positive integers are relatively prime? You may find the fact $\sum\limits_{k = 1}^\infty \frac{1}{k^2} = \frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \cdots = \frac{\pi^2}{6}$ useful.
+Compute the probability that two randomly chosen positive integers are relatively prime. You may find the fact $\sum\limits_{k = 1}^\infty \frac{1}{k^2} = \frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \cdots = \frac{\pi^2}{6}$ useful.
 \end{problem}
 
 \begin{answer}
@@ -181,4 +260,3 @@ asdf
 \end{solution}
 
 \end{document}
-
