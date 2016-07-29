@@ -30,19 +30,6 @@ We follow the order of operations to obtain \begin{align*} 2^{0 + 1 \cdot 6} - 2
 \end{solution}
 
 
-\begin{problem}%[Kyle]
-A certain circle has an area whose value is twice the value of its circumference. Compute the diameter of the circle.
-\end{problem}
-
-\begin{answer}
-$\boxed{8}$
-\end{answer}
-
-\begin{solution}
-The area of a circle with radius $r$ is $\pi r^2$, and its circumference is $2\pi r$. We have that $\pi r^2 = 2 \cdot 2\pi r$. Dividing by $\pi r$ on both sides leaves us with $r = 4$, so the diameter is $\boxed{8}$.
-\end{solution}
-
-
 \begin{problem}
 The sum of the digits of the year $2016$ is $2 + 0 + 1 + 6 = 9$. What is the next year for which the sum of the digits is also $9$?
 \end{problem}
@@ -66,19 +53,6 @@ $\boxed{2016}$
 
 \begin{solution}
 Note that $1 + 63 = 64$, $2 + 62 = 64$, $3 + 61 = 64$, and so forth. Therefore $(1 + 63) + (2 + 62) + (3 + 61) + \cdots (63 + 1) = 63 \cdot 64$is twice the desired sum. Thus the desired sum is $\frac{1}{2} \cdot 63 \cdot 64 = 63 \cdot 32 = \boxed{2016}$.
-\end{solution}
-
-
-\begin{problem}
-A regular $n$-sided polygon has $2015$ diagonals. Compute the number of diagonals in a regular $n+1$-sided polygon.
-\end{problem}
-
-\begin{answer}
-$\boxed{2079}$ (diagonals)
-\end{answer}
-
-\begin{solution}
-insert
 \end{solution}
 
 \begin{problem}%[Kyle]
@@ -124,20 +98,7 @@ The point of tangency of the circles is the center of the rectangle. Therefore, 
     \end{center}
 \end{figure}
 
-Now we consider the shaded right triangle in the diagram. If we let $r$ be the radius of the circle, the right triangle has legs of length $8-r$ and $9-r$ and hypotenuse of length $r$. Thus, by the Pythagorean Theorem, we have $(8-r)^2 + (9-r)^2 = r^2$, which reduces to $r^2 - 34r + 145 = 0$. Factoring this gives us $(r-5)(r-29) = 0$. The radius of the circle cannot be $29$ (the circle needs to fit inside a $16 \times 18$ box), so our only solution is $r = \boxed{5}$.
-\end{solution}
-
-
-\begin{problem}%[Lilian]
-If $\frac{1}{x} + \frac{1}{y} = 5$ and $x+y=10$, what is $x^2+y^2$?
-\end{problem}
-
-\begin{answer}
-96
-\end{answer}
-
-\begin{solution}
-Multiplying the two equations, we get $\frac{x}{y} + \frac{y}{x} + 2 = 50$. Subtracting by 2 and multiplying by $xy$, we see that $x^2+y^2 = 48xy$. Also, note that from squaring the second equation, $x^2+ y^2 +2xy = 100$. We now have a system of equations with $xy$ and $x^2+y^2$. Solving, we get our answer of $\boxed{96}$.
+Now we consider the shaded right triangle in the diagram. If we let $r$ be the radius of the circle, the right triangle has legs of length $8-r$ and $9-r$ and hypotenuse of length $r$. Thus, by the Pythagorean Theorem, we have $(8-r)^2 + (9-r)^2 = r^2$, which reduces to $r^2 - 34r + 145 = 0$. Factoring this gives us $(r-5)(r-29) = 0$. The radius of the circle cannot be $29$ (the circle needs to fit inside a $16 \times 18$ box), so our only solution si $r = \boxed{5}$.
 \end{solution}
 
 
@@ -153,7 +114,6 @@ $\boxed{2016}$ (people)
 insert solution
 \end{solution}
 
-
 \begin{problem}%[Josh]
 Quadrilateral $ABCD$ has sides $AB = 1008$, $BC = 2016$, and $CD = 2016$. If $\angle BAD$ is a right angle and $m\angle ADC = \frac{1}{2}m\angle BCD$, compute $m\angle BCD$ in degrees.
 \end{problem}
@@ -165,19 +125,6 @@ $\boxed{108}$ (degrees)
 \begin{solution}
 % INCLUDE DIAGRAM
 Reflect the quadrilateral about side $AD$, and let $B'$ be the reflection of $B$ and $C'$ that of $C$. Then pentagon $BCDC'D'$ is equilateral. Furthermore, $\angle BCD \cong \angle CDC' \cong DC'B'$, this construction is uniquely defined, and our pentagon is in fact a regular pentagon. Therefore $\angle BCD$ is an angle in a regular pentagon, so it measures $\boxed{108^\circ}$.
-\end{solution}
-
-
-\begin{problem}
-What is the probability that two randomly chosen positive integers are relatively prime? You may find the fact $\sum\limits_{k = 1}^\infty \frac{1}{k^2} = \frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \cdots = \frac{\pi^2}{6}$ useful.
-\end{problem}
-
-\begin{answer}
-$\boxed{\frac{6}{\pi^2}}$
-\end{answer}
-
-\begin{solution}
-asdf
 \end{solution}
 
 \end{document}
