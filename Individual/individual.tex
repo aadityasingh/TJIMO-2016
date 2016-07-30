@@ -148,6 +148,32 @@ soln
 
 
 \begin{problem}
+At a vending machine, 3 bags of chips and 2 bottles of water cost $\$2.35$, and 2 bags of chips and 3 bottles of water cost $\$2.65$. Compute the cost of 1 bag of chips and 1 bottle of water.
+\end{problem}
+
+\begin{answer}
+$\boxed{\$1}$
+\end{answer}
+
+\begin{solution}
+Let $c$ be the cost of one bag of chips, and $w$ be the cost of one bottle of water. We have: \begin{center}$\begin{cases} 3c + 2w = 2.35 \\ 2c + 3w = 2.65 \end{cases}$\end{center} Adding these equations together gives $5c + 5w = 5$, so $c + w = \boxed{1}$. (Although not necessary, we can also solve for $w$ and $c$ explicitly to give $w = 0.35$ and $c = 0.65$.)
+\end{solution}
+
+
+\begin{problem}
+Problem 12
+\end{problem}
+
+\begin{answer}
+
+\end{answer}
+
+\begin{solution}
+asfd
+\end{solution}
+
+
+\begin{problem}
 Two standard six-sided dice are rolled. Compute the probability that the product of the numbers rolled is divisible by $6$.
 \end{problem}
 
@@ -157,6 +183,124 @@ $\boxed{\frac{8}{9}}$
 
 \begin{solution}
 We will use complementary counting. That is, we compute the probability that the product of the numbers rolled is not divisible by $6$ and subtract that from $1$. In order to not be divisible by $6$, each die can either show a $1$ or $5$, for a $\frac{2}{6} = \frac{1}{3}$ chance each. For two independent dice, the probability is $\frac{1}{3} \cdot \frac{1}{3}$. Therefore the probability that the product is divisible by $6$ is $1 - \frac{1}{9} = \boxed{\frac{8}{9}}$.
+\end{solution}
+
+
+\begin{problem}%[Michael You]
+Rectangle $CDEF$ is inscribed in right triangle $ABC$ with right angle $C$ such that $D$ is on $AC$, $E$ is on $AB$, and $F$ is on $BC$. If $AD=3, CD=4$, and $DE=5$, find the area of $\triangle ABC$.
+%ADD ASYMPTOTE 
+\end{problem}
+
+\begin{answer}
+$\boxed{\frac{245}{6}}$
+\end{answer}
+
+\begin{solution}
+Since $\triangle AED \sim \triangle ABC$, we see that $BC = \frac{ED}{AD} \cdot AC = \frac{5}{3} \cdot 7 = \frac{35}{3}$. Thus, the area is $\dfrac{7 \cdot \frac{35}{3}}{2} = \boxed{\frac{245}{6}}$
+\end{solution}
+
+
+\begin{problem}
+algebra
+\end{problem}
+
+\begin{answer}
+
+\end{answer}
+
+\begin{solution}
+asfd
+\end{solution}
+
+
+\begin{problem}
+NAMES!!! A, B, and C are in a race. If A always beats C, but otherwise ties are allowed, find the number of possible results. For example, B and A at a tie for first and C second is one such result.
+\end{problem}
+
+\begin{answer}
+$\boxed{7}$
+\end{answer}
+
+\begin{solution}
+Insert solutoin
+\end{solution}
+
+
+\begin{problem}
+NAME's class can normally be split into even groups of $7$ when everyone is present. When $2$ people are absent and they try to split into groups of $9$, there is $1$ person left out. Find the minimum number of students in the entire class.
+\end{problem}
+
+\begin{answer}
+$\boxed{28}$ (students)
+\end{answer}
+
+\begin{solution}
+If there are $n$ students in the class, then we know that $n$ is divisible by $7$ and $n-1$ is divisible by $9$, or $n$ is $1$ more than a multiple of $9$. Simply listing out multiples of $7$, we have $7, 14, 21, 28, \ldots$. We see that $\boxed{28}$ is the first multiple of $7$ that is $1$ more than a multiple of $9$, so that is our answer.
+\end{solution}
+
+
+\begin{problem}%[Kyle]
+Two tanks are used to collect water to drain a full swimming pool. When only tank A is opened, it takes $2$ hours for the pool to drain completely. When only tank B is opened, it takes $3$ hours for the pool to drain completely. How many \textbf{minutes} will it take to drain the pool if both tanks are opened from the start?
+\end{problem}
+
+\begin{answer}
+$\boxed{72}$ (minutes)
+\end{answer}
+
+\begin{solution}
+We describe tanks A and B in terms of their individual drainage rates. Tank A has a rate of 1 swimming pool/2 hours. Tank B has a rate of 1 swimming pool/3 hours. Thus, the combined rate of tanks A and B working together is $\frac{1}{2} + \frac{1}{3} = \frac{5}{6}$, which can be rewritten in terms of our full pool: $\frac{5}{6} =$ 1 swimming pool/$\frac{6}{5}$ hours. hence it takes $\frac{6}{5}$ hours, or $\boxed{72}$ minutes, for both tanks to drain the pool.
+\end{solution}
+
+
+\begin{problem}
+problem 19
+\end{problem}
+
+\begin{answer}
+
+\end{answer}
+
+\begin{solution}
+solutgn
+\end{solution}
+
+
+\begin{problem}
+NAME1 and NAME2 are in the same SUBJECT class. They are both on track to get either an A, A-, or B+. The probability that NAME1 gets an A is $0.4$, the probability that NAME2 gets an A is $0.5$, and the probability that neither get an $A-$ but at least one get an $A$ is $0.6$. What is the probability that at least one of them gets an A but neither gets a B+?
+\end{problem}
+
+\begin{answer}
+$\boxed{0.3}$
+\end{answer}
+
+\begin{solution}
+Let $P(x, y)$ denote the probability that NAME1 gets grade $x$ and NAME2 gets grade $y$. From the given information we have: \begin{center}$\begin{cases} P(A, A) + P(A, A-) + P(A, B+) = 0.4 \\ P(A, A) + P(A-, A) + P(B+, A) = 0.5 \\ P(A, A) + P(A, B+) + P(B+, A) = 0.6\end{cases}$\end{center} Adding the first two equations and then subtracting the third gives $P(A, A) + P(A-, A) + P(A, A-) = \boxed{0.3}$.
+\end{solution}
+
+
+\begin{problem}%[Kyle/Fred]
+Compute the smallest positive integer value of $n$ such that $n!$ ($n$ factorial) ends in $16$ consecutive zeros, where $n! = 1 \cdot 2 \cdot \ldots \cdot n$.
+\end{problem}
+
+\begin{answer}
+$\boxed{70}$
+\end{answer}
+
+\begin{solution}
+The number of zeros at the end of a number $n$ is equal to teh largets power $k$ such that $10^k$ is a factor of $n$. We solve this by incrementing $n$ until $n$ acquires all $16$ zeros. We will always multiply by amultiple of $2$ more frequently than a multiple of $5$, so every time we multiply our current factorial by a multiple of $5^p$, we increase the nmber of zeros by $p$. The numbers $5, 10, 15$, and $20$ each add one zero. Next, $25$ adds two zeros, so $25!$ has 6 terminal zeros. We add another $6$ zeros to the end by the time we reach $50!$, with $12$ terminal zeros. We add four more zeros to reach $16$ with the numbers $55, 60, 65$, and $70$. Hence, $70!$ is the smallest factorial ending in $16$ zeros, so $n = \boxed{70}$.
+\end{solution}
+
+
+\begin{problem}%[Michael You]
+Two cars are traveling towards each other, with car A traveling at 70 km/h and car B travling at 65 km/hr. Initially, they are 15 km apart, and a bird begins to fly from car A to car B. When the bird reaches car B, it immediately starts flying back to car A. The bird continues to do this until the cars collide. Given that the bird flies at a speed of 20 km/h, compute the total distance the bird will fly before stopping
+\end{problem}
+
+\begin{answer}
+$\boxed{\frac{20}{9}}$ (km)
+\end{answer}
+
+\begin{solution}
+The amount of time the bird flies for is the same amount of time it takes for the cars to collide. The cars will collide in $\frac{15}{70+65}= \frac{1}{9}$ h. Thus, the distance is $20 \cdot \frac{1}{9} = \boxed{\frac{20}{9}}$
 \end{solution}
 
 
@@ -207,6 +351,32 @@ Now we consider the shaded right triangle in the diagram. If we let $r$ be the r
 \end{solution}
 
 
+\begin{problem}
+Find the least positive integer whose sum of positive divisors is $42$.
+\end{problem}
+
+\begin{answer}
+$\boxed{20}$
+\end{answer}
+
+\begin{solution}
+For a general number whose prime factorization is $p_1^{e_1}p_2^{e_2} \cdots p_k^{e_k}$, the sum of its divisors is $(1 + p_1 + p_1^2 \cdots + p_1^{e_1}) \cdots (1 + p_k + \cdots + p_k^{e_k})$. We have $42 = 2 \cdot 3 \cdot 7$, but $2$ is not workable ($1+1$ is invalid as $1$ is not prime), so the possible groupings are $6 \cdot 7 = (1 + 5)(1 + 2 + 4)$, $3 \cdot 14 = (1 + 2)(1 + 13) = $, and $42 = 1 + 41$. Of these, the least option is $(1+5)(1+2+4)$, which corresponds to the number $5 \cdot 4 = \boxed{20}$.
+\end{solution}
+
+
+\begin{problem}
+problem 25
+\end{problem}
+
+\begin{answer}
+
+\end{answer}
+
+\begin{solution}
+akfa;kfej
+\end{solution}
+
+
 \begin{problem}%[Lilian]
 If $\frac{1}{x} + \frac{1}{y} = 5$ and $x+y=10$, what is $x^2+y^2$?
 \end{problem}
@@ -219,6 +389,18 @@ $\boxed{96}$
 Multiplying the two equations, we get $\frac{x}{y} + \frac{y}{x} + 2 = 50$. Subtracting by 2 and multiplying by $xy$, we see that $x^2+y^2 = 48xy$. Also, note that from squaring the second equation, $x^2+ y^2 +2xy = 100$. We now have a system of equations with $xy$ and $x^2+y^2$. Solving, we get our answer of $\boxed{96}$.
 \end{solution}
 
+
+\begin{problem}
+probabilty with states (2 player knockout)
+\end{problem}
+
+\begin{answer}
+
+\end{answer}
+
+\begin{solution}
+asdf
+\end{solution}
 
 \begin{problem}
 There are $2016$ mathematicians at the Annual Mathematics Conference, and each mathematician brought along a nonmathematician partner. NAME1, a mathematician, brought NAME2, a journalist, who asked each of the $4031$ people besides himself how many people they knew besides themselves and their partner. (Knowing is mutual, so if person $A$ knows person $B$ then person $B$ knows person $A$.) NAME2 received a different answer from each person. Compute the number of people that NAME1 knows.

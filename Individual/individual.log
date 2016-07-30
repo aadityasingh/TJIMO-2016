@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=latex 2014.12.19)  29 JUL 2016 16:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=latex 2014.12.19)  30 JUL 2016 00:47
 entering extended mode
 **individual.tex
 ("C:\Users\Connie Pan\Desktop\LProjects\TJIMO2016\TJIMO-2016\Individual\individual.tex"
@@ -441,70 +441,209 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--160
  []
 
 [2]
-
-Package asymptote Warning: file `individual-1.eps' not found on input line 175.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--178
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
 
-Package asymptote Warning: file `individual-2.eps' not found on input line 202.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 [3]
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
-[4] ("C:\Users\Connie Pan\Desktop\LProjects\TJIMO2016\TJIMO-2016\Individual\individual.aux") ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+
+ []
+
+
+Package asymptote Warning: file `individual-1.eps' not found on input line 319.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--322
+
+ []
+
+
+Package asymptote Warning: file `individual-2.eps' not found on input line 346.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--382
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
+
+ []
+
+[7] ("C:\Users\Connie Pan\Desktop\LProjects\TJIMO2016\TJIMO-2016\Individual\individual.aux") ) 
 Here is how much of TeX's memory you used:
  2854 strings out of 493922
  37772 string characters out of 3147289
- 101866 words of memory out of 3000000
+ 102866 words of memory out of 3000000
  6090 multiletter control sequences out of 15000+200000
  16627 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,21n,45p,527b,491s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,21n,45p,778b,491s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on individual.dvi (4 pages, 16664 bytes).
+Output written on individual.dvi (7 pages, 29744 bytes).
