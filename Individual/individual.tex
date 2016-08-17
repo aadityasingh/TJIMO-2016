@@ -17,6 +17,7 @@
 
 \begin{document}
 
+
 \begin{problem}
 Compute $2^{0 + 1 \cdot 6} - 2^0 \cdot 1 + 7$.
 \end{problem}
@@ -31,7 +32,7 @@ We follow the order of operations to obtain \begin{align*} 2^{0 + 1 \cdot 6} - 2
 
 
 \begin{problem}
-The sum of the digits of the year $2016$ is $2 + 0 + 1 + 6 = 9$. What is the next year for which the sum of the digits is also $9$?
+The sum of the digits of the year $2016$ is $2 + 0 + 1 + 6 = 9$. Find the next year for which the sum of the digits is also $9$.
 \end{problem}
 
 \begin{answer}
@@ -52,7 +53,7 @@ $\boxed{2016}$
 \end{answer}
 
 \begin{solution}
-Note that $1 + 63 = 64$, $2 + 62 = 64$, $3 + 61 = 64$, and so forth. Therefore $(1 + 63) + (2 + 62) + (3 + 61) + \cdots (63 + 1) = 63 \cdot 64$is twice the desired sum. Thus the desired sum is $\frac{1}{2} \cdot 63 \cdot 64 = 63 \cdot 32 = \boxed{2016}$.
+Note that $1 + 63 = 64$, $2 + 62 = 64$, $3 + 61 = 64$, and so forth. Therefore $(1 + 63) + (2 + 62) + (3 + 61) + \cdots (63 + 1) = 63 \cdot 64$ is twice the desired sum. Thus the desired sum is $\frac{1}{2} \cdot 63 \cdot 64 = 63 \cdot 32 = \boxed{2016}$.
 \end{solution}
 
 
@@ -107,17 +108,17 @@ $\boxed{36}$
 The prime factorization of $2016$ is $2^5 \cdot 3^2 \cdot 7$. A divisor of $2016$ will have $0, 1, 2, 3, 4$, or $5$ factors of $2$, for $6$ choices. Similarly, there are $3$ choices for the number of factors of $3$, and $2$ for factors of $7$. Therefore there are $6 \cdot 3 \cdot 2 = \boxed{36}$ positive divisors of $2016$.
 \end{solution}
 
-% I think this problem is incorrectly placed. It should be in the 10-20 range.
-\begin{problem}
-A regular $n$-sided regular polygon has $2015$ diagonals. Compute the number of diagonals in a regular $n+1$-sided polygon.
+
+\begin{problem} %[NO NAME]
+Fermat is selling his very last and little mat. He decides to give a discount at $10\%$ off of the original price. After 2 weeks, no one bought his mat. Ferious, he decided to give an additional $30\%$ off the discounted price. Finally, Andrew Wiles bought the mat for $\$20$. What was the original price (to the nearest cent)?
 \end{problem}
 
 \begin{answer}
-$\boxed{2079}$ (diagonals)
+$\$31.75$
 \end{answer}
 
 \begin{solution}
-When thinking of a diagonal, we have to pick two non-adjacent vertices. Let's consider an $n$-sided regular polygon. To pick the first vertex, you have n choices. For the next vertex, you must pick out of the vertices that are not next to this one, or this one. Thus, we have n-3 choices. We must also note that each diagonal has two endpoints, and thus is counted twice. Thus, the number of diagonals in an n-sided regular polygon is $\frac{n(n-3)}{2}$. In this problem, we know that the number of diagonals is $2015$. Thus, $\frac{n(n-3)}{2} = 2015$, so $n(n-3) = 4030$. Now, note that $60^2 = 3600 < 4030$, $70^2 = 4900 > 4030$ and that either $n$ or $n-3$ must be a multiple of 5. Furthermore, we can immdiately eliminate $n = 68$ and $n = 63$ since $4030$ is not divisible by $4$. Thus, we see that $n = 65$ (you can plug this in to check). Now, we look at what the question asks for. The number of diagonals in a regular $n+1$-sided polygon is $\frac{(n+1)(n-2)}{2}$, from our previous formula. Thus, we see the answer is $\frac{66 \cdot 63}{2} = 2079$.
+Let the original price be $x$. Then, we get the equation $(1-0.1) \cdot (1-0.3) \cdot x = 20$. Then, $x = \frac{20}{0.7 \cdot 0.9}$, so we get the answer of $x = \$31.75$.
 \end{solution}
 
 
@@ -140,15 +141,47 @@ We know that the order for A and D is A,D, and the order for B, C, and E is BCE.
 
 
 \begin{problem}
-asfd
+Compute the units digit of $2017^{2016}$.
 \end{problem}
 
 \begin{answer}
-
+$\boxed{1}$
 \end{answer}
 
 \begin{solution}
-asdf
+We may start by simply replacing $2017$ with its units digit $7$. By looking at the first few powers of $7$ (7, 49, 343, 2401, 16807), we see that the units digit cycles every $4$ powers in the pattern $7, 9, 3, 1, 7, 9, 3, 1, \ldots$. In particular, every fourth one has units digit $1$, and $2016$ is divisible by $4$, so our answer is $\boxed{1}$.
+\end{solution}
+
+
+\begin{problem}%[Joie]
+Find the perimeter of the figure below, where $AB = 6$, $AJ = 10$, $GH = 1$, and all interior angles either measure $90^\circ$ or $270^\circ$.
+\begin{figure}[h]
+	\begin{center}
+		\begin{asy}
+		unitsize(12);
+		pair A = (0, 0), B = (0, 6), C = (4, 6), D = (4, 4), E= (6, 4), F = (6, 5), G = (8, 5), H = (8, 4), I = (10, 4), J = (10, 0);
+		draw(A--B--C--D--E--F--G--H--I--J--cycle);
+		label("A", A, S);
+		label("B", B, N);
+		label("C", C, N);
+		label("D", D, S);
+		label("E", E, S);
+		label("F", F, N);
+		label("G", G, N);
+		label("H", H, S);
+		label("I", I, N);
+		label("J", J, S);
+		\end{asy}
+	\end{center}
+\end{figure}
+\end{problem}
+
+\begin{answer}
+$\boxed{34}$
+\end{answer}
+
+\begin{solution}
+The key realization here is that $BC+DE+FG+HI = AJ = 10$ and $CD+IJ = AB = 6$. Thus, the perimeter is $2(10+6) + EF+GH=32 + 1 + 1 = \boxed{34}$.
 \end{solution}
 
 
@@ -161,20 +194,20 @@ $\boxed{\$1}$
 \end{answer}
 
 \begin{solution}
-Let $c$ be the cost of one bag of chips, and $w$ be the cost of one bottle of water. We have: \begin{center}$\begin{cases} 3c + 2w = 2.35 \\ 2c + 3w = 2.65 \end{cases}$\end{center} Adding these equations together gives $5c + 5w = 5$, so $c + w = \boxed{1}$. (Although not necessary, we can also solve for $w$ and $c$ explicitly to give $w = 0.35$ and $c = 0.65$.)
+Let $c$ be the cost of one bag of chips, and $w$ be the cost of one bottle of water. We have: \begin{center}$\begin{cases} 3c + 2w = 2.35 \\ 2c + 3w = 2.65 \end{cases}$\end{center} Adding these equations together gives $5c + 5w = 5$, so $c + w = \boxed{1}$. (Although not necessary, we can also solve for $w$ and $c$ explicitly to find $w = 0.35$ and $c = 0.65$.)
 \end{solution}
 
 
-\begin{problem} %[NO NAME]
-Fermat is selling his very last and little mat. He decides to give a discount at $10\%$ off of the original price. After 2 weeks, no one bought his mat. Ferious, he decided to give an additional $30\%$ off the discounted price. Finally, Andrew Wiles bought the mat for $\$20$. What was the original price (to the nearest cent)?
+\begin{problem}
+A scalene triangle has all integer side lengths, with two sides having lengths $1105$ and $2016$. Compute the number of possible lengths for the third side.
 \end{problem}
 
 \begin{answer}
-$\$31.75$
+$\boxed{2207}$ (lengths)
 \end{answer}
 
 \begin{solution}
-Let the original price be x. Then, we get the equation $(1-0.1) \cdot (1-0.3) \cdot x = 20$. Then, $x = \frac{20}{0.7 \cdot 0.9}$, so we get the answer of $x = \$31.75$.
+If $x$ is the length of the third side, then by the Triangle Inequality we have $1105 + x > 2016$ and $2016 + 1105 > x$, so $x$ must be between $912$ and $3120$, inclusive. There are $3120 - 912 + 1 = 2209$ integers from $912$ through $3120$, but the triangle is scalene, so the third side cannot be $1105$ or $2016$. Hence there are $2209 - 2 = \boxed{2207}$ possible lengths for the third side.
 \end{solution}
 
 
@@ -191,30 +224,17 @@ We will use complementary counting. That is, we compute the probability that the
 \end{solution}
 
 
-\begin{problem}%[Michael You]
-Rectangle $CDEF$ is inscribed in right triangle $ABC$ with right angle $C$ such that $D$ is on $AC$, $E$ is on $AB$, and $F$ is on $BC$. If $AD=3, CD=4$, and $DE=5$, find the area of $\triangle ABC$.
-%ADD ASYMPTOTE 
-\end{problem}
-
-\begin{answer}
-$\boxed{\frac{245}{6}}$
-\end{answer}
-
-\begin{solution}
-Since $\triangle AED \sim \triangle ABC$, we see that $BC = \frac{ED}{AD} \cdot AC = \frac{5}{3} \cdot 7 = \frac{35}{3}$. Thus, the area is $\dfrac{7 \cdot \frac{35}{3}}{2} = \boxed{\frac{245}{6}}$
-\end{solution}
-
-
+% I think this problem is incorrectly placed. It should be in the 10-20 range.
 \begin{problem}
-algebra
+A regular $n$-sided regular polygon has $2015$ diagonals. Compute the number of diagonals in a regular $n+1$-sided polygon.
 \end{problem}
 
 \begin{answer}
-
+$\boxed{2079}$ (diagonals)
 \end{answer}
 
 \begin{solution}
-asfd
+When thinking of a diagonal, we have to pick two non-adjacent vertices. Let's consider an $n$-sided regular polygon. To pick the first vertex, we have $n$ choices. For the next vertex, we must pick out of the vertices that are not next to this one, or itself. Thus, we have $n-3$ choices. We must also note that each diagonal has two endpoints, and thus is counted twice. Thus, the number of diagonals in an n-sided regular polygon is $\frac{n(n-3)}{2}$. In this problem, we know that the number of diagonals is $2015$. Thus, $\frac{n(n-3)}{2} = 2015$, so $n(n-3) = 4030$. Now, note that $60^2 = 3600 < 4030$, $70^2 = 4900 > 4030$ and that either $n$ or $n-3$ must be a multiple of 5. Furthermore, we can immdiately eliminate $n = 68$ and $n = 63$ since $4030$ is not divisible by $4$. Thus, we see that $n = 65$ (we can plug this in to check). Now, we look at what the question asks for. The number of diagonals in a regular $n+1$-sided polygon is $\frac{(n+1)(n-2)}{2}$, from our previous formula. Thus, we see the answer is $\frac{66 \cdot 63}{2} = 2079$.
 \end{solution}
 
 
@@ -232,7 +252,7 @@ Insert solutoin
 
 
 \begin{problem}
-NAME's class can normally be split into even groups of $7$ when everyone is present. When $2$ people are absent and they try to split into groups of $9$, there is $1$ person left out. Find the minimum number of students in the entire class.
+NAME's class can normally be split evenly into equal groups of $7$ when everyone is present. When $2$ people are absent and they try to split into groups of $9$, they are $1$ person short of having equal groups. Find the minimum number of students in the entire class.
 \end{problem}
 
 \begin{answer}
@@ -257,16 +277,17 @@ We describe tanks A and B in terms of their individual drainage rates. Tank A ha
 \end{solution}
 
 
-\begin{problem}
-problem 19
+\begin{problem}%[Michael You]
+Rectangle $CDEF$ is inscribed in right triangle $ABC$ with right angle $C$ such that $D$ is on $AC$, $E$ is on $AB$, and $F$ is on $BC$. If $AD=3, CD=4$, and $DE=5$, find the area of $\triangle ABC$.
+%ADD ASYMPTOTE 
 \end{problem}
 
 \begin{answer}
-
+$\boxed{\frac{245}{6}}$
 \end{answer}
 
 \begin{solution}
-solutgn
+Since $\triangle AED \sim \triangle ABC$, we see that $BC = \frac{ED}{AD} \cdot AC = \frac{5}{3} \cdot 7 = \frac{35}{3}$. Thus, the area is $\dfrac{7 \cdot \frac{35}{3}}{2} = \boxed{\frac{245}{6}}$
 \end{solution}
 
 
@@ -430,7 +451,7 @@ $\boxed{108}$ (degrees)
 
 \begin{solution}
 % INCLUDE DIAGRAM
-Reflect the quadrilateral about side $AD$, and let $B'$ be the reflection of $B$ and $C'$ that of $C$. Then pentagon $BCDC'D'$ is equilateral. Furthermore, $\angle BCD \cong \angle CDC' \cong DC'B'$, this construction is uniquely defined, and our pentagon is in fact a regular pentagon. Therefore $\angle BCD$ is an angle in a regular pentagon, so it measures $\boxed{108^\circ}$.
+Reflect the quadrilateral about side $AD$, and let $B'$ be the reflection of $B$ and $C'$ that of $C$. Then pentagon $BCDC'D'$ is equilateral. Furthermore, $\angle BCD \cong \angle CDC' \cong DC'B'$, and this construction is uniquely defined, and our pentagon is in fact a regular pentagon. Therefore $\angle BCD$ is an angle in a regular pentagon, so it measures $\boxed{108^\circ}$.
 \end{solution}
 
 
