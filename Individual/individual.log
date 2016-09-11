@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.1.24)  27 AUG 2016 12:59
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.1.24)  11 SEP 2016 12:00
 entering extended mode
 **C:/Users/Jeffery/Desktop/LProjects/TJIMO2016/TJIMO-2016/Individual/individual
 .tex
@@ -634,12 +634,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--224
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
 
@@ -674,17 +674,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--277
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--283
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
+Underfull \hbox (badness 10000) in paragraph at lines 294--296
 
  []
 
@@ -703,65 +703,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
-[5]
+
 Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 329--330
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
 <"individual-2".pdf, id=69, 81.34189pt x 85.35489pt>
 File: "individual-2".pdf Graphic file (type pdf)
  <use "individual-2".pdf>
-Package pdftex.def Info: "individual-2".pdf used on input line 345.
+Package pdftex.def Info: "individual-2".pdf used on input line 358.
 (pdftex.def)             Requested size: 81.34167pt x 85.35468pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--348
+Underfull \hbox (badness 10000) in paragraph at lines 347--361
 
  []
 
 <"individual-3".pdf, id=70, 75.46693pt x 85.35489pt>
 File: "individual-3".pdf Graphic file (type pdf)
  <use "individual-3".pdf>
-Package pdftex.def Info: "individual-3".pdf used on input line 372.
+Package pdftex.def Info: "individual-3".pdf used on input line 385.
 (pdftex.def)             Requested size: 75.46674pt x 85.35468pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
- []
-
-[6 <C:/Users/Jeffery/Desktop/LProjects/TJIMO2016/TJIMO-2016/Individual/individu
-al-2.pdf> <C:/Users/Jeffery/Desktop/LProjects/TJIMO2016/TJIMO-2016/Individual/i
-ndividual-3.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
  []
 
-<"individual-4".pdf, id=91, 77.07697pt x 82.4942pt>
+[6 <C:/Users/Jeffery/Desktop/LProjects/TJIMO2016/TJIMO-2016/Individual/individu
+al-2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+
+ []
+
+<"individual-4".pdf, id=85, 77.07697pt x 82.4942pt>
 File: "individual-4".pdf Graphic file (type pdf)
  <use "individual-4".pdf>
-Package pdftex.def Info: "individual-4".pdf used on input line 413.
+Package pdftex.def Info: "individual-4".pdf used on input line 426.
 (pdftex.def)             Requested size: 77.07677pt x 82.49397pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--416
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--424
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
+Underfull \hbox (badness 10000) in paragraph at lines 407--429
 
  []
 
@@ -776,7 +779,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 441--442
  []
 
 [7 <C:/Users/Jeffery/Desktop/LProjects/TJIMO2016/TJIMO-2016/Individual/individu
-al-4.pdf>]
+al-3.pdf> <C:/Users/Jeffery/Desktop/LProjects/TJIMO2016/TJIMO-2016/Individual/i
+ndividual-4.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 449--450
 
  []
@@ -825,7 +829,7 @@ Package rerunfilecheck Info: File `individual.out' has not changed.
 Here is how much of TeX's memory you used:
  7071 strings out of 494045
  99856 string characters out of 3155635
- 209264 words of memory out of 3000000
+ 210264 words of memory out of 3000000
  10221 multiletter control sequences out of 15000+200000
  16627 words of font info for 62 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
@@ -842,7 +846,7 @@ C:/MikTex/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/MikTex/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 ><C:/MikTex/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/MikTex/fonts/type1/pu
 blic/amsfonts/symbols/msam10.pfb>
-Output written on individual.pdf (8 pages, 258414 bytes).
+Output written on individual.pdf (8 pages, 258522 bytes).
 PDF statistics:
  180 PDF objects out of 1000 (max. 8388607)
  39 named destinations out of 1000 (max. 500000)
