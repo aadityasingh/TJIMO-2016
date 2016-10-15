@@ -4,7 +4,7 @@
 \usepackage{algorithmicx}
 \usepackage[noend]{algpseudocode}
 
-\usepackage{../tjimo}
+\usepackage{tjimo}
 
 \newcommand{\sevenpoints}{Time limit: 45 minutes.}
 \newcommand{\righthead}{\fdbox{Round}{Power}}
@@ -18,24 +18,32 @@
 \usepackage{gensymb}
 \usepackage{multicol}
 
+\begin{comment}
+\def \answer{\comment}
+\def \solution{\comment}
+\end{comment}
+
 \begin{document}
-
-Unlike the other rounds, just getting the answer right is not enough on the Power Round. Make sure you explain your answer and use words
-to describe how you arrived at your answer. In the words of middle school math teachers across the nation -- no work, no credit!
-
-This Power Round is divided into three sections. In the first section, the shoelace theorem is defined and discussed. In the second, we will be proving shoelace for triangles. Finally, we will be proving the shoelace theorem in general in the third section.
-
-Note that with the exception of Problem 1, you can use results from previous problems to prove a problem (that is, you can use Problem 2 to prove Problem 5, but not vice versa). 
 
 \section{Introduction}
 
+Unlike the other rounds, just getting the answer right is not enough on the Power Round. Make sure you explain your answer and use words to describe how you arrived at your answer. In the words of middle school math teachers across the nation -- no work, no credit!
+
+\phantom{hi} \noindent This Power Round (worth 150 points) is divided into two sections. In the first section,  we will be proving shoelace for triangles. Finally, we will be proving the shoelace theorem in general in the third section.
+
+\phantom{hi} \noindent Feel free to use results from previous problems on this round and the practice power round to prove a problem (that is, you can use Problem 2 to prove Problem 5, but not vice versa). 
+
+\phantom{hi} \noindent Do not be afraid if this power round is difficult, I will be a lenient grader. However, this does not mean that you should not do your best - show all work!
+
+\section{Recap}
+
 The shoelace theorem can be used to calculate the area of polygons, given the Cartesian coordinates of the vertices. 
 
-\begin{theorem} (The Shoelace Theorem) Suppose the polygon $P$ has vertices $(a_1, b_1)$, $(a_2, b_2)$, ... , $(a_n, b_n)$, listed in counterclockwise order. Then the area of $P$ is
+\begin{theorem}[The Shoelace Theorem] Suppose the polygon $P$ has vertices $(a_1, b_1)$, $(a_2, b_2)$, ... , $(a_n, b_n)$, listed in counterclockwise order. Then the area of $P$ is
 
 \[\dfrac{1}{2} |(a_1b_2 + a_2b_3 + \cdots + a_nb_1) - (b_1a_2 + b_2a_3 + \cdots + b_na_1)|\]
 \end{theorem}
-
+\begin{comment}
 The Shoelace Theorem gets its name because if one lists the coordinates in a column, 
 \begin{align*} 
 (a_1 &, b_1) \\ 
@@ -45,105 +53,39 @@ The Shoelace Theorem gets its name because if one lists the coordinates in a col
 (a_1 &, b_1) \\ 
 \end{align*} 
 and marks the pairs of coordinates to be multiplied, the resulting image looks like laced-up shoes.
+\end{comment}
 
+\begin{definition}
+\[\left|\begin{array}{c c}a_1  & b_1 \\ a_2 &  b_2 \\ \vdots & \vdots \\ a_n & b_n \\ a_1 & b_1 \\ \end{array}\right| = \dfrac{1}{2} |(a_1b_2 + a_2b_3 + \cdots + a_nb_1) - (b_1a_2 + b_2a_3 + \cdots + b_na_1)|\]
+Note that the shoelace theorem gets its name from the criss-crossing that results (in the first expression) when one marks the pairs of coordinates to be multiplied.
+\end{definition}
 
-\begin{problem}[2 points total]
-Use shoelace to find, with proof, the area of the nonagon below:
-\begin{center}
-    \begin{tikzpicture}
-        \filldraw[color = black!60, fill = black!30, thick] (3, 4.5) -- (2, 3) -- (0.5, 3.5) -- (1.5, 2) -- (1, 0.5) -- (2.5, 1.5) -- (4, 1) -- (4.5, 2.5) -- (3.5, 4) -- cycle;
-        \node at (3, 4.5) [above] {(6, 9)};
-        \node at (1.7, 3.2) [above] {(4, 6)};
-        \node at (0.5, 3.5) [above left] {(1, 7)};
-        \node at (1.5, 2) [left] {(3, 4)};
-        \node at (1, 0.5) [below left] {(2, 1)};
-        \node at (2.5, 1.3) [below] {(5, 3)};
-        \node at (4, 1) [below] {(8, 2)};
-        \node at (4.5, 2.5) [right] {(9, 5)};
-        \node at (3.5, 4) [right] {(7, 8)};
-    \end{tikzpicture}
-\end{center}
-\end{problem}
+\subsection{List of Facts}
+Here are facts you may use from the practice power on this power round:
 
-\begin{answer} 41 \end{answer}
-\begin{solution} Plugging the vertices into the shoelace theorem, we see that the area is 
-\[\dfrac{1}{2} |(6)(6) + (4)(7) + (1)(4) + (3)(1) + (2)(3) + (5)(2) + (8)(5) + (9)(8) + (7)(9)\]
-\[-((6)(8) + (4)(9) + (1)(6) + (3)(7) + (2)(4) + (5)(1) + (8)(3) + (9)(2) + (7)(2))|\]
-\[=\frac{1}{2}(262-180)=\boxed{41}\]
-\end{solution}
+\begin{theorem}
+The shoelace theorem applies if a triangle is entirely contained within the first quadrant and has a vertex located at the origin.
+\end{theorem}
 
-%\begin{problem} \normalfont Prove that the shoelace theorem works for a triangle with a vertex at $(0, 0)$ and a base on the x-axis.
+\begin{theorem}
+The shoelace theorem is consistent when a triangle is rotated by $90\degree$ counterclockwise about the origin. Assume that one vertex remains at the origin.
+\end{theorem}
 
+\section{General Triangles}
 
-%\begin{problem} \normalfont Prove that the shoelace theorem works for squares with one vertex on the x-axis and one vertex on the y-axis.
-
-\section{Areas of Triangles}
-
-We will begin proving shoelace theorem for just triangles.
-\subsection{Conveniently Located Triangles}
-\normalfont Let the three vertices of triangle $ABC$ lie at $(0, 0), (x_1, y_1),$  and $(x_2, y_2)$.
-
-\phantom{hello there}
-
-\begin{problem} \normalfont Prove that the shoelace theorem applies to the following cases for $x_1, y_1, x_2, y_2 \geq 0$: (Hint: Draw a box around the triangle and subtract out unnecessary areas)
-\end{problem}
-\phantom{blahbity blah} 
-\begin{multicols}{2}
-\begin{enumerate}[label=(\alph*)]
-\item $x_1 \leq x_2$ and $y_1 \geq y_2$
-    \newline
-    \begin{tikzpicture}
-        \filldraw[color = black!60, fill = black!10, thick] (0, 0) -- (4, 0) -- (4, 2.5) -- (0, 2.5) -- cycle;
-        \filldraw[color = black!60, fill = black!30, thick] (0, 0) -- (4, 1) -- (2.5, 2.5) -- cycle;
-        \node at (0, 0) [below left] {(0, 0)};
-        \node at (4, 1) [right] {$(x_2, y_2)$};
-        \node at (2.5, 2.5) [above] {$(x_1, y_1)$};
-    \end{tikzpicture}
-\item $x_1 < x_2$ and $y_1 < y_2$
-    \newline
-    \begin{tikzpicture}
-        \filldraw[color = black!60, fill = black!10, thick] (0, 0) -- (4, 0) -- (4, 2.5) -- (0, 2.5) -- cycle;
-        \filldraw[color = black!60, fill = black!30, thick] (0, 0) -- (4, 2.5) -- (3, 1) -- cycle;
-        \node at (0, 0) [below left] {(0, 0)};
-        \node at (4, 2.5) [above right] {$(x_2, y_2)$};
-        \node at (3, 1) [below] {$(x_1, y_1)$};
-    \end{tikzpicture}
-\end{enumerate}
-\end{multicols}
-
-\begin{solution}
-\begin{enumerate}[label=(\alph*)]
-\phantom{hello what's up}
-\item The area is $x_2y_1 - (\frac{1}{2}x_1y_1+\frac{1}{2}x_2y_2+\frac{1}{2}(x_2-x_1)(y_1-y_2))$.
-Expanding and cancelling gives $\frac{1}{2}(x_2y_1-x_1y_2)$. Note that this is the same result as when we use shoelace.
-
-\item Note that there are two cases. 
-\newline \textbf{Case 1:} $(x_2, y_2)$ is above the diagonal
-The area is $x_1y_1 - (\frac{1}{2}(x_1-x_2)(y_1-y_2)+\frac{1}{2}x_2y_2+(x_2)(y_1-y_2)+\frac{1}{2}x_1y_1)$.
-Expanding and cancelling gives $\frac{1}{2}(x_2y_1-x_1y_2)$. 
-\newline \textbf{Case 2:} $(x_2, y_2)$ is below the diagonal
-The area is $x_1y_1 - (\frac{1}{2}(x_1-x_2)(y_1-y_2)+\frac{1}{2}x_2y_2+(y_2)(x_1-x_2)+\frac{1}{2}x_1y_1)$.
-Expanding and cancelling gives $\frac{1}{2}(x_2y_1-x_1y_2)$. 
-
-\end{enumerate} \end{solution}
-
-\subsection{General Triangles}
-
-\begin{problem} \normalfont Prove that the shoelace theorem is consistent when a triangle is rotated by $90\degree$ clockwise or counterclockwise about the origin. Assume that one vertex remains at the origin. \end{problem}
+\begin{problem}[5 points total]  Prove that the shoelace theorem is consistent with translation, or in other words, the triangle with vertices $(x_1, y_1), (x_2, y_2), (x_3, y_3)$ has the same area as the triangle with vertices $(x_1 - a, y_1 - b), (x_2 - a, y_2 - b ), (x_3 - a, y_3 - b)$. \end{problem}
 
 \begin{solution}
 
 \end{solution}
 
-\begin{problem} \normalfont Prove that the shoelace theorem is consistent with translation, or in other words, the triangle with vertices $(x_1, y_1), (x_2, y_2), (x_3, y_3)$ has the same area as the triangle with vertices $(x_1 - a, y_1 - b), (x_2 - a, y_2 - b ), (x_3 - a, y_3 - b)$. \end{problem}
-
-\begin{problem} \normalfont Prove that the shoelace theorem applies for all triangles. \end{problem}
+\begin{problem}[10 points total]  Prove that the shoelace theorem applies for all triangles. \end{problem}
 
 \subsection{Clockwise or Counterclockwise?}
 Note that for the 6 ways of ordering the vertices of the triangle, each ordering will traverse the vertices in either a clockwise or a counterclockwise direction. 
 \newline \noindent Let the three vertices of triangle $ABC$ lie at $(x_1, y_1), (x_2, y_2),$  and $(x_3, y_3)$, in counterclockwise direction starting at $(x_1, y_1)$. 
 
-\begin{problem} \normalfont Prove that
+\begin{problem}[5 points total]  Prove that
 \[\left|\begin{array}{c c} x_1 &  y_1 \\ x_2  & y_2 \\ x_3  & y_3 \\ x_1 & y_1 \\ \end{array}\right| = 
 \left|\begin{array}{c c} x_2  & y_2 \\ x_3  & y_3 \\ x_1 &  y_1 \\ x_2 & y_2 \\ \end{array}\right| = 
 \left|\begin{array}{c c} x_3  & y_3 \\ x_1 &  y_1 \\ x_2  & y_2 \\ x_3 & y_3 \\ \end{array}\right| = 
@@ -156,9 +98,51 @@ Note that for the 6 ways of ordering the vertices of the triangle, each ordering
 Let $S_1$ be the sum $x_1y_2 + x_2y_3 + x_3y_1$, and $S_2$ be the sum $x_2y_1 + x_3y_2 + x_1y_3$.
 Note that the first three expressions are all equal to $S_1-S_2$ and the last three expressions are equal to $-(S_2-S_1) = S_1-S_2$. Thus, all six expressions are equal.
 \end{solution}
-\phantom{hello its me}
-\begin{problem}
+\begin{problem}[10 points total]
 Prove that if the vertices are listed counter-clockwise, the resulting expression is always positive.
 \end{problem}
 
+\section{Beyond Triangles}
+
+\subsection{Tangent: Induction}
+
+Induction consists of two steps: a base case and an inductive step. The base case involves establishing the fact that the claim holds true for a small case (such as when $n=1$). The inductive step involves proving that given that the claim holds for all $k$ starting at the base case and going up to $n$, then the statement is true for $n+1$.
+
+For example, if I was trying to prove that $1+2+...+n = \frac{n(n+1)}{2}$., and so on, I would start with the base case: $1=\frac{1(2)}{2}$. This is easily verified by the reflexive axiom. Now, assume for the purpose of induction that $1+2+...+n = \frac{n(n+1)}{2}$. Then, adding $n+1$ on both sides would yield $1+2+...+n+n+1=n+1+\frac{n(n+1)}{2} = \frac{(n+1)n + (n+1)(2)}{2} = \frac{(n+1)(n+2)}{2}$, and we are done.
+
+\begin{problem}[6 points total]
+Prove that the sum $1^2+2^2+...+n^2 = \frac{n(n+1)(2n+1)}{6}$.
+\end{problem}
+
+\begin{solution}
+Base case: $1=\frac{1(2)(3)}{6}$. This is easily verified by the reflexive axiom. Now, assume for the purpose of induction that $1^2+2^2+...+n^2 = \frac{n(n+1)(2n+1)}{6}$. Then, adding $(n+1)^2$ on both sides would yield $1^2+2^2+...+n^2+(n+1)^2=(n+1)^2+\frac{n(n+1)(2n+1)}{6} = \frac{(n+1)(n(2n+1) + (n+1)(6))}{6} = \frac{(n+1)(n+2)(2n+3)}{6}$, and we are done.
+
+\end{solution}
+
+\begin{problem}[6 points total]
+Prove that the sum $(1)(2) + (2)(3) + (3)(4) + ... + (n)(n+1) = \frac{n(n+1)(n+2)}{3}$
+\end{problem}
+
+\begin{solution}
+Base case: $(1)(2)=\frac{1(2)(6)}{6}$. This is easily verified by the reflexive axiom. Now, assume for the purpose of induction that $1(2)+2(3)+...+n(n+1) = \frac{n(n+1)(n+2)}{3}$. Then, adding $(n+1)(n+2)$ on both sides would yield $1(2)+2(3)+...+n(n+1)+(n+2)(n+2) = \frac{n(n+1)(n+2)}{3} + (n+1)(n+2) = \frac{(n+1)(n(n+3) + (n+2)(3))}{3} = \frac{(n+1)(n+2)(n+3)}{3}$, and we are done.
+\end{solution}
+
+\begin{problem}[7 points total]
+Prove that the sum $2^0 + 2^1 + 2^2 + 2^3 + ... + 2^n = 2^{n+1} - 1$
+\end{problem}
+
+\begin{solution}
+Base case: $2^0=2^1-1$. This is easily verified by the reflexive axiom. Now, assume for the purpose of induction that $2^0 + 2^1 + 2^2 + 2^3 + ... + 2^n = 2^{n+1} - 1$. Then, adding $2^{n+1})$ on both sides would yield $2^0 + 2^1 + 2^2 + 2^3 + ... + 2^n + 2^{n+1} = 2^{n+1} +2^{n+1} - 1 = 2^{n+2} - 1$, and we are done.
+\end{solution}
+
+\subsection{Back to shoelace}
+
+\begin{problem}[100 points total]
+Prove the shoelace theorem using induction.
+\end{problem}
+
+
+\begin{solution}
+
+\end{solution}
 \end{document}
