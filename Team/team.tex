@@ -1,0 +1,169 @@
+\documentclass[11pt]{article}
+\usepackage[paperwidth=8.5in, paperheight=11in]{geometry}
+
+\usepackage{../tjimo}
+%\usepackage[pdftex]{graphicx}
+\usepackage{asymptote}
+
+\begin{comment}
+\def\answer{\comment}
+\def\solution{\comment}
+\def\solutionone{\comment}
+\def\solutiontwo{\comment}
+\end{comment}
+
+\newcommand{\sevenpoints}{Time limit: 30 minutes}
+\newcommand{\righthead}{\fdbox{Round}{Team}}
+
+\begin{document}
+
+\begin{problem}
+If the prime factorization of $40^2 \cdot 120^5$ is  $2^a \cdot 3^b \cdot 5^c$, where $a,b,c$ are positive integers, find $a+b+c$.
+\end{problem}
+
+\begin{answer}
+$\boxed{33}$
+\end{answer}
+
+\begin{solution}
+Notice $40 = 2^3 \cdot 5$ and $120 = 2^{3} \cdot 3 \cdot 5$. Thus $40^2 \cdot 120^5 = 2^6 \cdot 5^2 \cdot 2^{15} \cdot 3^{5} \cdot 5^{5} = 2^{21} \cdot 3^{5} \cdot 5^{7}$, so our answer is $21 + 5 + 7 = \boxed{33}$.
+\end{solution}
+
+
+\begin{problem}
+Let triangle ABC have $AB = 7$, $BC = 24$, and $CA = 25$. Let $X$ be the midpoint of $AB$, let $Y$ be the midpoint of $BC$, and let $Z$ be the midpoint of $CA$. Find the area of $XYZ$. 
+\end{problem}
+
+\begin{answer}
+$\boxed{21}$
+\end{answer}
+
+\begin{solution}
+The area of the middle triangle is $\dfrac{1}{4}$ the area of the outer triangle, so our answer is $\dfrac{1}{4} \cdot \dfrac{1}{2} \cdot 7 \cdot 24 = \boxed{21}$. 
+\end{solution}
+
+
+\begin{problem}
+How many distinct ways are there to place the positive integers $1, 2, 3, 4, 5$ into the below squares such that every integer is used exactly once, each square contains exactly one integer, the horizontal row of three integers is in either increasing or decreasing order, and the vertical column of three integers is in either increasing or decreasing order?
+\begin{figure}[h]
+	\begin{center}
+		\begin{asy}
+			unitsize(24);
+			draw((-1, 0) -- (2, 0) -- (2, 1) -- (-1, 1) -- cycle);
+			draw((0, -1) -- (1, -1) -- (1, 2) -- (0, 2) -- cycle);
+		\end{asy}
+	\end{center}
+\end{figure}
+\end{problem}
+
+\begin{answer}
+$\boxed{16}$ (ways)
+\end{answer}
+
+\begin{solution}
+It is easy to deduce the middle square must be $3$. Then the left and right squares must be one of ${1,2}$ and one of ${4,5}$ in some order, and then the top and bottom must be the remaining two in some order. This gives a total of $2 \cdot 2 \cdot 2 \cdot 2 = \boxed{16}$ possibilities.
+\end{solution}
+
+
+\begin{problem}%[Josh]
+There are some number of people in a room. They have $92$ cupcakes total. They try dividing the cupcakes by giving each person five cupcakes, but then they have some cupcakes left over. Then Josh enters the room with $92$ more cupcakes. The people in the room, including Josh, divide the cupcakes by giving each person ten cupcakes, and they find that they don't have enough. How many people, including Josh, are now in the room?
+\end{problem}
+
+\begin{answer}
+$\boxed{19}$ (people)
+\end{answer}
+
+\begin{solution}
+Let $n$ be the original number of people in the room. We get $92 > 5n$ and $92 + 92 < 10(n+1)$. So $87 < 5n < 92$ meaning $5n = 90$ and $n = 18$. Including Josh, our answer is $18 + 1 = \boxed{19}$. 
+\end{solution}
+
+
+\begin{problem}
+Three congruent squares are placed in an L-shaped figure, as shown below. Suppose the area of this L-shaped figure is $300$. Find the radius of the largest circle that can fit inside this figure. Express your answer in simplest radical form.  
+\begin{figure}[h]
+	\begin{center}
+		\begin{asy}
+			import graph;
+			unitsize(36);
+			draw((0,0)--(0,2)--(1,2)--(1,1)--(2,1)--(2,0)--(0,0));
+			draw((1, 0) -- (1, 1) -- (0,1 ));
+			draw(Circle((0.58578,0.58578),0.58578), dashed);
+		\end{asy}
+	\end{center}
+\end{figure}
+\end{problem}
+
+\begin{answer}
+$\boxed{20-10\sqrt{2}}$
+\end{answer}
+
+\begin{solution}
+If the radius of the circle is $r$, notice the diagonal of the middle of the three squares is $r + \sqrt2 r$. The side length satisfies $3s^2 = 300$ so $s = 10$. Thus $r(1 + \sqrt2) = 10\sqrt2$ and $r = 10\sqrt2 (\sqrt2 - 1) = \boxed{20 - 10\sqrt{2}}$. 
+\end{solution}
+
+
+\begin{problem}
+If $x,y$ are distinct real numbers such that \[ x^2 + 4y = 25 \] \[y^2 + 4x = 25\] find $x+y$.
+\end{problem}
+
+\begin{answer}
+$\boxed{4}$
+\end{answer}
+
+\begin{solution}
+Subtracting the equations gives $x^2 - y^2 + 4y - 4x = 0$ or $(x-y)(x+y-4) = 0$. Since $x \ne y$, we see $x+y -4 = 0$ or $x+y = \boxed{4}$. 
+\end{solution}
+
+
+\begin{problem}
+Alice, Bob, and Chris play a game where they flip a fair coin eight times. If the coin lands heads more than tails, Alice wins. If the coins lands tails more than heads, Bob wins. If the coin lands heads and tails the same amount, Chris wins. How many times more likely is Bob to win than Chris? Express your answer as a common fraction.
+\end{problem}
+
+\begin{answer}
+$\boxed{\frac{93}{70}}$
+\end{answer}
+
+\begin{solution}
+We calculate Chris's probability of winning as $\dfrac{\dbinom{8}{4}}{2^8}  = \dfrac{70}{256}$. Thus Alice and Bob's total probability is $1 - \dfrac{70}{256} = \dfrac{186}{256}$ so their individual probabilities are $\dfrac{93}{256}$ and our answer is $\boxed{\dfrac{93}{70}}$. 
+\end{solution}
+
+
+\begin{problem}
+In a regular tetrahedron $ABCD$ with volume $400$, we inscribe a sphere tangent to all four sides. Let $R$ be the center of the sphere. Find the volume of $RABC$.
+\end{problem}
+
+\begin{answer}
+$\boxed{100}$
+\end{answer}
+
+\begin{solution}
+Notice by symmetry $[RABC] = [RBCD] = [RACD] = [RABD]$ and they sum to $400$ so our answer is $\boxed{100}$.
+\end{solution}
+
+
+\begin{problem}
+If $2^u = 3$, $3^v = 4$, $4^w = 5$, $5^x = 6$, $6^y = 7$, and $7^z = 8$, find $uvwxyz$.
+\end{problem}
+
+\begin{answer}
+$\boxed{3}$
+\end{answer}
+
+\begin{solution}
+Notice we can write this as \[ (((((2^u)^v)^w)^x)^y)^z = 8 \] or $2^{uvwxyz} = 8$, so $uvwxyz = \boxed{3}$.
+\end{solution}
+
+
+\begin{problem}
+Let $p(x)$ be a polynomial with integer coefficients, and constant term $2016$. For example, $5x^2 + 2016$ and $3x^5 + 8x^3 + 2016$ are such polynomials. Given that $p(100)$ is a positive integer, find the smallest possible value of $p(100)$. 
+\end{problem}
+
+\begin{answer}
+$\boxed{16}$
+\end{answer}
+
+\begin{solution}
+When we plug in $100$ into $p$, notice all terms will be multiples of $100$ except for the last one. Therefore $p(100) \equiv 2016 \pmod{100}$, so $p(100) \ge 16$. Now notice if $p(x) = -20x+2016$ then $p(100) = 16$, so our answer is $\boxed{16}$.
+\end{solution}
+
+\end{document}
