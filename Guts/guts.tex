@@ -17,8 +17,512 @@
 
 \begin{document}
 
+\section*{Set 1}
+
+\begin{problem}%[Michael]
+How many distinct arrangements of the word ``JEFFERSON" are there?
+\end{problem}
+
+\begin{answer}
+90720
+\end{answer}
+
+\begin{solution}	
+$\dfrac{9!}{2!2!} = 90720$.
+\end{solution}
+
+
 \begin{problem}
-Problem 1
+Find the area of an equilateral triangle with a side length of 4.
+\end{problem}
+
+\begin{answer}
+$4\sqrt{3}$
+\end{answer}
+
+\begin{solution}
+The area of an equilateral triangle with side length $s$ is $\dfrac{s^2\sqrt{3}}{4}$ so the area of this equilateral triangle is $\dfrac{16\sqrt{3}}{4} = 4\sqrt{3}$.
+\end{solution}
+
+
+\begin{problem}
+Compute the smallest positive integer that leaves a remainder of $3$ when divided by $4$ and a remainder of $4$ when divided by $5$.
+\end{problem}
+
+\begin{answer}
+$19$
+\end{answer}
+
+\begin{solution}
+The number is one less than a multiple of $4$ and one less than a multiple of $5$, so it must be one less than a multiple of $20$. The smallest such positive integer is $20 - 1 = 19$.
+\end{solution}
+
+
+\begin{problem}%[Harry]
+If the sum of five consecutive numbers is 25, what is the largest of the 5 numbers?
+\end{problem}
+
+\begin{answer}
+7
+\end{answer}
+
+\begin{solution}
+Let the five consecutive numbers be $n-2, n-1, n, n+1$, and $n+2$. $(n-2)+(n-1)+(n)+(n+1)+(n+2) = 5n = 25$, so $n=5$. The largest number is $n+2 = 7$.
+\end{solution}
+
+\newpage
+
+\section*{Set 2}
+
+\begin{problem}%[Harry]
+Compute $3+4+5+7+...+25$.
+\end{problem}
+
+\begin{answer}
+168
+\end{answer}
+
+\begin{solution}
+The sum $1+3+5+...+n+...+(2n-1) = n^2$. Therefore, the sum is $13^2-1 = 168$.  
+\end{solution}
+
+
+\begin{problem}%[Harry]
+If Kao has 3 fair dies, what is the probability that the 3 numbers she rolls add up to 18?
+\end{problem}
+
+\begin{answer}
+$\dfrac{1}{216}$
+\end{answer}
+
+\begin{solution}
+The only way to get a sum of 18 with 3 rolls is if she rolls a 6 every time. Therefore, the probability is $\dfrac{1}{6\cdot6\cdot6} = \dfrac{1}{216}$.
+\end{solution}
+
+\begin{problem}%[Michael]
+Compute $\frac{1}{1\cdot 6} + \frac{1}{6\cdot 11} + \cdots + \frac{1}{2011\cdot 2016}$.
+\end{problem}
+
+\begin{answer}
+$\dfrac{403}{2016}$
+\end{answer}
+
+\begin{solution}
+This expression can be rewritten as a telescoping sum. Each term in the form of $\dfrac{1}{n(n+5)}$ can be rewritten as $\bigg(\dfrac{1}{5}\bigg)\bigg(\dfrac{1}{n}-\dfrac{1}{n+5}\bigg)$. Using this, our original expression can be rewritten as $\bigg(\dfrac{1}{5}\bigg)\bigg(\big(1-\frac{1}{6}\big)+\big(\frac{1}{6}-\frac{1}{11}\big)+...+\big(\frac{1}{2006}-\frac{1}{2011}\big)+\big(\frac{1}{2011}+\frac{1}{2016}\big)\bigg) = \bigg(\dfrac{1}{5}\bigg)\bigg(1-\dfrac{1}{2016}\bigg) = \dfrac{403}{2016}$.
+\end{solution}
+
+\begin{problem}%[Michael]
+What is the remainder when $4^{89}$ is divided by $15$?
+\end{problem}
+
+\begin{answer}
+4
+\end{answer}
+
+\begin{solution}
+$4^{89} = 16^{44}\cdot 4$. Note that $16^{44}$ (mod $15$) is equivalent to $1$. Therefore, the remainder is just $1\cdot4 = 4$.
+\end{solution}
+
+\newpage
+
+\section*{Set 3}
+
+\begin{problem}%[Michael]
+Jeffery has a very big lawn. If Akshaj can mow Jeffery's lawn in 8 hours and Michael can mow Jeffery's lawn in 12 hours, how many hours would it take Akshaj and Michael to mow Jeffery's lawn (working together)?
+\end{problem}
+
+\begin{answer}
+$\dfrac{24}{5}$
+\end{answer}
+
+\begin{solution}
+Akshaj can mow $\dfrac{1}{8}$ of Jeffery's lawn per hour, while Michael can mow $\dfrac{1}{12}$ of the lawn in an hour. Combined, those two can mow $\dfrac{5}{24}$of Jeffery's enormous lawn in an hour, thus it will take them $\dfrac{24}{5}$ hours to mow Jeffery's lawn.
+\end{solution}
+
+
+\begin{problem}%[Michael]
+The Cookie Monster enjoys eating cookies every day. He starts out with 80 cookies and never adds any cookies to the jar. On the 1st day he eats 1 cookie, on the 2nd day he eats 2 cookies, and continues doing so such that on the nth day, he eats $n$ cookies. After how many days will the Cookie Monster's jar be empty? 
+\end{problem}
+
+\begin{answer}
+13
+\end{answer}
+
+\begin{solution}
+This problem uses consecutive sums: $1+2+3+ \cdots +n = \dfrac{n(n+1)}{2}$. Let $n$ be the number of days it will take Cookie Monster to finish his jar of cookies, so $\dfrac{n(n+1)}{2} = 80$. $n = 12$ is too small (just under 80), so it will take Cookie Monster 13 days to finish his cookie jar.
+\end{solution}
+
+
+\begin{problem}%[Michael]
+What is the area enclosed by the $x$-axis, $y=3x+6$, and $y=-3x+12$?
+\end{problem}
+
+\begin{answer}
+27
+\end{answer}
+ 
+\begin{solution}
+The equations create a triangular area with a base of 6 and a height of 9. The area is $\bigg(\dfrac{1}{2}\bigg)(6)(9) = 27$.
+\end{solution}
+
+
+\begin{problem}
+Harry has a standard deck of cards (52 cards, 13 in each suit). He deals out a hand with 13 cards in it. He then separates his hand into piles based on suit. The pile with the most cards in it has Q cards. What is the smallest value Q can assume?
+\end{problem}
+
+\begin{answer}
+4
+\end{answer}
+
+\begin{solution} %[someone re-write this solution]
+We are essentially distributing 13 cards into 4 piles, or in the terms of pigeon hole, trying to fit 13 pigeons into 4 holes. We can see that no matter how we do the fitting, there is always going to be a pile with 4 cards or more in one of the piles. 
+\end{solution}
+
+\newpage
+
+\section*{Set 4}
+
+\begin{problem}
+How many digits are in the product $4^{14} \cdot 5^{24}$?
+\end{problem}
+
+\begin{answer}
+26
+\end{answer}
+
+\begin{solution}
+We can see that the product is equivalent to $2^{28} \cdot 5^{24}$. By regrouping the product, we get $(2*5)^{24} \cdot 2^{4}$ which equals to $16 \cdot 10^{24}$. We can easily see that the final product has 26 digits. 
+\end{solution}
+
+
+\begin{problem}
+There are 100 light bulbs lined up in a row in a long room. Each bulb has its own switch and is currently switched off. The room has an entry door and an exit door. There are 100 people lined up outside the entry door. Each bulb is numbered consecutively from 1 to 100 and so is each person. Person 1 enters the room, switches on every bulb, and exits. Person 2 enters and flips the switch on every second bulb (turning off bulbs 2, 4, 6...). Person 3 enters and flips the switch on every third bulb (changing the state on bulbs 3, 6, 9...). This continues until all 100 people have passed through the room. How many light bulbs are on at the very end?
+\end{problem}
+
+\begin{answer}
+90
+\end{answer}
+
+\begin{solution} %[someone re-write this solution]
+We observe that every light bulb $n$ is flipped $k$ times, with $k$ being the number of factors $n$ has. We can see that every composite number has an even number of factors, thus any light bulb of a composite number is flipped an even number of times. If a light is flipped an even number of times, it will go back to its original state, which in this case is off. We can see that the number of factors of all perfect squares is odd. 
+\end{solution}
+
+
+\begin{problem} %easy
+TJ Varisty Math team went out and ordered 9 eight-slice pizzas. Frankie came and ate $\dfrac{1}{6}$ of all the pizzas. Oxahaj was next and he ate $\dfrac{2}{5}$ of all the pizzas left. Samuel then ate $\dfrac{1}{2}$ of all the pizzas remaining. How many slices of pizza are left. 
+\end{problem}
+
+\begin{answer}
+18
+\end{answer}
+
+\begin{solution} %[someone re-write this solution]
+There are a total of 72 slices of pizza. Frankie ate $\dfrac{1}{6} \cdot 72 = 12$ slices, and left 60 slices. Oxahaj ate $\dfrac{2}{5} \cdot 60 = 24$ of the remaining pizza and left Samuel with $36$ slices. Samuel ate $\dfrac{1}{2} \cdot 36 = 18$ slices, which means there are 18 slices of pizzas remaining. 
+\end{solution}
+
+\begin{problem} %old problem
+Sam buys some tacos from Taco Bell. Six of the tacos have beef, eight have chicken, eleven have pork, three have beef and pork, two have beef and chicken, five have chicken and pork, and two have beef, chicken, and pork. How many tacos did Sam buy?
+\end{problem}
+
+\begin{answer}
+17
+\end{answer}
+
+\begin{solution} %[someone re-write this solution]
+By the Principle of Inclusion-Exclusion (PIE), we have $|B \cup C \cup P| = |B| + |C| + |P| - |B \cap C| - |B \cap P| - | C \cap P| + |B \cap C \cap P|$ where B, C, P, represent the set of tacos that include beef, chicken, and pork, respectively. Therefore, we have $6+8+11-3-2-5+2=17$.
+\end{solution}
+
+\newpage
+
+\section*{Set 5}
+
+\begin{problem} %old problem
+Harry lives on a coordinate plane. Starting from point A, he walks 4 units up, 3 units to the right, 8 units up, and then 6 more units to the right, in this order, ending at point B. What is the shortest possible distance from A to B?
+\end{problem}
+
+\begin{answer}
+15
+\end{answer}
+
+\begin{solution} %[someone re-write this solution]
+In total, Harry walks $4+8 = 12$ units up and $3+6=9$ units to the right. These two lengths are the legs of a right triangle. The length of the hypotenuse is the shortest distance from A to B, so applying the Pythagorean Theorem, we have: $\sqrt{9^2+12^2} = 15$.
+\end{solution}
+
+
+\begin{problem}%[Kyle]
+What is the probability that three standard six-sided dice  show exactly two distinct face values when rolled?
+\end{problem}
+
+\begin{answer}
+$\frac{5}{9}$
+\end{answer}
+
+\begin{solution}
+One way to solve this is with complimentary counting. There are $6$ out of $216$ ways to roll three equal face values (one distinct face value), so this outcome has probability $\frac{1}{36}$. There are $_6P_3 = 6 \cdot 5 \cdot 4 = 120$ out of $216$ ways to choose and permnute three distinct face values across the three dice, so this outcome has probability $\frac{20}{36}$. Hence, the probability of rolling exactly two distinct face values is $1 - \frac{1}{36} - \frac{15}{36} = \frac{5}{9}$.
+\end{solution}
+
+
+\begin{problem}%[Michael]
+If $\sqrt{a}+\sqrt{b} = \sqrt{13+\sqrt{42}}$ for some positive integer $a$ and $b$, what is $a^2+b^2$?
+\end{problem}
+
+\begin{answer}
+85
+\end{answer}
+
+\begin{solution}
+Squaring both sides of the equation gives $a + b + 2\sqrt{ab} = 13 + \sqrt{42}$. Thus we have $a+b = 13$ and $ab = 42$, so $a = 7$ and $b = 6$. Then $a^2 + b^2 = 49 + 36 = 85$.
+\end{solution}
+
+\begin{problem}
+If GCD$(a, b) = 15$ and LCM$(a, b) = 40$ for some positive integer $a$ and $b$, what is $ab$?
+\end{problem}
+
+\begin{answer}
+600
+\end{answer}
+
+\begin{solution}
+It is well known that the multiple of GCD$(a, b)$ and LCM$(a, b)$ is $ab$. In this case $ab$ = $15 \cdot 40$ = 600
+\end{solution}
+
+\newpage
+
+\section*{Set 6}
+
+\begin{problem}
+Points $A$, $B$, $C$, and $D$ lie on a circle. Segments $AC$ and $BD$ intersect at a right angle at point $E$ inside the circle. If $AE = 6$, $BE = 8$, and $CE = 4$, compute the length of $CD$.
+\end{problem}
+
+\begin{answer}
+5
+\end{answer}
+
+\begin{solution}
+By Power of a Point, $AE \cdot CE = BE \cdot DE$, or $6 \cdot 4 = 8 \cdot DE$, so $DE = 3$. Therefore, by the Pythagorean Theorem, $CD = \sqrt{CE^2 + DE^2} = \sqrt{3^2 + 4^2} = 5$.
+\end{solution}
+
+
+\begin{problem}
+What is the least possible integer for which $35\%$ of that number is greater than 3?
+\end{problem}
+
+\begin{answer}
+9
+\end{answer}
+
+\begin{solution}
+Let $n$ be the least possible integer that satisfies the problem statement.
+
+$0.35n > 3$ so $n > 8.57$. Therefore, the least possible integer is $9$.
+\end{solution}
+
+
+\begin{problem} %[need help with phrasing]
+The Miniature Thorne room in the Chicago Art Institute consists of 64 tiny replicas of real world rooms. If a 5 feet long table is represented by a 6 inch replica, and the scales are constant within the exhibition, what is the real life size(area) of a 25 square inch carpet?
+\end{problem}
+
+\begin{answer}
+2500 square inches
+\end{answer}
+
+\begin{solution}
+The scaling ratio is $\frac{6 \text{ inch}}{5 \text{ feet}} = \frac{6}{60} = \frac{1}{10}$, so the ratio of the area of the real carpet to that of its replica is $10^2 = 100$, so the area is $25 \cdot 100 = 2500$.
+\end{solution}
+
+
+\begin{problem}%[Michael]
+How many positive integers less than or equal to $50$ are relatively prime to $50$?
+\end{problem}
+
+\begin{answer}
+20
+\end{answer}
+
+\begin{solution}
+Euler's totient function, $\phi(n)$ finds the number of numbers less than or equal to $n$ that are relatively prime to $n$, where $n$ is a positive integer. $\phi(50) = 50\bigg(1-\dfrac{1}{2}\bigg)\bigg(1-\dfrac{1}{5}\bigg) = 20$.
+The problem can also be solved by listing.
+\end{solution}
+
+\newpage
+
+\section*{Set 7}
+
+\begin{problem}%[Alex Wang]
+Suppose that the following are true:
+\begin{itemize}
+	\item Hao always laughs in math class.
+	\item Math class is on Wednesday and Friday.
+	\item If Hao laughs in a class, he will laugh for the rest of the day.
+\end{itemize}
+How many of the following are always true?
+\begin{itemize}
+	\item Hao only laughs twice a week.
+	\item Hao will laugh on Friday.
+	\item Hao will not laugh on Monday.
+	\item Hao will laugh in Physics, which he has after math.
+\end{itemize}
+\end{problem}
+
+\begin{answer}
+2
+\end{answer}
+
+\begin{solution}
+The second and fourth statements are always true, but there is no guarantee that any other statement is always true.
+\end{solution}
+
+
+\begin{problem} %[need help with phrasing]
+In how many ways can 1128 be written as a product of two positive integers if order doesn't matter?
+\end{problem}
+
+\begin{answer}
+8
+\end{answer}
+
+\begin{solution}
+1128 can be prime factored into $2^3 \cdot 3 \cdot 47$. We can see that 1128 has $4 \cdot 2 \cdot 2 = 16$ prime factors and each product pair has two prime factors, thus there are $16 \div 2 = 8$ ways 1128 can be written as a product of two positive integers.   
+\end{solution}
+
+\begin{problem} 
+A circle is inscribed inside a square with perimeter $40$, and a square is inscribed inside the circle. Compute the area of the smaller square. 
+\end{problem}
+
+\begin{answer}
+50
+\end{answer}
+
+\begin{solution}
+The side length of the big square is $10$, which is a diameter of the circle, which is a diagonal of the smaller square. Therefore the area of the smaller square is $\frac{1}{2} \cdot 10 \cdot 10 = 50$.
+\end{solution}
+
+\begin{problem} 
+Ray started with a positive integer x, then divided it by 5, discarding any remainder, to obtain an integer y. He then divided y by 4, again discarding the remainder, to obtain z. If $z = 12$, what is the sum of possible integers x that Ray could have started with?
+\end{problem}
+
+\begin{answer}
+8
+\end{answer}
+
+\begin{solution}
+Working backwards, we can get the possible values of $y$: $4z$, $4z+1$, $4z+2$, $4z+3$, $4z+4$, ..., $4z+11$, which would be 48, 49, 50, 51, 52, ..., 59, respectively.
+\end{solution}
+
+\newpage
+
+\section*{Set 8}
+
+\begin{problem} 
+Big Ben is a huge philanthropist. He loves to give back to the community and sometimes even gives people things they didn't ask for. If he donated 100 dollars to charity on his first year of donation and increased the amount by $100\%$ every year, in which year will his total donation surpass \$10,000? 
+\end{problem}
+
+\begin{answer}
+6th year
+\end{answer}
+
+\begin{solution}
+The second year, he will donate \$200, for a total of \$300. The third year, he will donate \$300, for a total of \$700. In general, the $n$th year, he will donate $100 \cdot 2^n$, and his total will be $100 \cdot (2^{n+1} - 1)$. The first value of $n$ for which this is greater than $10000$ is $n = 6$.
+\end{solution}
+
+\begin{problem}
+Determine the smallest positive integer that ends in $7$ and is divisible by exactly 3 primes.
+\end{problem}
+
+\begin{answer}
+357
+\end{answer}
+
+\begin{solution}
+Note that the primes must be odd and cannot be $5$. Simple experimentation yields $3*7*17 = 357$
+\end{solution}
+
+
+\begin{problem}
+Harry decides to paint the entire outside of a 10 by 12 by 8 feet box. He then decides to cut the box into 1 by 1 by 1 feet cubes and picks one of them. What is the probability that the cube picked has at least 2 sides painted? 
+\end{problem}
+
+\begin{answer}
+$\frac{13}{120}$
+\end{answer}
+
+\begin{solution}
+There are a total of $10 \cdot 12 \cdot 8 = 960$ cubes. Note that the cubes with at least two sides painted lie on the edges of the box. Adding up the cubes on the edges, we get that there are 104 cubes with at least two sides painted. Therefore, the probability is $\dfrac{104}{960} = \dfrac{13}{120}$.
+\end{solution}
+
+
+\begin{problem}
+Costco only sells pencils in packs of 7 and 12. What is the largest number of pencils that Akshaj cannot purchase?
+\end{problem}
+
+\begin{answer}
+65
+\end{answer}
+
+\begin{solution}
+By the Chicken McNugget Theorem, since $7$ and $12$ are relatively prime, the largest number of pencils that Akshaj cannot purchase is $(7)(12)-7-12 = 65$ pencils.
+\end{solution} 
+
+\newpage
+
+\section*{Set 9}
+
+\begin{problem}
+Akshaj is throwing darts onto a circular board with three concentric circles with radii of 3, 4, 5. Assuming Akshaj does not miss the board, what is the probability that he obtains a score of 8 with two tries? 
+\end{problem}
+
+\begin{answer}
+$\dfrac{211}{625}$
+\end{answer}
+
+\begin{solution}
+Let $P(n)$ denote the probability that the dart lands in an area with a point value of $n$.
+
+We can split this problem into separate cases, calculate each case's probability, and then sum them:
+
+Case 1 - Akshaj can get a score of 3 on the first dart and then a 5 on the second one (or 5 on the first dart and 3 on the second one): $2 \cdot P(3) \cdot P(5) = 2 \cdot \dfrac{9\pi}{25\pi} \cdot \dfrac{25\pi-16\pi}{25\pi} = \dfrac{162}{625}$
+
+Case 2 - Akshaj gets a score of 4 on both darts: $ P(4) \cdot P(4) = \dfrac{16\pi-9\pi}{25\pi} \cdot  \dfrac{16\pi-9\pi}{25\pi} = \dfrac{49}{625}$
+
+Summing these two probabilities up, we get $\dfrac{162}{625} + \dfrac{49}{625} = \dfrac{211}{625}$.
+\end{solution}
+
+
+\begin{problem}
+Find the remainder when $35!$ is divided by $37$.
+\end{problem}
+
+\begin{answer}
+1
+\end{answer}
+
+\begin{solution}
+By Wilson's Theorem, we have that $(37-1)! \equiv -1 \pmod{37}$. $36! \equiv 36(35!) \equiv -1(35!) \equiv -1 \pmod{37}$. Therefore, $35! \equiv 1 \pmod{37}$.
+\end{solution}
+
+
+\begin{problem}
+Estimate the total number of times the fifth letter of the alphabet (uppercase or lowercase) appears in the solutions to this Guts Round. Your answer will be considered correct if it is within 100 of the correct answer.
+\end{problem}
+
+\begin{answer}
+1186
+\end{answer}
+
+\begin{solution}
+Trivial. Just count. Or Ctrl+F.
+\end{solution}
+
+\begin{problem}
+Compute $\frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \frac{1}{4^2} + \cdots$.
+\end{problem}
+
+\begin{answer}
+$\frac{\pi^2}{6}$
+\end{answer}
+
+\begin{problem}
+This was given in problem 30 on the individual round.
 \end{problem}
 
 \end{document}
