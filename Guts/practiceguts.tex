@@ -1,6 +1,6 @@
-\documentclass[11pt, a5paper]{article}
-%\usepackage[paperwidth=8.5in, paperheight=11in]{geometry}
-\usepackage[landscape]{geometry}
+\documentclass[11pt]{article}
+\usepackage[paperwidth=8.5in, paperheight=11in]{geometry}
+%\usepackage[landscape]{geometry}
 
 \usepackage{../tjimo}
 %\usepackage[pdftex]{graphicx}
@@ -20,8 +20,168 @@
 
 \section*{Set 1}
 
+\begin{problem}
+Compute $1 - 2 + 3 - 4 + 5 - 6 + \cdots + 19 - 20$.
+\end{problem}
+
+\begin{answer}
+$\boxed{-10}$
+\end{answer}
+
+\begin{solution}
+Addition is associative, so by grouping every two terms, we have $(1 - 2) + (3 - 4) + (5 - 6) + \cdots + (19 - 20) = \underbrace{-1 + (-1) + (-1) + \cdots + (-1)}_{\text{10 -1s}} = \boxed{-10}$.
+\end{solution}
+
+
+\begin{problem}%[Lilian]
+How many diagonals are in a hexagon?
+\end{problem}
+
+\begin{answer}
+$\boxed{9}$ (diagonals)
+\end{answer}
+
+\begin{solution}
+Since each vertex cannot form a diagonal with itself or its two adjacent vertices, it can only form $6-3$ diagonals. As there are 6 vertices, and a diagonal has 2 endpoints, we see that there are a total of $\frac{(6)(6-3)}{2}=\boxed{9}$ diagonals.
+\end{solution}
+
+
+\begin{problem}%[Michael You]
+Using only 3 straight cuts, what is the maximum number into which a cube can be cut?
+\end{problem}
+
+\begin{answer}
+$\boxed{8}$
+\end{answer}
+
+\begin{solution}
+Imagine the vertices of the cube are at $(\pm 1, \pm 1, \pm 1)$. Then, the three cuts are the planes $x=0, y=0,$ and $z=0$. Each ``quadrant" will become a piece.
+\end{solution}
+
+
+\begin{problem}%[Christian]
+Find all two-digit numbers $\underline{AB}$ that satisfy the equation $\sqrt{A + \sqrt{\underline{AB}}} = A$, where $A$ is the tens digit, $B$ is the units digit, and $\underline{AB}$ is a two-digit number.
+\end{problem}
+
+\begin{answer}
+$\boxed{36}$
+\end{answer}
+
+\begin{solution}
+Squaring both sides of the equation gives $\sqrt{\underline{AB}} = A^2 + A$. Since $A^2 + A$ is a positive integer, $\underline{AB}$ must be the square of a positive integer. A quick check of the two-digit perfect squares yields $\boxed{36}$ as the only solution.
+\end{solution}
+
+\newpage
+
+
+\section*{Set 2}
+
 \begin{problem}%[Bryan/Michael]
 Akshaj is failing APUSH. His test scores were $47, 51, 43, 64$, and $35$. If he gets a $42$ on his next test, what is the average of all his test scores?
 \end{problem}
+
+\begin{answer}
+$\boxed{47}$
+\end{answer}
+
+\begin{solution}
+The average is $\frac{47 + 51 + 43 + 64 + 35 + 42}{6} = \boxed{47}$.
+\end{solution}
+
+
+\begin{problem}%[Lilian]
+There are $30$ people in one of the math team trailers. $25$ of them like geometry, $14$ of them like algebra, and $20$ of them like number theory. If $10$ of them like algebra and geometry, $12$ of them like algebra and number theory, and $8$ of them like geometry and number theory, how many of them like all $3$ subjects?
+\end{problem}
+
+\begin{answer}
+$\boxed{1}$ (person)
+\end{answer}
+
+\begin{solution}
+If we add the number of people who like one subject together, $25 + 14 + 20 = 59$, we overcount the students who like two or more subjects. If we subtract the number of people who like $2$ subjects from the previous sum, $59 - 10 - 12 - 8 = 29$, we oversubtract the students who like all $3$, so $29$ plus the number of students who like all $3$ should equal the number of total students, or $30$, so there is $\boxed{1}$ person who likes all three subjects.
+\end{solution}
+
+
+\begin{problem}%[Josh/Eric Chen]
+What is the remainder when $2^{2016}$ is divided by $7$?
+\end{problem}
+
+\begin{answer}
+$\boxed{1}$
+\end{answer}
+
+\begin{solution}
+Note that $2^3 = 8 \equiv 1 \pmod{7}$ is $1$ more than a multiple of $7$, and $2^{2016} = (2^3)^{672} \equiv 1^{672} = 1 \pmod{7}$, so the remainder is $\boxed{1}$.
+\end{solution}
+
+
+\begin{problem}%[Kyle]
+In quadrilateral $ABCD$, $\angle DAC = 75^\circ$, $\angle ACB = 40^\circ$, $\angle DBC = 75^\circ$, and $\angle BDC = 25^\circ$. Find the measure of angle $\angle ABD$.
+\end{problem}
+
+\begin{answer}
+$\boxed{40^\circ}$
+\end{answer}
+
+\begin{solution}
+We observe that $\angle DCA = 180^\circ - \angle DBC - \angle ACB - \angle BDC = 40^\circ$. We also have that $\angle DAC \equiv \angle DBC$, so quadrilateral $ABCD$ is cyclic (i.e. its four vertices lie on exactly one circle). Therefore, by properties of cyclic quadrilaterals, $\angle DCA \equiv \angle DBA$, so $\angle ABD = \boxed{40^\circ}$.
+\end{solution}
+
+\newpage
+
+
+\section*{Set 3}
+
+\begin{problem}%[Alex]
+Lilian does Alex's evil bidding. If Lilian averages $30$ tasks per hour between 7 pm and 9 pm and does $51$ tasks between 7 pm and 8:30 pm, how many tasks does she do between 8:30 pm and 9 pm?
+\end{problem}
+
+\begin{answer}
+$\boxed{9}$ (tasks)
+\end{answer}
+
+\begin{solution}
+Since Lilian averages $30$ tasks per hour, in the two hours between 7 pm and 9 pm, she will do $60$ tasks. As she has completed $51$ tasks between 7 pm and 8:30 pm, she will do $60 - 51 = \boxed{9}$ tasks between 8:30 pm and 9 pm.
+\end{solution}
+
+
+\begin{problem}%[Ajit]
+Michael has a playlist with $10$ songs on it. The lengths of the songs form an arithmetic sequence with common difference $6$ seconds and sum $30$ minutes. What is the length of the shortest song in seconds?
+\end{problem}
+
+\begin{answer}
+$\boxed{153}$ (seconds)
+\end{answer}
+
+\begin{solution}
+The average length is $\frac{30}{10} = 3$ minutes or $180$ seconds. The average length is halfway between the fifth and sixth shortest songs, so we have to subtract $4.5$ times the common difference from the average to get the shortest song, which is $180 - 4.5 \cdot 6 = 180 - 27 = \boxed{153}$ seconds.
+\end{solution}
+
+
+
+\begin{problem}%[Kyle]
+How many distinct, non-congruent rectangles with positive integer side lengths have an area that is $52$ more than their perimeter?
+\end{problem}
+
+\begin{answer}
+$\boxed{4}$ (rectangles)
+\end{answer}
+
+\begin{solution}
+Let $x$ and $y$ be the side lengths of the rectangle. The area is $xy$, and the perimeter is $2(x+y)$. We are given that $xy = 52 + 2(x+y)$, so $xy - 2x - 2y = 52$. The trick here is to add $4$ to both sides of the equation, "forcing" the left side to factor: $(x-2)(y-2) = xy - 2x - 2y + 4 = 52 + 4 = 56$. Since $x$ and $y$ must be positive integers, our task is now to count the number of distinct factor pairs of $56$. These pairs are $1$ and $56$, $2$ and $28$, $4$ and $14$, and $7$ and $8$. Thus, there are $\boxed{4}$ ordered pairs $(x, y)$ that serve as the side lengths of four distinct rectangles.
+\end{solution}
+
+
+\begin{problem}%[Josh/Eric Chen]
+There is a $70\%$ chance that it is cloudy, and a $60\%$ chance that it will rain. It is twice as likely to rain when it is cloudy thanw henf eaijfa. What is the probability that it will rain, given that it is not cloudy?
+\end{problem}
+
+\begin{answer}
+$\boxed{\frac{6}{17}}$
+\end{answer}
+
+\begin{solution}
+Let $p$ be the probability it rains when it is not cloudy. Then $2p$ is the probability it will rain when it is cloudy. We are given $\frac{7}{10} \cdot 2p + \frac{3}{10} \cdot p = \frac{6}{10}$, so solving gives $p = \boxed{\frac{6}{17}}$.
+\end{solution}
 
 \end{document}

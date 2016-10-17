@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.1.24)  15 OCT 2016 15:07
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.1.24)  16 OCT 2016 23:00
 entering extended mode
 **C:/Users/Jeffery/Desktop/LProjects/TJIMO2016/TJIMO-2016/Guts/practiceguts.tex
 
@@ -409,24 +409,24 @@ LaTeX Font Info:    ... okay on input line 19.
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a5paper
+* paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: landscape 
-* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
-* v-part:(T,H,B)=(50.5326pt, 294.76926pt, 75.79893pt)
-* \paperwidth=597.50787pt
-* \paperheight=421.10078pt
-* \textwidth=490.52367pt
-* \textheight=312.83675pt
-* \oddsidemargin=17.3571pt
-* \evensidemargin=17.3571pt
-* \topmargin=-58.7374pt
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=502.27461pt
+* \textheight=574.54405pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-13.87262pt
 * \headheight=120.4503pt
 * \headsep=21.90005pt
 * \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=4.0pt
+* \marginparwidth=59.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
@@ -470,47 +470,165 @@ LaTeX Info: Redefining \nameref on input line 19.
 (C:\Users\Jeffery\Desktop\LProjects\TJIMO2016\TJIMO-2016\Guts\practiceguts.out)
 (C:\Users\Jeffery\Desktop\LProjects\TJIMO2016\TJIMO-2016\Guts\practiceguts.out)
 \@outlinefile=\write5
-
+LaTeX Font Info:    Try loading font information for U+msa on input line 24.
+(C:\MikTex\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 24.
+ (C:\MikTex\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
-LaTeX Font Info:    Try loading font information for U+msa on input line 27.
-(C:\MikTex\tex\latex\amsfonts\umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 27.
- (C:\MikTex\tex\latex\amsfonts\umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
+[3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
 
 (C:\Users\Jeffery\Desktop\LProjects\TJIMO2016\TJIMO-2016\Guts\practiceguts.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
 Package rerunfilecheck Info: File `practiceguts.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 6985 strings out of 494045
- 98736 string characters out of 3155635
- 191128 words of memory out of 3000000
- 10187 multiletter control sequences out of 15000+200000
- 11658 words of font info for 43 fonts, out of 3000000 for 9000
+ 7030 strings out of 494045
+ 99180 string characters out of 3155635
+ 203250 words of memory out of 3000000
+ 10205 multiletter control sequences out of 15000+200000
+ 16627 words of font info for 62 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,21n,45p,329b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,21n,45p,706b,425s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/MikTex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/MikTex/fonts/type1/p
 ublic/amsfonts/cm/cmbx12.pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmcsc10.
-pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/MikTex/fonts/type1/
-public/amsfonts/cm/cmss17.pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmssbx1
-0.pfb>
-Output written on practiceguts.pdf (1 page, 62043 bytes).
+pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/MikTex/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/MikTex/fonts/type1/p
+ublic/amsfonts/cm/cmss17.pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmssbx10
+.pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/MikTex/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb><C:/MikTex/fonts/type1/public/amsfonts/symbols/m
+sam10.pfb>
+Output written on practiceguts.pdf (3 pages, 140053 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
+ 86 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
