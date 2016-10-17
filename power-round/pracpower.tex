@@ -19,10 +19,10 @@
 \usepackage{gensymb}
 \usepackage{multicol}
 
-\begin{comment}
+%\begin{comment}
 \def \answer{\comment}
 \def \solution{\comment}
-\end{comment}
+%\end{comment}
 
 \begin{document}
 
@@ -32,7 +32,7 @@ Unlike the other rounds, just getting the answer right is not enough on the Powe
 
 This Practice Power Round (worth 25 points) is divided into two sections. In the first section,  we will discuss the shoelace theorem. We will then start proving the shoelace theorem for triangles.
 
-Feel free to use results from previous problems (with the exception of using Section 1 for the other section) on this round and the practice power round to prove a problem (that is, you can use Problem 2 to prove Problem 3, but not vice versa). 
+Feel free to use results from previous problems on this round to prove a later problem (that is, you can use Problem 2 to prove Problem 3, but not vice versa). You do not need to have solved the earlier problem to cite its result.
 
 \section{The Shoelace Theorem}
 \noindent The shoelace theorem can be used to calculate the area of polygons, given the Cartesian coordinates of the vertices. 
@@ -80,7 +80,7 @@ Use shoelace to find, with proof, the area of the nonagon below:
 \begin{answer} 41 \end{answer}
 \begin{solution} Plugging the vertices into the shoelace theorem, we see that the area is 
 \[\dfrac{1}{2} |(6)(6) + (4)(7) + (1)(4) + (3)(1) + (2)(3) + (5)(2) + (8)(5) + (9)(8) + (7)(9)\]
-\[-((6)(8) + (4)(9) + (1)(6) + (3)(7) + (2)(4) + (5)(1) + (8)(3) + (9)(2) + (7)(2))|\]
+\[-((9)(4) + (6)(1) + (7)(3) + (4)(2) + (1)(5) + (3)(8) + (2)(9) + (5)(7) + (6)(8))|\]
 \[=\frac{1}{2}(262-180)=\boxed{41}\]
 \end{solution}
 
@@ -93,7 +93,7 @@ Let the vertices be $(0, 0)$, $(x_2, 0)$, and $(x_1, y_1)$. Note that this works
 \end{solution}
 
 \begin{problem}[4 points total]
-Prove that the shoelace theorem works for squares with one vertex on the x-axis and one vertex on the y-axis.
+Prove that the shoelace theorem works for squares with two adjacent vertices on the positive x-axis and positive y-axis and the other two vertices in the first quadrant.
 \end{problem}
 
 \begin{solution}
@@ -141,10 +141,10 @@ Let the vertex on the x-axis be $(x, 0)$ and the vertex on the y-axis be $(0, y)
 Expanding and cancelling gives $\frac{1}{2}(x_2y_1-x_1y_2)$. Note that this is the same result as when we use shoelace.
 
 \item Note that there are two cases. 
-\newline \textbf{Case 1:} $(x_2, y_2)$ is above the diagonal
+\newline \textbf{Case 1:} $(x_2, y_2)$ is above the diagonal - 
 The area is $x_1y_1 - (\frac{1}{2}(x_1-x_2)(y_1-y_2)+\frac{1}{2}x_2y_2+(x_2)(y_1-y_2)+\frac{1}{2}x_1y_1)$.
 Expanding and cancelling gives $\frac{1}{2}(x_2y_1-x_1y_2)$. 
-\newline \textbf{Case 2:} $(x_2, y_2)$ is below the diagonal
+\newline \textbf{Case 2:} $(x_2, y_2)$ is below the diagonal - 
 The area is $x_1y_1 - (\frac{1}{2}(x_1-x_2)(y_1-y_2)+\frac{1}{2}x_2y_2+(y_2)(x_1-x_2)+\frac{1}{2}x_1y_1)$.
 Expanding and cancelling gives $\frac{1}{2}(x_2y_1-x_1y_2)$. 
 
