@@ -9,7 +9,6 @@ settings.toolbar=false;
 viewportmargin=(2,2);
 
 import graph;
-unitsize(36);
+size(60);
 draw((0,0)--(0,2)--(1,2)--(1,1)--(2,1)--(2,0)--(0,0));
-draw((1, 0) -- (1, 1) -- (0,1 ));
-draw(Circle((0.58578,0.58578),0.58578), dashed);
+draw(Circle((0.58578,0.58578),0.58578));
