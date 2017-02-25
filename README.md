@@ -1,7 +1,7 @@
-IMPORTANT: DO NOT MAKE THIS REPOSITORY PUBLIC PRIOR TO NOVEMBER 5.
+IMPORTANT: DO NOT MAKE THIS REPOSITORY PUBLIC PRIOR TO MARCH 4.
 
-# TJIMO-2016
-Thomas Jefferson Intermediate Math Open, November 5, 2016
+# TJIMO-2016-17
+Thomas Jefferson Intermediate Math Open, Mach 4, 2017
 
 Warning
 ---
