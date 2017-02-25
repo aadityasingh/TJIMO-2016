@@ -13,7 +13,7 @@
 \def\solutiontwo{\comment}
 %\end{comment}
 
-\newcommand{\sevenpoints}{Time limit: 30 minutes.}
+\newcommand{\sevenpoints}{Time limit: 40 minutes.}
 \newcommand{\righthead}{\fdbox{Round}{Guts}}
 
 \begin{document}
@@ -21,28 +21,28 @@
 \section*{Set 1}
 
 \begin{problem}%[Michael]
-How many distinct arrangements of the word ``JEFFERSON" are there?
+How many distinct arrangements of the word ``MATH" are there?
 \end{problem}
 
 \begin{answer}
-90720
+24
 \end{answer}
 
 \begin{solution}	
-$\dfrac{9!}{2!2!} = 90720$.
+$4! = 24$.
 \end{solution}
 
 
 \begin{problem}
-Find the area of an equilateral triangle with a side length of 4.
+Find the area of a square with perimeter $16$.,
 \end{problem}
 
 \begin{answer}
-$4\sqrt{3}$
+$16$
 \end{answer}
 
 \begin{solution}
-The area of an equilateral triangle with side length $s$ is $\dfrac{s^2\sqrt{3}}{4}$ so the area of this equilateral triangle is $\dfrac{16\sqrt{3}}{4} = 4\sqrt{3}$.
+The area of an equilateral triangle with side length $s$ is $s^2$, so $s = 4$. Then the perimeter is $4s = 16$.
 \end{solution}
 
 
@@ -66,7 +66,7 @@ If the sum of five consecutive integers is 25, what is the largest of the five i
 \begin{answer}
 7
 \end{answer}
-
+	
 \begin{solution}
 Let the five consecutive integers be $n-2, n-1, n, n+1$, and $n+2$. $(n-2)+(n-1)+(n)+(n+1)+(n+2) = 5n = 25$, so $n=5$. The largest number is $n+2 = 7$.
 \end{solution}
@@ -89,7 +89,7 @@ The sum $1+3+5+...+n+...+(2n-1) = n^2$. Therefore, the sum is $13^2-1 = 168$.
 
 
 \begin{problem}%[Harry]
-If Kao has 3 fair, standard dice, what is the probability that the 3 numbers she rolls add up to 18?
+If Kao has 3 fair, standard dice, what is the probability that the 3 numbers she rolls sum to 18?
 \end{problem}
 
 \begin{answer}
@@ -101,27 +101,27 @@ The only way to get a sum of 18 with 3 rolls is if she rolls a 6 every time. The
 \end{solution}
 
 \begin{problem}%[Michael]
-Compute $\frac{1}{1\cdot 6} + \frac{1}{6\cdot 11} + \cdots + \frac{1}{2011\cdot 2016}$.
+Compute $\frac{1}{1\cdot 2} + \frac{1}{2\cdot 3} + \cdots + \frac{1}{9\cdot 10}$.
 \end{problem}
 
 \begin{answer}
-$\dfrac{403}{2016}$
+$\dfrac{9}{10}$
 \end{answer}
 
 \begin{solution}
-This expression can be rewritten as a telescoping sum. Each term in the form of $\dfrac{1}{n(n+5)}$ can be rewritten as $\bigg(\dfrac{1}{5}\bigg)\bigg(\dfrac{1}{n}-\dfrac{1}{n+5}\bigg)$. Using this, our original expression can be rewritten as $\bigg(\dfrac{1}{5}\bigg)\bigg(\big(1-\frac{1}{6}\big)+\big(\frac{1}{6}-\frac{1}{11}\big)+...+\big(\frac{1}{2006}-\frac{1}{2011}\big)+\big(\frac{1}{2011}-\frac{1}{2016}\big)\bigg) = \bigg(\dfrac{1}{5}\bigg)\bigg(1-\dfrac{1}{2016}\bigg) = \dfrac{403}{2016}$.
+This expression can be rewritten as a telescoping sum. Each term in the form of $\dfrac{1}{n(n+1)}$ can be rewritten as $\dfrac{1}{n} - \dfrac{1}{n+1}$. Using this, our original expression can be written as $\dfrac{1}{1} - \dfrac{1}{2} + \dfrac{1}{2} - \dfrac{1}{3} + \cdots + \dfrac{1}{9} - \dfrac{1}{10} = 1 - \dfrac{1}{10} = \dfrac{9}{10}$.
 \end{solution}
 
-\begin{problem}%[Michael]
-What is the remainder when $4^{89}$ is divided by $15$?
+\begin{problem}
+Costco only sells pencils in packs of 3 and 5. What is the largest integer number of pencils that Akshaj cannot purchase?
 \end{problem}
 
 \begin{answer}
-4
+7
 \end{answer}
 
 \begin{solution}
-$4^{89} = 16^{44}\cdot 4$. Note that $16^{44}$ (mod $15$) is equivalent to $1$. Therefore, the remainder is just $1\cdot4 = 4$.
+By the Chicken McNugget Theorem, since $3$ and $5$ are relatively prime, the largest number of pencils that Akshaj cannot purchase is $(3)(5)-3-5 = 7$ pencils. Alternatively, note that $7$ is not attainable, $8 = 3+5$, $9 = 3 + + 3$, and $10 = 5 + 5$, so any number $8$ or above is attainable.
 \end{solution}
 
 \newpage
@@ -153,17 +153,18 @@ The Cookie Monster enjoys eating cookies every day. He starts out with 80 cookie
 This problem uses consecutive sums: $1+2+3+ \cdots +n = \dfrac{n(n+1)}{2}$. Let $n$ be the number of days it will take Cookie Monster to finish his jar of cookies, so $\dfrac{n(n+1)}{2} = 80$. Since $n = 12$ is too small (just under 80), it will take Cookie Monster 13 days to finish his cookie jar.
 \end{solution}
 
-
-\begin{problem}%[Michael]
-What is the area enclosed by the $x$-axis, $y=3x+6$, and $y=-3x+12$?
+\begin{problem}
+What is the least possible integer for which $35\%$ of that number is greater than 3?
 \end{problem}
 
 \begin{answer}
-27
+9
 \end{answer}
- 
+
 \begin{solution}
-The equations create a triangular area with a base of 6 and a height of 9. The area is $\bigg(\dfrac{1}{2}\bigg)(6)(9) = 27$.
+Let $n$ be the least possible integer that satisfies the problem statement.
+
+$0.35n > 3$ so $n > \frac{3}{0.35} \approx 8.57$. Therefore, the least possible integer is $9$.
 \end{solution}
 
 
@@ -184,15 +185,15 @@ We are essentially distributing 13 cards into 4 piles, or in the terms of the Pi
 \section*{Set 4}
 
 \begin{problem}
-How many digits are in the numerical value of the product $4^{14} \cdot 5^{24}$?
+How many digits are in the numerical value of the product $4^{4} \cdot 5^{5}$?
 \end{problem}
 
 \begin{answer}
-26
+6
 \end{answer}
 
 \begin{solution}
-We can see that the product is equivalent to $2^{28} \cdot 5^{24}$. By regrouping the product, we get $(2*5)^{24} \cdot 2^{4}$ which equals $16 \cdot 10^{24}$. We can easily see that the final product has 26 digits. 
+We can see that the product is equivalent to $2^{8} \cdot 5^{5}$. By regrouping the product, we get $2^3 (2*5)^{5}$ which equals $8 \cdot 10^{5} = 800000$. We can easily see that the final product has 6 digits. 
 \end{solution}
 
 
@@ -210,7 +211,7 @@ We observe that every light bulb $n$ is flipped $k$ times, where $k$ is the numb
 
 
 \begin{problem} %easy
-The TJ Varisty Math team went out and ordered 9 eight-slice pizzas. Frankie came and ate $\dfrac{1}{6}$ of all the pizza slices. Oxahaj was next and he ate $\dfrac{2}{5}$ of all the pizza slices left. Samuel then ate $\dfrac{1}{2}$ of all the slices remaining. How many slices of pizza are left?
+The TJ Varsity Math team went out and ordered 9 eight-slice pizzas. Frankie came and ate $\dfrac{1}{6}$ of all the pizza slices. Oxahaj was next and he ate $\dfrac{2}{5}$ of all the pizza slices left. Samuel then ate $\dfrac{1}{2}$ of all the slices remaining. How many slices of pizza are left?
 \end{problem}
 
 \begin{answer}
@@ -249,17 +250,16 @@ Harry lives on a coordinate plane. Starting from point $A$, he walks 4 units nor
 In total, Harry walks $4+8 = 12$ units up and $3+6=9$ units to the right. These two lengths are the legs of a right triangle. The length of the hypotenuse is the shortest distance from A to B, so applying the Pythagorean Theorem, we have: $\sqrt{9^2+12^2} = 15$.
 \end{solution}
 
-
 \begin{problem}%[Kyle]
 What is the probability that three standard six-sided dice  show exactly two distinct face values when rolled?
 \end{problem}
 
 \begin{answer}
-$\frac{5}{9}$
+$\frac{5}{12}$
 \end{answer}
 
 \begin{solution}
-One way to solve this is with complementary counting. There are $6$ out of $216$ ways to roll three equal face values (one distinct face value), so this outcome has probability $\frac{1}{36}$. There are $_6P_3 = 6 \cdot 5 \cdot 4 = 120$ out of $216$ ways to choose and permute three distinct face values across the three dice, so this outcome has probability $\frac{20}{36}$. Hence, the probability of rolling exactly two distinct face values is $1 - \frac{1}{36} - \frac{15}{36} = \frac{5}{9}$.
+One way to solve this is with complementary counting. There are $6$ out of $216$ ways to roll three equal face values (one distinct face value), so this outcome has probability $\frac{1}{36}$. There are $_6P_3 = 6 \cdot 5 \cdot 4 = 120$ out of $216$ ways to choose and permute three distinct face values across the three dice, so this outcome has probability $\frac{20}{36}$. Hence, the probability of rolling exactly two distinct face values is $1 - \frac{1}{36} - \frac{20}{36} = \frac{5}{12}$.
 \end{solution}
 
 
@@ -303,24 +303,20 @@ Points $A$, $B$, $C$, and $D$ lie on a circle. Chords $AC$ and $BD$ intersect at
 By Power of a Point, $AE \cdot CE = BE \cdot DE$, or $6 \cdot 4 = 8 \cdot DE$, so $DE = 3$. Therefore, by the Pythagorean Theorem, $CD = \sqrt{CE^2 + DE^2} = \sqrt{3^2 + 4^2} = 5$.
 \end{solution}
 
-
-\begin{problem}
-What is the least possible integer for which $35\%$ of that number is greater than 3?
+\begin{problem}%[Michael]
+What is the area enclosed by the $x$-axis, $y=3x+6$, and $y=-3x+12$?
 \end{problem}
 
 \begin{answer}
-9
+27
 \end{answer}
-
+ 
 \begin{solution}
-Let $n$ be the least possible integer that satisfies the problem statement.
-
-$0.35n > 3$ so $n > \frac{3}{0.35} \approx 8.57$. Therefore, the least possible integer is $9$.
+The equations create a triangular area with a base of 6 and a height of 9. The area is $\bigg(\dfrac{1}{2}\bigg)(6)(9) = 27$.
 \end{solution}
 
-
 \begin{problem} %[need help with phrasing]
-The Thorne Miniature room in the Chicago Art Institute consists of 64 tiny replicas of real-world rooms. If a 5 feet long table is represented by a 6 inch replica, and the scales are constant within the exhibition, what is the real life size area of a 25 square inch carpet replica?
+The Thorne Miniature room in the Chicago Art Institute consists of 64 tiny replicas of real-world rooms. If a 5 feet long table is represented by a 6 inch replica, and the scales are constant within the exhibition, what is the real life size area, in square inches, of a 25 square inch carpet replica?
 \end{problem}
 
 \begin{answer}
@@ -416,7 +412,7 @@ Working backwards, we can get the possible values of $x$: $4y$, $4y+1$, $4y+2$, 
 \section*{Set 8}
 
 \begin{problem} 
-Big Ben is a huge philanthropist. He loves to give back to the community and sometimes even gives people things they didn't ask for. If he donated 100 dollars to charity on his first year of donation and increased the amount by $100\%$ every year, in which year will his total donation surpass \$10,000? 
+Big Ben is a huge philanthropist. He loves to give back to the community and sometimes even gives people things they didn't ask for. If he donated 100 dollars to charity on his first year of donation and increased the amount by $100\%$ every year, in which year will the sum of his donations surpass \$10,000? 
 \end{problem}
 
 \begin{answer}
@@ -451,72 +447,18 @@ $\frac{13}{120}$
 \begin{solution}
 There are a total of $10 \cdot 12 \cdot 8 = 960$ cubes. Note that the cubes with at least two sides painted lie on the edges of the box. Adding up the cubes on the edges, we get that there are 104 cubes with at least two sides painted. Therefore, the probability is $\dfrac{104}{960} = \dfrac{13}{120}$.
 \end{solution}
-
-
-\begin{problem}
-Costco only sells pencils in packs of 7 and 12. What is the largest integer number of pencils that Akshaj cannot purchase?
-\end{problem}
-
-\begin{answer}
-65
-\end{answer}
-
-\begin{solution}
-By the Chicken McNugget Theorem, since $7$ and $12$ are relatively prime, the largest number of pencils that Akshaj cannot purchase is $(7)(12)-7-12 = 65$ pencils.
-\end{solution} 
-
-\newpage
-
-\section*{Set 9}
-
-\begin{problem}
-Akshaj is throwing darts onto a circular board with three concentric circles with radii of 3, 4, 5 and corresponding scores $3$, $4$, and $5$, respectively. Assuming Akshaj never misses the board, what is the probability that he obtains a score of 8 with two tries? 
-\end{problem}
-
-\begin{answer}
-$\dfrac{211}{625}$
-\end{answer}
-
-\begin{solution}
-Let $P(n)$ denote the probability that the dart lands in an area with a point value of $n$.
-
-We can split this problem into separate cases, calculate each case's probability, and then sum them:
-
-Case 1 - Akshaj can get a score of 3 on the first dart and then a 5 on the second one (or 5 on the first dart and 3 on the second one): $2 \cdot P(3) \cdot P(5) = 2 \cdot \dfrac{9\pi}{25\pi} \cdot \dfrac{25\pi-16\pi}{25\pi} = \dfrac{162}{625}$
-
-Case 2 - Akshaj gets a score of 4 on both darts: $ P(4) \cdot P(4) = \dfrac{16\pi-9\pi}{25\pi} \cdot  \dfrac{16\pi-9\pi}{25\pi} = \dfrac{49}{625}$
-
-Summing these two probabilities up, we get $\dfrac{162}{625} + \dfrac{49}{625} = \dfrac{211}{625}$.
-\end{solution}
-
+ 
 
 \begin{problem}
 Estimate the total number of times the fifth letter of the alphabet (uppercase or lowercase) appears in the solutions to this Guts Round. Your answer will be considered correct if it is within 100 of the correct answer.
 \end{problem}
 
 \begin{answer}
-1186
+CALCULATE
 \end{answer}
 
 \begin{solution}
 Trivial. Just count. Or Ctrl+F.
 \end{solution}
-
-\begin{problem}
-Compute $\frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \frac{1}{4^2} + \cdots$.
-\end{problem}
-
-\begin{answer}
-$\frac{\pi^2}{6}$
-\end{answer}
-
-\begin{solution}
-This was given in problem 30 on the individual round.
-\end{solution}
-
-
-\begin{problem}
-Pick a number from the set $\{1, 2, 3, 4, 5\}$. Your score on this problem will be the number you picked times the proportion of people who picked a different number.
-\end{problem}
 
 \end{document}
