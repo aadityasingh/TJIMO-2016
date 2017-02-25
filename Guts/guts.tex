@@ -1,16 +1,17 @@
 \documentclass[11pt]{article}
-\usepackage[paperwidth=8.5in, paperheight=11in]{geometry}
+%\usepackage[paperwidth=8.5in, paperheight=11in]{geometry}
+\usepackage[a5paper, landscape]{geometry}
 
 \usepackage{../tjimo}
 %\usepackage[pdftex]{graphicx}
 \usepackage{asymptote}
 
-\begin{comment}
+%\begin{comment}
 \def\answer{\comment}
 \def\solution{\comment}
 \def\solutionone{\comment}
 \def\solutiontwo{\comment}
-\end{comment}
+%\end{comment}
 
 \newcommand{\sevenpoints}{Time limit: 30 minutes.}
 \newcommand{\righthead}{\fdbox{Round}{Guts}}
@@ -204,12 +205,12 @@ There are 100 light bulbs lined up in a row in a long room. Each bulb has its ow
 \end{answer}
 
 \begin{solution} %[someone re-write this solution]
-We observe that every light bulb $n$ is flipped $k$ times, with $k$ being the number of factors $n$ has. We can see that every composite number has an even number of factors, thus any light bulb of a composite number is flipped an even number of times. If a light is flipped an even number of times, it will go back to its original state, which in this case is off. We can see that the number of factors of all perfect squares is odd. 
+We observe that every light bulb $n$ is flipped $k$ times, where $k$ is the number of positive divisors of $n$. We can see that every nonsquare number has an even number of factors, so any light bulb of a nonsquare number is flipped an even number of times. If a light is flipped an even number of times, it will go back to its original state, which was off. We can see that the number of factors of all perfect squares is odd. There are $10$ squares up to $100$, so our answer is $100 - 10 = 90$.
 \end{solution}
 
 
 \begin{problem} %easy
-TJ Varisty Math team went out and ordered 9 eight-slice pizzas. Frankie came and ate $\dfrac{1}{6}$ of all the pizzas. Oxahaj was next and he ate $\dfrac{2}{5}$ of all the pizzas left. Samuel then ate $\dfrac{1}{2}$ of all the pizzas remaining. How many slices of pizza are left. 
+The TJ Varisty Math team went out and ordered 9 eight-slice pizzas. Frankie came and ate $\dfrac{1}{6}$ of all the pizza slices. Oxahaj was next and he ate $\dfrac{2}{5}$ of all the pizza slices left. Samuel then ate $\dfrac{1}{2}$ of all the slices remaining. How many slices of pizza are left?
 \end{problem}
 
 \begin{answer}
@@ -217,7 +218,7 @@ TJ Varisty Math team went out and ordered 9 eight-slice pizzas. Frankie came and
 \end{answer}
 
 \begin{solution} %[someone re-write this solution]
-There are a total of 72 slices of pizza. Frankie ate $\dfrac{1}{6} \cdot 72 = 12$ slices, and left 60 slices. Oxahaj ate $\dfrac{2}{5} \cdot 60 = 24$ of the remaining pizza and left Samuel with $36$ slices. Samuel ate $\dfrac{1}{2} \cdot 36 = 18$ slices, which means there are 18 slices of pizzas remaining. 
+There are a total of 72 slices of pizza. Frankie ate $\dfrac{1}{6} \cdot 72 = 12$ slices, leaving 60 slices. Oxhaj ate $\dfrac{2}{5} \cdot 60 = 24$ of the remaining pizza, leaving Samuel with $36$ slices. Samuel ate $\dfrac{1}{2} \cdot 36 = 18$ slices, which means there are 18 slices of pizzas remaining. 
 \end{solution}
 
 \begin{problem} %old problem
@@ -229,7 +230,7 @@ Sam buys some tacos from Taco Bell. Six of the tacos have beef, eight have chick
 \end{answer}
 
 \begin{solution} %[someone re-write this solution]
-By the Principle of Inclusion-Exclusion (PIE), we have $|B \cup C \cup P| = |B| + |C| + |P| - |B \cap C| - |B \cap P| - | C \cap P| + |B \cap C \cap P|$ where B, C, P, represent the set of tacos that include beef, chicken, and pork, respectively. Therefore, we have $6+8+11-3-2-5+2=17$.
+By the Principle of Inclusion-Exclusion (PIE), we have $|B \cup C \cup P| = |B| + |C| + |P| - |B \cap C| - |B \cap P| - | C \cap P| + |B \cap C \cap P|$ where $B$, $C$, $P$, represent the set of tacos that include beef, chicken, and pork, respectively. Therefore, we have $6+8+11-3-2-5+2=17$.
 \end{solution}
 
 \newpage
@@ -237,7 +238,7 @@ By the Principle of Inclusion-Exclusion (PIE), we have $|B \cup C \cup P| = |B| 
 \section*{Set 5}
 
 \begin{problem} %old problem
-Harry lives on a coordinate plane. Starting from point A, he walks 4 units up, 3 units to the right, 8 units up, and then 6 more units to the right, in this order, ending at point B. What is the shortest possible distance from A to B?
+Harry lives on a coordinate plane. Starting from point $A$, he walks 4 units north, 3 units east, 8 units north, and then 6 more units east, in this order, ending at point $B$. What is the straight-line distance from $A$ to $B$?
 \end{problem}
 
 \begin{answer}
@@ -258,12 +259,12 @@ $\frac{5}{9}$
 \end{answer}
 
 \begin{solution}
-One way to solve this is with complimentary counting. There are $6$ out of $216$ ways to roll three equal face values (one distinct face value), so this outcome has probability $\frac{1}{36}$. There are $_6P_3 = 6 \cdot 5 \cdot 4 = 120$ out of $216$ ways to choose and permnute three distinct face values across the three dice, so this outcome has probability $\frac{20}{36}$. Hence, the probability of rolling exactly two distinct face values is $1 - \frac{1}{36} - \frac{15}{36} = \frac{5}{9}$.
+One way to solve this is with complementary counting. There are $6$ out of $216$ ways to roll three equal face values (one distinct face value), so this outcome has probability $\frac{1}{36}$. There are $_6P_3 = 6 \cdot 5 \cdot 4 = 120$ out of $216$ ways to choose and permute three distinct face values across the three dice, so this outcome has probability $\frac{20}{36}$. Hence, the probability of rolling exactly two distinct face values is $1 - \frac{1}{36} - \frac{15}{36} = \frac{5}{9}$.
 \end{solution}
 
 
 \begin{problem}%[Michael]
-If $\sqrt{a}+\sqrt{b} = \sqrt{13+\sqrt{42}}$ for some positive integer $a$ and $b$, what is $a^2+b^2$?
+If $\sqrt{a}+\sqrt{b} = \sqrt{13+2\sqrt{42}}$ for some positive integers $a$ and $b$, what is $a^2+b^2$?
 \end{problem}
 
 \begin{answer}
@@ -271,19 +272,19 @@ If $\sqrt{a}+\sqrt{b} = \sqrt{13+\sqrt{42}}$ for some positive integer $a$ and $
 \end{answer}
 
 \begin{solution}
-Squaring both sides of the equation gives $a + b + 2\sqrt{ab} = 13 + \sqrt{42}$. Thus we have $a+b = 13$ and $ab = 42$, so $a = 7$ and $b = 6$. Then $a^2 + b^2 = 49 + 36 = 85$.
+Squaring both sides of the equation gives $a + b + 2\sqrt{ab} = 13 + 2\sqrt{42}$. Thus we have $a+b = 13$ and $ab = 42$, so $a = 7$ and $b = 6$. Then $a^2 + b^2 = 49 + 36 = 85$.
 \end{solution}
 
 \begin{problem}
-If GCD$(a, b) = 15$ and LCM$(a, b) = 40$ for some positive integer $a$ and $b$, what is $ab$?
+If the greatest common divisor of two positive integers is $5$ and their least common multiple is $30$, what is their product?
 \end{problem}
 
 \begin{answer}
-600
+150
 \end{answer}
 
 \begin{solution}
-It is well known that the multiple of GCD$(a, b)$ and LCM$(a, b)$ is $ab$. In this case $ab$ = $15 \cdot 40$ = 600
+It is well known that for any integers $a$ and $b$, we have $\gcd(a ,b) \cdot \operatorname{lcm}(a, b) = ab$. Thu $ab = 5 \cdot 30 = 150$. One can also guess and check to find that $a = 10$ and $b = 15$ works.
 \end{solution}
 
 \newpage
@@ -291,7 +292,7 @@ It is well known that the multiple of GCD$(a, b)$ and LCM$(a, b)$ is $ab$. In th
 \section*{Set 6}
 
 \begin{problem}
-Points $A$, $B$, $C$, and $D$ lie on a circle. Segments $AC$ and $BD$ intersect at a right angle at point $E$ inside the circle. If $AE = 6$, $BE = 8$, and $CE = 4$, compute the length of $CD$.
+Points $A$, $B$, $C$, and $D$ lie on a circle. Chords $AC$ and $BD$ intersect at a right angle at point $E$ inside the circle. If $AE = 6$, $BE = 8$, and $CE = 4$, compute the length of $CD$.
 \end{problem}
 
 \begin{answer}
@@ -314,12 +315,12 @@ What is the least possible integer for which $35\%$ of that number is greater th
 \begin{solution}
 Let $n$ be the least possible integer that satisfies the problem statement.
 
-$0.35n > 3$ so $n > 8.57$. Therefore, the least possible integer is $9$.
+$0.35n > 3$ so $n > \frac{3}{0.35} \approx 8.57$. Therefore, the least possible integer is $9$.
 \end{solution}
 
 
 \begin{problem} %[need help with phrasing]
-The Miniature Thorne room in the Chicago Art Institute consists of 64 tiny replicas of real world rooms. If a 5 feet long table is represented by a 6 inch replica, and the scales are constant within the exhibition, what is the real life size(area) of a 25 square inch carpet?
+The Thorne Miniature room in the Chicago Art Institute consists of 64 tiny replicas of real-world rooms. If a 5 feet long table is represented by a 6 inch replica, and the scales are constant within the exhibition, what is the real life size area of a 25 square inch carpet replica?
 \end{problem}
 
 \begin{answer}
@@ -340,8 +341,9 @@ How many positive integers less than or equal to $50$ are relatively prime to $5
 \end{answer}
 
 \begin{solution}
-Euler's totient function, $\phi(n)$ finds the number of numbers less than or equal to $n$ that are relatively prime to $n$, where $n$ is a positive integer. $\phi(50) = 50\bigg(1-\dfrac{1}{2}\bigg)\bigg(1-\dfrac{1}{5}\bigg) = 20$.
-The problem can also be solved by listing.
+Euler's totient function, $\phi(n)$, finds the number of numbers less than or equal to $n$ that are relatively prime to $n$, where $n$ is a positive integer. $\phi(50) = 50\bigg(1-\dfrac{1}{2}\bigg)\bigg(1-\dfrac{1}{5}\bigg) = 20$.
+
+Alternatively, note that any such number must be odd, eliminating the $25$ even numbers. Of the remaining, $5$ are multiples of $5$ (5, 15, 25, 35, and 45), leaving a total of $20$ integers relatively prime to $50$.
 \end{solution}
 
 \newpage
@@ -357,7 +359,7 @@ Suppose that the following are true:
 \end{itemize}
 How many of the following are always true?
 \begin{itemize}
-	\item Hao only laughs twice a week.
+	\item Hao only laughs two days a week.
 	\item Hao will laugh on Friday.
 	\item Hao will not laugh on Monday.
 	\item Hao will laugh in Physics, which he has after math.
@@ -374,7 +376,7 @@ The second and fourth statements are always true, but there is no guarantee that
 
 
 \begin{problem} %[need help with phrasing]
-In how many ways can 1128 be written as a product of two positive integers if order doesn't matter?
+In how many ways can 1128 be written as a product of two positive integers if the order doesn't matter?
 \end{problem}
 
 \begin{answer}
@@ -382,7 +384,7 @@ In how many ways can 1128 be written as a product of two positive integers if or
 \end{answer}
 
 \begin{solution}
-1128 can be prime factored into $2^3 \cdot 3 \cdot 47$. We can see that 1128 has $4 \cdot 2 \cdot 2 = 16$ prime factors and each product pair has two prime factors, thus there are $16 \div 2 = 8$ ways 1128 can be written as a product of two positive integers.   
+1128 can be prime factored into $2^3 \cdot 3 \cdot 47$. We can see that 1128 has $4 \cdot 2 \cdot 2 = 16$ positive factors and each product pair has two prime factors, thus there are $16 \div 2 = 8$ ways 1128 can be written as a product of two positive integers.   
 \end{solution}
 
 \begin{problem} 
@@ -398,15 +400,15 @@ The side length of the big square is $10$, which is a diameter of the circle, wh
 \end{solution}
 
 \begin{problem} 
-Ray started with a positive integer x, then divided it by 5, discarding any remainder, to obtain an integer y. He then divided y by 4, again discarding the remainder, to obtain z. If $z = 12$, what is the sum of possible integers x that Ray could have started with?
+Ray started with a positive integer $x$, divided it by $4$, discarded any remainder, and obtained an integer $y$. If $y = 12$, what is the sum of all possible values of $x$?
 \end{problem}
 
 \begin{answer}
-8
+198
 \end{answer}
 
 \begin{solution}
-Working backwards, we can get the possible values of $y$: $4z$, $4z+1$, $4z+2$, $4z+3$, $4z+4$, ..., $4z+11$, which would be 48, 49, 50, 51, 52, ..., 59, respectively.
+Working backwards, we can get the possible values of $x$: $4y$, $4y+1$, $4y+2$, $4y+3$, which would be 48, 49, 50, and 51, for a sum of 198.
 \end{solution}
 
 \newpage
@@ -418,15 +420,15 @@ Big Ben is a huge philanthropist. He loves to give back to the community and som
 \end{problem}
 
 \begin{answer}
-6th year
+7th year
 \end{answer}
 
 \begin{solution}
-The second year, he will donate \$200, for a total of \$300. The third year, he will donate \$300, for a total of \$700. In general, the $n$th year, he will donate $100 \cdot 2^n$, and his total will be $100 \cdot (2^{n+1} - 1)$. The first value of $n$ for which this is greater than $10000$ is $n = 6$.
+The second year, he will donate \$200, for a total of \$300. The third year, he will donate \$400, for a total of \$700. In general, the $n$th year, he will donate $100 \cdot 2^{n-1}$, and his total will be $100 \cdot (2^{n} - 1)$. The first value of $n$ for which this is greater than $10000$ is $n = 7$.
 \end{solution}
 
 \begin{problem}
-Determine the smallest positive integer that ends in $7$ and is divisible by exactly 3 primes.
+Determine the smallest positive integer that ends in $7$ and is divisible by exactly 3 primes, all of which are distinct.
 \end{problem}
 
 \begin{answer}
@@ -439,7 +441,7 @@ Note that the primes must be odd and cannot be $5$. Simple experimentation yield
 
 
 \begin{problem}
-Harry decides to paint the entire outside of a 10 by 12 by 8 feet box. He then decides to cut the box into 1 by 1 by 1 feet cubes and picks one of them. What is the probability that the cube picked has at least 2 sides painted? 
+Harry decides to paint the entire outside of a $10 \times 12 \times 8$ rectangular prism. He then decides to cut the rectangular prism into $1 \times 1 \times 1$ cubes and picks one of them. What is the probability that the cube picked has at least 2 sides painted? 
 \end{problem}
 
 \begin{answer}
@@ -452,7 +454,7 @@ There are a total of $10 \cdot 12 \cdot 8 = 960$ cubes. Note that the cubes with
 
 
 \begin{problem}
-Costco only sells pencils in packs of 7 and 12. What is the largest number of pencils that Akshaj cannot purchase?
+Costco only sells pencils in packs of 7 and 12. What is the largest integer number of pencils that Akshaj cannot purchase?
 \end{problem}
 
 \begin{answer}
@@ -468,7 +470,7 @@ By the Chicken McNugget Theorem, since $7$ and $12$ are relatively prime, the la
 \section*{Set 9}
 
 \begin{problem}
-Akshaj is throwing darts onto a circular board with three concentric circles with radii of 3, 4, 5. Assuming Akshaj does not miss the board, what is the probability that he obtains a score of 8 with two tries? 
+Akshaj is throwing darts onto a circular board with three concentric circles with radii of 3, 4, 5 and corresponding scores $3$, $4$, and $5$, respectively. Assuming Akshaj never misses the board, what is the probability that he obtains a score of 8 with two tries? 
 \end{problem}
 
 \begin{answer}
@@ -485,19 +487,6 @@ Case 1 - Akshaj can get a score of 3 on the first dart and then a 5 on the secon
 Case 2 - Akshaj gets a score of 4 on both darts: $ P(4) \cdot P(4) = \dfrac{16\pi-9\pi}{25\pi} \cdot  \dfrac{16\pi-9\pi}{25\pi} = \dfrac{49}{625}$
 
 Summing these two probabilities up, we get $\dfrac{162}{625} + \dfrac{49}{625} = \dfrac{211}{625}$.
-\end{solution}
-
-
-\begin{problem}
-Find the remainder when $35!$ is divided by $37$.
-\end{problem}
-
-\begin{answer}
-1
-\end{answer}
-
-\begin{solution}
-By Wilson's Theorem, we have that $(37-1)! \equiv -1 \pmod{37}$. $36! \equiv 36(35!) \equiv -1(35!) \equiv -1 \pmod{37}$. Therefore, $35! \equiv 1 \pmod{37}$.
 \end{solution}
 
 
@@ -524,5 +513,10 @@ $\frac{\pi^2}{6}$
 \begin{solution}
 This was given in problem 30 on the individual round.
 \end{solution}
+
+
+\begin{problem}
+Pick a number from the set $\{1, 2, 3, 4, 5\}$. Your score on this problem will be the number you picked times the proportion of people who picked a different number.
+\end{problem}
 
 \end{document}
