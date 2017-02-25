@@ -8,7 +8,7 @@ settings.embed=true;
 settings.toolbar=false;
 viewportmargin=(2,2);
 
-unitsize(12);
+unitsize(10);
 pair A = (0, 0), B = (0, 6), C = (4, 6), D = (4, 4), E= (6, 4), F = (6, 5), G = (8, 5), H = (8, 4), I = (10, 4), J = (10, 0);
 draw(A--B--C--D--E--F--G--H--I--J--cycle);
 label("A", A, S);

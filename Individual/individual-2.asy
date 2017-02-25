@@ -9,7 +9,7 @@ settings.toolbar=false;
 viewportmargin=(2,2);
 
 import graph;
-unitsize(4);
+unitsize(3);
 draw((0, 0) -- (16, 0) -- (16, 18) -- (0, 18) -- cycle);
 draw(Circle((5, 5), 5));
 draw(Circle((11, 13), 5));

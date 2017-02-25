@@ -59,7 +59,7 @@ The number is one less than a multiple of $4$ and one less than a multiple of $5
 
 
 \begin{problem}%[Harry]
-If the sum of five consecutive numbers is 25, what is the largest of the 5 numbers?
+If the sum of five consecutive integers is 25, what is the largest of the five integers?
 \end{problem}
 
 \begin{answer}
@@ -67,7 +67,7 @@ If the sum of five consecutive numbers is 25, what is the largest of the 5 numbe
 \end{answer}
 
 \begin{solution}
-Let the five consecutive numbers be $n-2, n-1, n, n+1$, and $n+2$. $(n-2)+(n-1)+(n)+(n+1)+(n+2) = 5n = 25$, so $n=5$. The largest number is $n+2 = 7$.
+Let the five consecutive integers be $n-2, n-1, n, n+1$, and $n+2$. $(n-2)+(n-1)+(n)+(n+1)+(n+2) = 5n = 25$, so $n=5$. The largest number is $n+2 = 7$.
 \end{solution}
 
 \newpage
@@ -75,7 +75,7 @@ Let the five consecutive numbers be $n-2, n-1, n, n+1$, and $n+2$. $(n-2)+(n-1)+
 \section*{Set 2}
 
 \begin{problem}%[Harry]
-Compute $3+4+5+7+...+25$.
+Compute $3+5+7+...+25$.
 \end{problem}
 
 \begin{answer}
@@ -88,7 +88,7 @@ The sum $1+3+5+...+n+...+(2n-1) = n^2$. Therefore, the sum is $13^2-1 = 168$.
 
 
 \begin{problem}%[Harry]
-If Kao has 3 fair dies, what is the probability that the 3 numbers she rolls add up to 18?
+If Kao has 3 fair, standard dice, what is the probability that the 3 numbers she rolls add up to 18?
 \end{problem}
 
 \begin{answer}
@@ -108,7 +108,7 @@ $\dfrac{403}{2016}$
 \end{answer}
 
 \begin{solution}
-This expression can be rewritten as a telescoping sum. Each term in the form of $\dfrac{1}{n(n+5)}$ can be rewritten as $\bigg(\dfrac{1}{5}\bigg)\bigg(\dfrac{1}{n}-\dfrac{1}{n+5}\bigg)$. Using this, our original expression can be rewritten as $\bigg(\dfrac{1}{5}\bigg)\bigg(\big(1-\frac{1}{6}\big)+\big(\frac{1}{6}-\frac{1}{11}\big)+...+\big(\frac{1}{2006}-\frac{1}{2011}\big)+\big(\frac{1}{2011}+\frac{1}{2016}\big)\bigg) = \bigg(\dfrac{1}{5}\bigg)\bigg(1-\dfrac{1}{2016}\bigg) = \dfrac{403}{2016}$.
+This expression can be rewritten as a telescoping sum. Each term in the form of $\dfrac{1}{n(n+5)}$ can be rewritten as $\bigg(\dfrac{1}{5}\bigg)\bigg(\dfrac{1}{n}-\dfrac{1}{n+5}\bigg)$. Using this, our original expression can be rewritten as $\bigg(\dfrac{1}{5}\bigg)\bigg(\big(1-\frac{1}{6}\big)+\big(\frac{1}{6}-\frac{1}{11}\big)+...+\big(\frac{1}{2006}-\frac{1}{2011}\big)+\big(\frac{1}{2011}-\frac{1}{2016}\big)\bigg) = \bigg(\dfrac{1}{5}\bigg)\bigg(1-\dfrac{1}{2016}\bigg) = \dfrac{403}{2016}$.
 \end{solution}
 
 \begin{problem}%[Michael]
@@ -136,12 +136,12 @@ $\dfrac{24}{5}$
 \end{answer}
 
 \begin{solution}
-Akshaj can mow $\dfrac{1}{8}$ of Jeffery's lawn per hour, while Michael can mow $\dfrac{1}{12}$ of the lawn in an hour. Combined, those two can mow $\dfrac{5}{24}$of Jeffery's enormous lawn in an hour, thus it will take them $\dfrac{24}{5}$ hours to mow Jeffery's lawn.
+Akshaj can mow $\dfrac{1}{8}$ of Jeffery's lawn per hour, while Michael can mow $\dfrac{1}{12}$ of the lawn in an hour. Combined, those two can mow $\dfrac{5}{24}$ of Jeffery's enormous lawn in an hour, thus it will take them $\dfrac{24}{5}$ hours to mow Jeffery's lawn.
 \end{solution}
 
 
 \begin{problem}%[Michael]
-The Cookie Monster enjoys eating cookies every day. He starts out with 80 cookies and never adds any cookies to the jar. On the 1st day he eats 1 cookie, on the 2nd day he eats 2 cookies, and continues doing so such that on the nth day, he eats $n$ cookies. After how many days will the Cookie Monster's jar be empty? 
+The Cookie Monster enjoys eating cookies every day. He starts out with 80 cookies and never adds any cookies to the jar. On the 1st day he eats 1 cookie, on the 2nd day he eats 2 cookies, and continues doing so such that on the $n$th day, he eats $n$ cookies, unless there are less than $n$ cookies remaining, in which case he simply eats all the remaining cookies. After how many days will the Cookie Monster's jar be empty? 
 \end{problem}
 
 \begin{answer}
@@ -149,7 +149,7 @@ The Cookie Monster enjoys eating cookies every day. He starts out with 80 cookie
 \end{answer}
 
 \begin{solution}
-This problem uses consecutive sums: $1+2+3+ \cdots +n = \dfrac{n(n+1)}{2}$. Let $n$ be the number of days it will take Cookie Monster to finish his jar of cookies, so $\dfrac{n(n+1)}{2} = 80$. $n = 12$ is too small (just under 80), so it will take Cookie Monster 13 days to finish his cookie jar.
+This problem uses consecutive sums: $1+2+3+ \cdots +n = \dfrac{n(n+1)}{2}$. Let $n$ be the number of days it will take Cookie Monster to finish his jar of cookies, so $\dfrac{n(n+1)}{2} = 80$. Since $n = 12$ is too small (just under 80), it will take Cookie Monster 13 days to finish his cookie jar.
 \end{solution}
 
 
@@ -175,7 +175,7 @@ Harry has a standard deck of cards (52 cards, 13 in each suit). He deals out a h
 \end{answer}
 
 \begin{solution} %[someone re-write this solution]
-We are essentially distributing 13 cards into 4 piles, or in the terms of pigeon hole, trying to fit 13 pigeons into 4 holes. We can see that no matter how we do the fitting, there is always going to be a pile with 4 cards or more in one of the piles. 
+We are essentially distributing 13 cards into 4 piles, or in the terms of the Pigeonhole Principle, trying to fit 13 pigeons into 4 holes. We can see that no matter how we do the fitting, there is always going to be a pile with 4 or more cards. 
 \end{solution}
 
 \newpage
@@ -183,7 +183,7 @@ We are essentially distributing 13 cards into 4 piles, or in the terms of pigeon
 \section*{Set 4}
 
 \begin{problem}
-How many digits are in the product $4^{14} \cdot 5^{24}$?
+How many digits are in the numerical value of the product $4^{14} \cdot 5^{24}$?
 \end{problem}
 
 \begin{answer}
@@ -191,7 +191,7 @@ How many digits are in the product $4^{14} \cdot 5^{24}$?
 \end{answer}
 
 \begin{solution}
-We can see that the product is equivalent to $2^{28} \cdot 5^{24}$. By regrouping the product, we get $(2*5)^{24} \cdot 2^{4}$ which equals to $16 \cdot 10^{24}$. We can easily see that the final product has 26 digits. 
+We can see that the product is equivalent to $2^{28} \cdot 5^{24}$. By regrouping the product, we get $(2*5)^{24} \cdot 2^{4}$ which equals $16 \cdot 10^{24}$. We can easily see that the final product has 26 digits. 
 \end{solution}
 
 
