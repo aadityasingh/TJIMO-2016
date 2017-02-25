@@ -1,0 +1,310 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.25)  24 FEB 2017 21:40
+entering extended mode
+**./double.tex
+(double.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
+Package: pdfpages 2017/01/14 v0.5h Insert pages of external PDF documents (AM)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count87
+\calc@Bcount=\count88
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count89
+\calc@Cskip=\skip45
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+\Gread@gobject=\count90
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+\AM@pagewidth=\dimen107
+\AM@pageheight=\dimen108
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
+File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box26
+\AM@global@opts=\toks15
+\AM@toc@title=\toks16
+\c@AM@survey=\count91
+\AM@templatesizebox=\box27
+) (double.aux)
+\openout1 = `double.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+\AtBeginShipoutBox=\box28
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count92
+\scratchdimen=\dimen109
+\scratchbox=\box29
+\nofMPsegments=\count93
+\nofMParguments=\count94
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count95
+\MPscratchDim=\dimen110
+\MPnumerator=\count96
+\makeMPintoPDFobject=\count97
+\everyMPtoPDFconversion=\toks18
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)) <practiceguts.pdf, id=1, 597.50829pt x 421.10124pt>
+File: practiceguts.pdf Graphic file (type pdf)
+
+<use practiceguts.pdf>
+Package pdftex.def Info: practiceguts.pdf used on input line 6.
+(pdftex.def)             Requested size: 597.50682pt x 421.1002pt.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf>
+Package pdftex.def Info: practiceguts.pdf used on input line 6.
+(pdftex.def)             Requested size: 597.50682pt x 421.1002pt.
+ <practiceguts.pdf, id=4, page=1, 597.50829pt x 421.10124pt>
+File: practiceguts.pdf Graphic file (type pdf)
+
+<use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 597.50682pt x 421.1002pt.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+
+<use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+
+<use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+ [1
+
+ <./practiceguts.pdf{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}>] <practiceguts.pdf, id=55, page=2, 597.50829pt
+ x 421.10124pt>
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 2>
+Package pdftex.def Info: practiceguts.pdf, page2 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+
+<use practiceguts.pdf, page 2>
+Package pdftex.def Info: practiceguts.pdf, page2 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 2>
+Package pdftex.def Info: practiceguts.pdf, page2 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 2>
+Package pdftex.def Info: practiceguts.pdf, page2 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+
+<use practiceguts.pdf, page 2>
+Package pdftex.def Info: practiceguts.pdf, page2 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 2>
+Package pdftex.def Info: practiceguts.pdf, page2 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+ [2 <./practiceguts.pdf>]
+<practiceguts.pdf, id=74, page=3, 597.50829pt x 421.10124pt>
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 3>
+Package pdftex.def Info: practiceguts.pdf, page3 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+
+<use practiceguts.pdf, page 3>
+Package pdftex.def Info: practiceguts.pdf, page3 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 3>
+Package pdftex.def Info: practiceguts.pdf, page3 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 3>
+Package pdftex.def Info: practiceguts.pdf, page3 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+
+<use practiceguts.pdf, page 3>
+Package pdftex.def Info: practiceguts.pdf, page3 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 3>
+Package pdftex.def Info: practiceguts.pdf, page3 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+ [3 <./practiceguts.pdf>] (double.aux) ) 
+Here is how much of TeX's memory you used:
+ 2784 strings out of 493333
+ 39868 string characters out of 3139188
+ 104825 words of memory out of 3000000
+ 6296 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 40i,18n,46p,239b,427s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss1
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on double.pdf (3 pages, 128132 bytes).
+PDF statistics:
+ 91 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+

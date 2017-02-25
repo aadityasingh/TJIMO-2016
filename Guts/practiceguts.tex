@@ -1,22 +1,27 @@
 \documentclass[11pt]{article}
-\usepackage[paperwidth=8.5in, paperheight=11in]{geometry}
-%\usepackage[landscape]{geometry}
+%\usepackage[paperwidth=8.5in, paperheight=11in]{geometry}
+\usepackage[landscape, a5paper]{geometry}
 
 \usepackage{../tjimo}
 %\usepackage[pdftex]{graphicx}
+%\usepackage[doublepages]{pdfpages}
 \usepackage{asymptote}
 
-\begin{comment}
+%\begin{comment}
 \def\answer{\comment}
 \def\solution{\comment}
 \def\solutionone{\comment}
 \def\solutiontwo{\comment}
-\end{comment}
+%\end{comment}
 
 \newcommand{\sevenpoints}{}
 \newcommand{\righthead}{\fdbox{Round}{Practice Guts}}
 
 \begin{document}
+
+\end{solution}
+
+\newpage
 
 \section*{Set 1}
 
@@ -47,7 +52,7 @@ Since each vertex cannot form a diagonal with itself or its two adjacent vertice
 
 
 \begin{problem}%[Michael You]
-Using only 3 straight cuts, what is the maximum number into which a cube can be cut?
+Using only 3 straight cuts, what is the maximum number of pieces into which a cube can be cut?
 \end{problem}
 
 \begin{answer}
@@ -68,16 +73,15 @@ $\boxed{36}$
 \end{answer}
 
 \begin{solution}
-Squaring both sides of the equation gives $\sqrt{\underline{AB}} = A^2 + A$. Since $A^2 + A$ is a positive integer, $\underline{AB}$ must be the square of a positive integer. A quick check of the two-digit perfect squares yields $\boxed{36}$ as the only solution.
+Squaring both sides of the equation gives $\sqrt{\underline{AB}} = A^2 - A$. Since $A^2 - A$ is a positive integer, $\underline{AB}$ must be the square of a positive integer. A quick check of the two-digit perfect squares yields $\boxed{36}$ as the only solution.
 \end{solution}
 
 \newpage
 
-
 \section*{Set 2}
 
 \begin{problem}%[Bryan/Michael]
-Akshaj is failing APUSH. His test scores were $47, 51, 43, 64$, and $35$. If he gets a $42$ on his next test, what is the average of all his test scores?
+Akshaj is struggling in APUSH. His test scores were $47, 51, 43, 64$, and $35$. If he gets a $42$ on his next test, what will be the average of all his test scores?
 \end{problem}
 
 \begin{answer}
@@ -90,7 +94,7 @@ The average is $\frac{47 + 51 + 43 + 64 + 35 + 42}{6} = \boxed{47}$.
 
 
 \begin{problem}%[Lilian]
-There are $30$ people in one of the math team trailers. $25$ of them like geometry, $14$ of them like algebra, and $20$ of them like number theory. If $10$ of them like algebra and geometry, $12$ of them like algebra and number theory, and $8$ of them like geometry and number theory, how many of them like all $3$ subjects?
+There are $30$ people in one of the math-team trailers. $25$ of them like geometry, $14$ of them like algebra, and $20$ of them like number theory. If $10$ of them like algebra and geometry, $12$ of them like algebra and number theory, and $8$ of them like geometry and number theory, how many of them like all $3$ subjects?
 \end{problem}
 
 \begin{answer}
@@ -128,7 +132,6 @@ We observe that $\angle DCA = 180^\circ - \angle DBC - \angle ACB - \angle BDC =
 \end{solution}
 
 \newpage
-
 
 \section*{Set 3}
 
@@ -173,7 +176,7 @@ Let $x$ and $y$ be the side lengths of the rectangle. The area is $xy$, and the 
 
 
 \begin{problem}%[Josh/Eric Chen]
-There is a $70\%$ chance that it is cloudy, and a $60\%$ chance that it will rain. It is twice as likely to rain when it is cloudy thanw henf eaijfa. What is the probability that it will rain, given that it is not cloudy?
+There is a $70\%$ chance that it is cloudy, and a $60\%$ chance that it will rain. It is twice as likely to rain when it is cloudy than when it is not. What is the probability that it will rain, given that it is not cloudy?
 \end{problem}
 
 \begin{answer}
