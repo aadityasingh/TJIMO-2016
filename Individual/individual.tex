@@ -5,12 +5,12 @@
 %\usepackage[pdftex]{graphicx}
 \usepackage{asymptote}
 
-%\begin{comment}
+\begin{comment}
 \def\answer{\comment}
 \def\solution{\comment}
 \def\solutionone{\comment}
 \def\solutiontwo{\comment}
-%\end{comment}
+\end{comment}
 
 \newcommand{\sevenpoints}{Time limit: 60 minutes.}
 \newcommand{\righthead}{\fdbox{Round}{Individual}}
@@ -45,7 +45,7 @@ Note that for $2017, 2018$, and $2019$ have sum of digits greater than $9$. The 
 
 
 \begin{problem}
-Compute $1 + 2 + 3 + \cdots +  63$.
+Compute $1 + 2 + 3 + \cdots +  63$. 
 \end{problem}
 
 \begin{answer}
@@ -71,15 +71,15 @@ The area of a circle with radius $r$ is $\pi r^2$, and its circumference is $2\p
 
 
 \begin{problem}
-Polya has 5 shirts, each of a different color: red, green, blue, yellow, and black. He also has 4 pairs of pants of different colors: red, orange, yellow, green. If Polya does not want to wear pants of the same color as his shirt, compute the number of ways he can choose a shirt and a pair of pants.
+Polya has 5 shirts, each of a different color: red, green, blue, yellow, and black. He also has 4 hats of different colors: red, orange, yellow, green. Compute the number of ways he can choose a shirt and a hat.
 \end{problem}
 
 \begin{answer}
-$\boxed{17}$
+$\boxed{20}$ (ways)
 \end{answer}
 
 \begin{solution}
-Without the color restriction, there are simply $5 \cdot 4 = 20$ ways to choose a shirt and a pair of pants because there are $4$ pairs of pants from which to choose for each of $5$ shirts. There are $3$ invalid sets: red shirt/pants, yellow shirt/pants, and green shirt/pants. Hence there are $20 - 3 = \boxed{17}$ valid combinations.
+There are $5$ ways to choose a shirt. For each shirt, there are $4$ ways to choose a hat. Thus there are $5 \cdot 4 = \boxed{20}$ total ways. 
 \end{solution}
 
 
@@ -97,28 +97,28 @@ The distance from Cantor's home to school is $\frac{1}{2} \text{hour} \cdot 3 \t
 
 
 \begin{problem}
-Compute the number of positive divisors of $2016$.
+Compute the number of positive divisors of $1024$.
 \end{problem}
 
 \begin{answer}
-$\boxed{36}$
+$\boxed{11}$
 \end{answer}
 
 \begin{solution}
-The prime factorization of $2016$ is $2^5 \cdot 3^2 \cdot 7$. A divisor of $2016$ will have $0, 1, 2, 3, 4$, or $5$ factors of $2$, for $6$ choices. Similarly, there are $3$ choices for the number of factors of $3$, and $2$ for factors of $7$. Therefore there are $6 \cdot 3 \cdot 2 = \boxed{36}$ positive divisors of $2016$.
+The prime factorization of $1024$ is $2^{10}$. Thus, any divisor of $1024$ must be a power of $2$. We can represent any divisor as $2^x$ for some $0 \le x \le 10$. For example, $x=0$ gives $1$ and $x=10$ gives $1024$. Since there are $11$ possible values for $x$, there are then $\boxed{11}$ positive divisors of $1024$. 
 \end{solution}
 
 
 \begin{problem} %[NO NAME]
-Fermat is selling his very last and little mat. He decides to give a discount at $10\%$ off of the original price. After 2 weeks, no one bought his mat. Furious, he decided to give an additional $30\%$ off the discounted price. Finally, Andrew Wiles bought the mat for $\$20$. Find, to the nearest cent, the original price of the mat.
+Fermat was selling his very last and little mat at an original price of $\$20$. He then decided to give a discount at $10\%$ off of the original price. After 2 weeks, no one bought his mat. Furious, he decided to give an additional $30\%$ off the discounted price. Finally, after both discounts, Andrew Wiles bought the mat. Find the price Andrew Wiles paid. Express your answer in dollars and cents.
 \end{problem}
 
 \begin{answer}
-$\boxed{\$31.75}$
+$\boxed{\$12.60}$
 \end{answer}
 
 \begin{solution}
-Let the original price be $x$. Then, we get the equation $(1-0.1) \cdot (1-0.3) \cdot x = 20$. Then, $x = \frac{20}{0.7 \cdot 0.9}$, so we get the answer of $x = \boxed{\$31.75}$.
+If the original price is $\$20$, the first discount takes off $10\% \cdot \$20  = \$2$, resulting in a price of $\$20 - \$2 = \$18$. Then the next discount takes off $30\%$ of $\$18$, or $0.30 \cdot \$18 = \$5.40$, resulting in a price of $\$18 - \$5.40 = \boxed{\$12.60}$, which is the price Andrew Wiles must have paid. 
 \end{solution}
 
 
@@ -126,30 +126,126 @@ Let the original price be $x$. Then, we get the equation $(1-0.1) \cdot (1-0.3) 
 %logic/puzzle question -not sure if this counts?
 %If the midterm and final exams of a TJ chemistry class are each worth $\frac{1}{9}$ of the overall grade, and each quarter grade is worth $\frac{7}{36}$ of the overall grade, and NAME gets an average of 91 across all four of his quarter grades, and gets a 73 on his midterm, what score must he receive on the final exam on the final exam in order to get an A (overall grade $\geq 92.5$)?
 
-Al, Bob, Carl, David, and Edward are standing side by side for a picture. Carl is to the left of Al, Bob is to the right of Edward, David is to the left of Edward, Edward is next to Al, and David is not next to Al. Furthermore, David is complaining that the people on his sides are not giving him enough space. Determine, from left to right, the order in which they are standing.
-%  AD  BCE    BADCE
+Al, Bob, Carl, David, and Edward are standing side by side for a picture. Carl is to the left of Al, Bob is to the right of Edward, and David is to the left of Edward. Furthermore, David is complaining that the people on both of his sides are not giving him enough space. Find the person standing farthest to the left. (Note: ``Carl is to the left of Al" does not necessarily mean Carl is adjacent to Al.)
+%  AD  BCE    BADCE           DEB   CA
 \end{problem}
 
 \begin{answer}
 %$122.5$
-$\boxed{\text{Carl, David, Edward, Al, Bob}}$
+$\boxed{\text{Carl}}$
 \end{answer}
 
 \begin{solution}
-We know that the order for Al and Carl is Carl, Al, and the order for Bob, David, and Edward is David, Edward, Bob. Since David is between two people, Carl must be farthest left, so we have Carl, David, Edward, Bob. Finally, since Edward is next to Al and David is not, Al must go between Edward and Bob, yielding $\boxed{\text{Carl, David, Edward, Al, Bob}}$.
+We know that the order for Al and Carl is Carl, Al, and the order for Bob, David, and Edward is David, Edward, Bob. Then neither Al, Edward, nor Bob can be farthest to the left. Furthermore, David is between two people, so $\boxed{\text{Carl}}$ must be the farthest to the left. 
 \end{solution}
 
-
 \begin{problem}
-Compute the units digit of $2017^{2016}$.
+Mario has a humongous jug with $640$ ounces of apple juice. Every day, Mario drinks half of the contents in the jug. Thus, after the first day, there will be $320$ ounces remaining. Compute the number of days after which there will be $5$ ounces of apple juice left.
 \end{problem}
 
 \begin{answer}
-$\boxed{1}$
+$\boxed{7}$ (days)
 \end{answer}
 
 \begin{solution}
-We may start by simply replacing $2017$ with its units digit $7$. By looking at the first few powers of $7$ (7, 49, 343, 2401, 16807), we see that the units digit cycles every $4$ powers in the pattern $7, 9, 3, 1, 7, 9, 3, 1, \ldots$. Since every fourth power has units digit $1$ and $2016$ is divisible by $4$, our answer is $\boxed{1}$.
+Every day, Mario divides the amount of juice left by $2$. To reach $5$ ounces, he must divide the original amount by $\dfrac{640}{5} = 128$. Since $128 = 2^7$, Mario must drink from the jug seven times, so it will take him $\boxed{7}$ days. 
+\end{solution}
+
+\begin{problem}
+Define the operation $a \triangle b = a + 2b$ for any real $a, b$. If $a \triangle (b \triangle a)  = (ka) \triangle b$ for all positive integers $a$ and $b$, compute $k$.
+\end{problem}
+
+\begin{answer}
+$\boxed{5}$
+\end{answer}
+
+\begin{solution}
+We simply evaluate  both sides of the equation: \begin{align*}a \triangle (b \triangle a) = a + 2(b \triangle a) &= a + 2(b + 2a) = 5a + 2b \\ (ka) \triangle b &= ka + 2b\end{align*} Thus we must have $5a = ka$ for all positive integers $a$, so $k = 5$.
+\end{solution}
+
+\begin{problem}
+At a vending machine, 3 bags of chips and 2 bottles of water cost $\$2.35$, and 2 bags of chips and 3 bottles of water cost $\$2.65$. Compute the cost of 1 bag of chips and 1 bottle of water.
+\end{problem}
+
+\begin{answer}
+$\boxed{\$1}$
+\end{answer}
+
+\begin{solution}
+Let $c$ be the cost of one bag of chips, and $w$ be the cost of one bottle of water. We have: \begin{center}$\begin{cases} 3c + 2w = 2.35 \\ 2c + 3w = 2.65 \end{cases}$\end{center} Adding these equations together gives $5c + 5w = 5$, so $c + w = \boxed{1}$. (Although not necessary, we can also solve for $w$ and $c$ explicitly to find $w = 0.35$ and $c = 0.65$.)
+\end{solution}
+
+\begin{problem}
+How many unordered sets of three prime numbers sum to $38$? (Note: the set \{1, 2, 3\} is considered the same as the set \{3, 2, 1\})
+\end{problem}
+
+\begin{answer}
+$\boxed{4}$
+\end{answer}
+
+\begin{solution}
+First notice that if all three prime numbers were odd, then their sum would be odd. Thus, at least one must be even. So, one of the three primes is $2$. The other two primes must sum to $36$. It is easy to check that the only pairs of primes that sum to $36$ are $\{5, 31\}, \{7, 29\}, \{13, 23\}, \{17, 19\}$. Thus, there are $\boxed{4}$ total sets.
+\end{solution}
+
+\begin{problem}
+A palindrome is a positive integer that reads the same forwards and backwards. For example, $2002$ and $1111$ are palindromes, while $2017$ is not. Compute the number of $5$-digit palindromes.
+\end{problem}
+
+\begin{answer}
+$\boxed{900}$
+\end{answer}
+
+\begin{solution}
+Note that a five-digit palindrome is of the form $\overline{ABCBA}$, where $A,B,C$ are digits and $A \ne 0$. There are $9$ ways to choose $A$, and $10$ ways to choose each of $B$ and $C$, so our answer is $9 \cdot 10 \cdot 10 = \boxed{900}$.
+\end{solution}
+
+\begin{problem}
+Determine the greatest integer from the following set: $\{7^{2000},\  2^{6000},\ 7^{1000} \times 3^{2000},\ 3^{1000} \times 5^{2000},\ 3^{4000} \}$
+\end{problem}
+
+\begin{answer}
+$\boxed{3^{4000}}$
+\end{answer}
+
+\begin{solution}
+Take the $1000$th root of each number. Note that this does not affect the largest number. We then obtain the set $\{7^2, 2^6, 7 \cdot 3^2, 3 \cdot 5^2, 3^4\}$, or $\{49, 64, 63, 75, 81\}$. The largest number is $81$, so our answer is $\boxed{3^{4000}}$.
+\end{solution}
+
+\begin{problem}
+Find $a$ such that the following system of equations have no solutions: $\begin{cases} 2x + 3y = 7 \\ 5x + ay = 10 \end{cases}$
+\end{problem}
+
+\begin{answer}
+$\boxed{\dfrac{15}{2}}$
+\end{answer}
+
+\begin{solution}
+Notice multiplying the first equation by $\dfrac{5}{2}$ gives $5x + \dfrac{15}{2}y = \dfrac{35}{2}$. For the system to have no solutions notice we can make $a = \boxed{\dfrac{15}{2}}$ to make the system inconsistent (since $10 \ne \frac{35}{2}$). 
+\end{solution}
+
+%\begin{problem}
+%Seven people named Affery, Beffery, Ceffery, Deffery, Effery, Feffery, and Geffery want to form a committee. How many possible committees are there that contain both Affery and Beffery but not Ceffery?
+%\end{problem}
+%
+%\begin{answer}
+%$\boxed{16}$
+%\end{answer}
+%
+%\begin{solution}
+%The committee already must contain Affery and Beffery and not Ceffery. For the four other people, each of them has two options: either join the committee or not. Thus, in total there are $2^4 = \boxed{16}$ possibilities. 
+%\end{solution}
+
+
+\begin{problem}
+Lewis has $25$ mL of a $20\%$ acid solution and wants to make a $40\%$ acid solution. However, he accidentally adds $10$ mL of additional pure water before realizing he was supposed to add acid. Determine the amount of pure acid (in mL) he now needs to add in order to make his $40\%$ acid solution.
+\end{problem}
+
+\begin{answer}
+$\boxed{15}$ (mL)
+\end{answer}
+
+\begin{solution}
+The original solution consisted of $20\% \cdot 25 = 5$ mL of acid and $20$ mL water. The additional $10$ mL of water gives a total of $30$ mL of water. Since only pure acid is added, the amount of water remains constant. Thus the final $40\%$ acid solution will contain $30$ mL of water, which forms $60\%$ of the solution. Therefore $40\%$ of the solution will be $20$ mL acid, so $20 - 5 = \boxed{15}$ mL of pure acid needs to be added.
 \end{solution}
 
 
@@ -186,41 +282,15 @@ The key realization here is that $BC+DE+FG+HI = AJ = 10$ and $CD+IJ = AB = 6$. T
 
 
 \begin{problem}
-At a vending machine, 3 bags of chips and 2 bottles of water cost $\$2.35$, and 2 bags of chips and 3 bottles of water cost $\$2.65$. Compute the cost of 1 bag of chips and 1 bottle of water.
+Compute the units digit of $2017^{2016}$.
 \end{problem}
 
 \begin{answer}
-$\boxed{\$1}$
+$\boxed{1}$
 \end{answer}
 
 \begin{solution}
-Let $c$ be the cost of one bag of chips, and $w$ be the cost of one bottle of water. We have: \begin{center}$\begin{cases} 3c + 2w = 2.35 \\ 2c + 3w = 2.65 \end{cases}$\end{center} Adding these equations together gives $5c + 5w = 5$, so $c + w = \boxed{1}$. (Although not necessary, we can also solve for $w$ and $c$ explicitly to find $w = 0.35$ and $c = 0.65$.)
-\end{solution}
-
-
-\begin{problem}
-Lewis has $25$ mL of a $20\%$ acid solution and wants to make a $40\%$ acid solution. However, he accidentally adds $10$ mL of additional pure water before realizing he was supposed to add acid. Determine the amount of pure acid (in mL) he now needs to add in order to make his $40\%$ acid solution.
-\end{problem}
-
-\begin{answer}
-$\boxed{15}$ (mL)
-\end{answer}
-
-\begin{solution}
-The original solution consisted of $20\% \cdot 25 = 5$ mL of acid and $20$ mL water. The additional $10$ mL of water gives a total of $30$ mL of water. Since only pure acid is added, the amount of water remains constant. Thus the final $40\%$ acid solution will contain $30$ mL of water, which forms $60\%$ of the solution. Therefore $40\%$ of the solution will be $20$ mL acid, so $20 - 5 = \boxed{15}$ mL of pure acid needs to be added.
-\end{solution}
-
-
-\begin{problem}
-A scalene triangle has all integer side lengths, with two sides having lengths $1105$ and $2016$. Compute the number of possible lengths for the third side.
-\end{problem}
-
-\begin{answer}
-$\boxed{2207}$ (lengths)
-\end{answer}
-
-\begin{solution}
-If $x$ is the length of the third side, then by the Triangle Inequality we have $1105 + x > 2016$ and $2016 + 1105 > x$, so $x$ must be between $912$ and $3120$, inclusive. There are $3120 - 912 + 1 = 2209$ integers from $912$ through $3120$, but the triangle is scalene, so the third side cannot be $1105$ or $2016$. Hence there are $2209 - 2 = \boxed{2207}$ possible lengths for the third side.
+We may start by simply replacing $2017$ with its units digit $7$. By looking at the first few powers of $7$ (7, 49, 343, 2401, 16807), we see that the units digit cycles every $4$ powers in the pattern $7, 9, 3, 1, 7, 9, 3, 1, \ldots$. Since every fourth power has units digit $1$ and $2016$ is divisible by $4$, our answer is $\boxed{1}$.
 \end{solution}
 
 
@@ -234,20 +304,6 @@ $\boxed{\frac{8}{9}}$
 
 \begin{solution}
 We will use complementary counting. That is, we compute the probability that the product of the numbers rolled is not divisible by $2$ or $3$ and subtract that from $1$. In order to not be divisible by $2$ or $3$, each die can either show a $1$ or $5$, for a $\frac{2}{6} = \frac{1}{3}$ chance each. For two independent dice, the probability is $\frac{1}{3} \cdot \frac{1}{3}$. Therefore the probability that the product is divisible by $2$ or $3$ is $1 - \frac{1}{9} = \boxed{\frac{8}{9}}$.
-\end{solution}
-
-
-% I think this problem is incorrectly placed. It should be in the 10-20 range.
-\begin{problem}
-A regular $n$-sided regular polygon has $2015$ diagonals. Compute the number of diagonals in a regular $n+1$-sided polygon.
-\end{problem}
-
-\begin{answer}
-$\boxed{2079}$ (diagonals)
-\end{answer}
-
-\begin{solution}
-When thinking of a diagonal, we have to pick two non-adjacent vertices. Let's consider an $n$-sided regular polygon. To pick the first vertex, we have $n$ choices. For the next vertex, we must pick out of the vertices that are not next to this one, or itself. Thus, we have $n-3$ choices. We must also note that each diagonal has two endpoints, and thus is counted twice. Thus, the number of diagonals in an n-sided regular polygon is $\frac{n(n-3)}{2}$. In this problem, we know that the number of diagonals is $2015$. Thus, $\frac{n(n-3)}{2} = 2015$, so $n(n-3) = 4030$. Now, note that $60^2 = 3600 < 4030$, $70^2 = 4900 > 4030$ and that either $n$ or $n-3$ must be a multiple of 5. Furthermore, we can immediately eliminate $n = 68$ and $n = 63$ since $4030$ is not divisible by $4$. Thus, we see that $n = 65$ (we can plug this in to check). Now, we look at what the question asks for. The number of diagonals in a regular $n+1$-sided polygon is $\frac{(n+1)(n-2)}{2}$, from our previous formula. Thus, we see the answer is $\frac{66 \cdot 63}{2} = 2079$.
 \end{solution}
 
 
@@ -277,19 +333,6 @@ If there are $n$ students in the class, then we know that $n$ is divisible by $7
 \end{solution}
 
 
-\begin{problem}%[Kyle]
-Two tanks are used to collect water to drain a full swimming pool. When only tank A is opened, it takes $2$ hours for the pool to drain completely. When only tank B is opened, it takes $3$ hours for the pool to drain completely. Compute how many \textbf{minutes} it will take to drain the pool if both tanks are opened from the start.
-\end{problem}
-
-\begin{answer}
-$\boxed{72}$ (minutes)
-\end{answer}
-
-\begin{solution}
-We describe tanks A and B in terms of their individual drainage rates. Tank A has a rate of 1 swimming pool/2 hours. Tank B has a rate of 1 swimming pool/3 hours. Thus, the combined rate of tanks A and B working together is $\frac{1}{2} + \frac{1}{3} = \frac{5}{6}$, which can be rewritten in terms of our full pool: $\frac{5}{6} =$ 1 swimming pool/$\frac{6}{5}$ hours. hence it takes $\frac{6}{5}$ hours, or $\boxed{72}$ minutes, for both tanks to drain the pool.
-\end{solution}
-
-
 \begin{problem}%[Michael You]
 Rectangle $CDEF$ is inscribed in right triangle $ABC$ with right angle $C$ such that $D$ is on $AC$, $E$ is on $AB$, and $F$ is on $BC$. If $AD=3, CD=4$, and $DE=5$, find the area of $\triangle ABC$. Express your answer as a common fraction.
 %ADD ASYMPTOTE 
@@ -303,17 +346,28 @@ $\boxed{\frac{245}{6}}$
 Since $\triangle AED \sim \triangle ABC$, we see that $BC = \frac{ED}{AD} \cdot AC = \frac{5}{3} \cdot 7 = \frac{35}{3}$. Thus, the area is $\dfrac{7 \cdot \frac{35}{3}}{2} = \boxed{\frac{245}{6}}$
 \end{solution}
 
-
-\begin{problem}
-Alexander and Thomas are in the same history class. They are both on track to get either an A, A-, or B+. The probability that Alexander gets an A is $0.4$, the probability that Thomas gets an A is $0.5$, and the probability that neither gets an $A-$ but at least one gets an $A$ is $0.6$. Compute the probability that at least one of them gets an A but neither gets a B+. Express your answer as a decimal to the nearest tenth.
+\begin{problem}%[Lilian]
+If $\frac{1}{x} + \frac{1}{y} = 5$ and $x+y=10$, find the value of $x^2+y^2$.
 \end{problem}
 
 \begin{answer}
-$\boxed{0.3}$
+$\boxed{96}$
 \end{answer}
 
 \begin{solution}
-Let $P(x, y)$ denote the probability that Alexander gets grade $x$ and Thomas gets grade $y$. From the given information we have: \begin{center}$\begin{cases} P(A, A) + P(A, A-) + P(A, B+) = 0.4 \\ P(A, A) + P(A-, A) + P(B+, A) = 0.5 \\ P(A, A) + P(A, B+) + P(B+, A) = 0.6\end{cases}$\end{center} Adding the first two equations and then subtracting the third gives $P(A, A) + P(A-, A) + P(A, A-) = \boxed{0.3}$.
+We can rewrite the first equation as $\dfrac{x+y}{xy} = 5$. Thus, since $x+y = 10$, we know $xy = 2$. Now notice $x^2+y^2 = (x+y)^2 - 2xy = 10^2 - 2 \cdot 2 = \boxed{96}$.
+\end{solution}
+
+\begin{problem}%[Kyle]
+Two tanks are used to collect water to drain a full swimming pool. When only tank A is opened, it takes $2$ hours for the pool to drain completely. When only tank B is opened, it takes $3$ hours for the pool to drain completely. Compute how many \textbf{minutes} it will take to drain the pool if both tanks are opened from the start.
+\end{problem}
+
+\begin{answer}
+$\boxed{72}$ (minutes)
+\end{answer}
+
+\begin{solution}
+We describe tanks A and B in terms of their individual drainage rates. Tank A has a rate of 1 swimming pool/2 hours. Tank B has a rate of 1 swimming pool/3 hours. Thus, the combined rate of tanks A and B working together is $\frac{1}{2} + \frac{1}{3} = \frac{5}{6}$, which can be rewritten in terms of our full pool: $\frac{5}{6} =$ 1 swimming pool/$\frac{6}{5}$ hours. hence it takes $\frac{6}{5}$ hours, or $\boxed{72}$ minutes, for both tanks to drain the pool.
 \end{solution}
 
 
@@ -389,7 +443,6 @@ The point of tangency of the circles is the center of the rectangle. Therefore, 
 Now we consider the shaded right triangle in the diagram. If we let $r$ be the radius of the circle, the right triangle has legs of length $8-r$ and $9-r$ and hypotenuse of length $r$. Thus, by the Pythagorean Theorem, we have $(8-r)^2 + (9-r)^2 = r^2$, which reduces to $r^2 - 34r + 145 = 0$. Factoring this gives us $(r-5)(r-29) = 0$. The radius of the circle cannot be $29$ (the circle needs to fit inside a $16 \times 18$ box), so our only solution is $r = \boxed{5}$.
 \end{solution}
 
-
 \begin{problem}
 Find the least positive integer whose sum of positive divisors is $42$.
 \end{problem}
@@ -404,87 +457,37 @@ For a general number whose prime factorization is $p_1^{e_1}p_2^{e_2} \cdots p_k
 
 
 \begin{problem}
-In the figure below (not to scale), $BD$ bisects $\angle ABX$, $CD$ bisects $\angle ACX$, and $EG$ bisects $\angle AED$. Furthermore, $DE$ is parallel to $CX$. If $AB = 27$, $AC = 36$, and $AE = 12$, compute the length of $AG$.	
-\begin{figure}[h]
+Aaditya has a random number generator that randomly selects a real number $x$ uniformly at random between $0$ and $1$. He uses his random number generator twice to obtain two real numbers $a$ and $b$. What is the probability that $\dfrac{1}{6} < \dfrac{a}{a+b} < \dfrac{5}{6}$?
+\end{problem}
+
+\begin{answer}
+$\boxed{\frac{4}{5}}$
+\end{answer}
+
+\begin{solution}
+Since the random number generator has a continuous distribution we model this with geometric probability on a coordinate plane. Let the $x$-axis represent the value of $a$ and the $y$-axis that of $b$. Cross multiplying $\dfrac{1}{6} < \dfrac{x}{x+y}$ gives $x+y < 6x$, or $y < 5x$. Similarly, $\dfrac{x}{x+y} < \dfrac{5}{6}$ requires $6x < 5x+5y$, or $x < 5y$.
+
+\begin{figure}[H]
 	\begin{center}
 		\begin{asy}
-			unitsize(6);
-			defaultpen(fontsize(10pt));
-			pair A = (5, 10), B = (0, 0), C = (7, 0), D = (-3, 5), E = (6, 5), F = extension(A, B, D, E), G = (3.75, 7.5), X = (-3, 0);
-			draw(A--B--C--cycle);
-			draw(B--D--E--G);
-			draw(C--D);
-			draw(B--X);
-			label("A", A, N);
-			label("B", B, S);
-			label("C", C, S);
-			label("D", D, W);
-			label("E", E, E*0.1);
-			label("F", F, NW);
-			label("G", G, NW);
-			label("X", X, S);
+		import graph;
+		pair A = (0, 0), B = (0.2, 1), C = (1, 0.2);
+		unitsize(60);
+		xaxis("$x$", -0.1, 1.5);
+		yaxis("$y$",-0.1, 1.5);
+		real f(real x) {return 5*x;}
+		real g(real x) {return x/5;}
+
+		draw((0, 0) -- (1, 0) -- (1, 1) -- (0, 1) -- cycle);
+		draw(graph(f, 0, 0.3, operator ..));
+		draw(graph(g, 0, 1.3, operator ..));
+		filldraw(A -- B -- (1, 1) -- C -- cycle, gray);
+		label("1", (1, 0), S);
+		label("1", (0, 1), W);
 		\end{asy}
 	\end{center}
 \end{figure}
-\end{problem}
 
-\begin{answer}
-$\boxed{6}$
-\end{answer}
-
-\begin{solution}
-Triangles $AFE$ and $ABC$ are similar, so $\frac{AF}{AB} = \frac{AE}{AC} = \frac{1}{3}$, so $AF = 9$. Since $BC$ and $DE$ are parallel, $\angle XBD \cong \angle BDF$, but $BD$ also bisects $\angle FBX$, so triangle $FDB$ is isosceles with $DF = DB = 18$. Similarly, triangle $CDE$ is isosceles with $CE = DE = 24$, so $FE = DE - DF = 6$. By the angle bisector theorem, $\frac{AG}{FG} = \frac{AE}{FE} = \frac{12}{6} = 2$. Hence we have $AG = \frac{2}{3} AF = \boxed{6}$.
+Now we can graph both inequalities in the Cartesian plane. Note that our answer is simply the area of the region within the square $0 < x < 1$ and $0 < y < 1$ between the lines $y=5x$ and $y = \dfrac{1}{5}x$, divided by the area of the square, which is $1$. To find the successful area, we note that the complement area is two congruent triangles both which have area $\dfrac{1}{2} \cdot \dfrac{1}{5} \cdot 1  = \dfrac{1}{10}$, so our answer is $1 - 2 \cdot \dfrac{1}{10} = \boxed{\dfrac{4}{5}}$.
 \end{solution}
-
-
-\begin{problem}%[Lilian]
-If $\frac{1}{x} + \frac{1}{y} = 5$ and $x+y=10$, find the value of $x^2+y^2$.
-\end{problem}
-
-\begin{answer}
-$\boxed{96}$
-\end{answer}
-
-\begin{solution}
-Multiplying the two equations, we get $\frac{x}{y} + \frac{y}{x} + 2 = 50$. Subtracting by 2 and multiplying by $xy$, we see that $x^2+y^2 = 48xy$. Also, note that from squaring the second equation, $x^2+ y^2 +2xy = 100$. We now have a system of equations with $xy$ and $x^2+y^2$. Solving, we get our answer of $\boxed{96}$.
-\end{solution}
-
-
-\begin{problem} %[Aaditya?]
-Aaditya wants to find three positive numbers that sum to a number less than 1. He decides to use a random number generator three times to get three numbers between 0 and 1. If the random number generator has a continuous, uniform distribution, compute the probability that Aaditya finds three numbers that add up to a number less than 1. Express your answer as a common fraction.
-\end{problem}
-
-\begin{answer}
-$\boxed{\frac{1}{6}}$
-\end{answer}
-
-\begin{solution}
-This is a geometry problem in secret. Let the three numbers be $a$, $b$ and $c$. If we put these numbers on the coordinate axes, we see that the possible triplets represent a cube with side length 1. The region where $a + b + c$ is less than 1 ends up being a a tetrahedron with vertices $(0, 0, 0)$, $(0, 0, 1)$, $(1, 0, 0)$ and $(0, 1, 0)$. This tetrahedron has volume $\frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{3} = \frac{1}{6}$, which is the probability we are looking for.
-\end{solution}
-
-
-\begin{problem}%[Josh]
-Quadrilateral $ABCD$ has sides $AB = 1008$, $BC = 2016$, and $CD = 2016$. If $\angle BAD$ is a right angle and $m\angle ADC = \frac{1}{2}m\angle BCD$, compute $m\angle BCD$ in degrees.
-\end{problem}
-
-\begin{answer}
-$\boxed{108}$ (degrees)
-\end{answer}
-
-\begin{solution}
-% INCLUDE DIAGRAM
-Reflect the quadrilateral about side $AD$, and let $B'$ be the reflection of $B$ and $C'$ that of $C$. Then pentagon $BCDC'D'$ is equilateral. Furthermore, $\angle BCD \cong \angle CDC' \cong DC'B'$, and this construction is uniquely defined. Therefore $\angle BCD$ is an angle in a regular pentagon, so it measures $\boxed{108^\circ}$.
-\end{solution}
-
-
-\begin{problem}
-Let $P(n)$ be the probability that two randomly chosen positive integers less than $n$ are relatively prime. As $n$ increases, $P(n)$ approaches a fixed constant. Compute this constant. You may find the fact $\sum\limits_{k = 1}^\infty \frac{1}{k^2} = \frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \cdots = \frac{\pi^2}{6}$ useful. Express your answer in simplest form.
-\end{problem}
-\begin{answer}
-$\boxed{\frac{6}{\pi^2}}$
-\end{answer}
-\begin{solution}
-If two numbers are relatively prime, then there is no prime that divides both of them. The probability that both numbers are divisible by $2$ is $\frac{1}{2} \cdot \frac{1}{2}$, so the probability that $2$ does not divide both of them is $1 - \frac{1}{2^2}$. Continuing in this manner, we find the probability to be $\left(1 - \frac{1}{2^2}\right)\left(1 - \frac{1}{3^2}\right)\left(1 - \frac{1}{5^2}\right) \cdots$. Multiplying $\frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \cdots$ by $1 - \frac{1}{2^2}$, we get $(\frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \cdots) - \left(\frac{1}{2^2} + \frac{1}{4^2} + \frac{1}{6^2} + \cdots\right)$, canceling out all the terms with even denominators. Similarly, multiplying the result by $1 - \frac{1}{3^2}$ cancels out the remaining terms with denominators divisible by $3$, and so forth. In the end, we will be left with $1$. Thus, our desired answer is simply the reciprocal of $\sum\limits_{k = 1}^\infty \frac{1}{k^2} = \frac{\pi^2}{6}$, which is $\boxed{\frac{6}{\pi^2}}$.
-\end{solution}
-
 \end{document}
