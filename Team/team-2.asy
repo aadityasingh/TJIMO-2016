@@ -8,7 +8,13 @@ settings.embed=true;
 settings.toolbar=false;
 viewportmargin=(2,2);
 
-import graph;
-size(60);
-draw((0,0)--(0,2)--(1,2)--(1,1)--(2,1)--(2,0)--(0,0));
-draw(Circle((0.58578,0.58578),0.58578));
+size(70);
+defaultpen(fontsize(8pt));
+draw((0,0)--(0,2)--(2,2)--(2,0)--(0,0));
+draw((2,2)--(2,4)--(4,4)--(4,2)--(2,2));
+draw((1,0)--(1,2));
+draw((0,1)--(2,1));
+draw((3,2)--(3,4));
+draw((2,3)--(4,3));
+label("A", (0, 0), SW);
+label("B", (4, 4), NE);

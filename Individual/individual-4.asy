@@ -8,18 +8,17 @@ settings.embed=true;
 settings.toolbar=false;
 viewportmargin=(2,2);
 
-unitsize(6);
-defaultpen(fontsize(10pt));
-pair A = (5, 10), B = (0, 0), C = (7, 0), D = (-3, 5), E = (6, 5), F = extension(A, B, D, E), G = (3.75, 7.5), X = (-3, 0);
-draw(A--B--C--cycle);
-draw(B--D--E--G);
-draw(C--D);
-draw(B--X);
-label("A", A, N);
-label("B", B, S);
-label("C", C, S);
-label("D", D, W);
-label("E", E, E*0.1);
-label("F", F, NW);
-label("G", G, NW);
-label("X", X, S);
+import graph;
+pair A = (0, 0), B = (0.2, 1), C = (1, 0.2);
+unitsize(60);
+xaxis("$x$", -0.1, 1.5);
+yaxis("$y$",-0.1, 1.5);
+real f(real x) {return 5*x;}
+real g(real x) {return x/5;}
+
+draw((0, 0) -- (1, 0) -- (1, 1) -- (0, 1) -- cycle);
+draw(graph(f, 0, 0.3, operator ..));
+draw(graph(g, 0, 1.3, operator ..));
+filldraw(A -- B -- (1, 1) -- C -- cycle, gray);
+label("1", (1, 0), S);
+label("1", (0, 1), W);

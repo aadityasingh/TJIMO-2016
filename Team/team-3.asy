@@ -1,6 +1,6 @@
 if(!settings.multipleView) settings.batchView=false;
 settings.tex="pdflatex";
-defaultfilename="team-1";
+defaultfilename="team-3";
 if(settings.render < 0) settings.render=4;
 settings.outformat="";
 settings.inlineimage=true;
@@ -10,11 +10,14 @@ viewportmargin=(2,2);
 
 import graph;
 size(80);
-draw((0,0)--(1,1.732)--(2,0)--(0,0));
-draw((0,0)--(1, 0.5897)--(2,0));
+draw((0,0)--(0,2)--(2,2)--(2,0)--(0,0));
+draw(Circle((1,1),1));
+draw((0, 0) -- (2, 2));
 defaultpen(fontsize(10pt));
-label("A", (0, 0), SW);
-label("B", (1, 1.732), N);
+label("A", (0, 2), NW);
+label("B", (2, 2), NE);
 label("C", (2, 0), SE);
-label("O", (1, 0.5773), N);
-dot((1, 0.5773));
+label("D", (0, 0), SW);
+label("O", (1, 1), S);
+label("X", (1.707, 1.707), S);
+dot((1, 1));

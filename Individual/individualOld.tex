@@ -1,0 +1,490 @@
+\documentclass[11pt]{article}
+\usepackage[paperwidth=8.5in, paperheight=11in]{geometry}
+
+\usepackage{../tjimo}
+%\usepackage[pdftex]{graphicx}
+\usepackage{asymptote}
+
+%\begin{comment}
+\def\answer{\comment}
+\def\solution{\comment}
+\def\solutionone{\comment}
+\def\solutiontwo{\comment}
+%\end{comment}
+
+\newcommand{\sevenpoints}{Time limit: 60 minutes.}
+\newcommand{\righthead}{\fdbox{Round}{Individual}}
+
+\begin{document}
+
+
+\begin{problem}
+Compute $2^{0 + 1 \cdot 6} - 2^0 \cdot 1 + 7$.
+\end{problem}
+
+\begin{answer}
+$\boxed{70}$
+\end{answer}
+
+\begin{solution}
+We follow the order of operations to obtain \begin{align*} 2^{0 + 1 \cdot 6} - 2^0 \cdot 1 + 7 &= 2^{0 + 6} - 1 \cdot 1 + 7 \\ &= 2^6 - 1 + 7 \\ &= 64 - 1 + 7 = \boxed{70}. \end{align*}
+\end{solution}
+
+
+\begin{problem}
+The sum of the digits of the year $2016$ is $2 + 0 + 1 + 6 = 9$. Find the next year for which the sum of the digits is also $9$.
+\end{problem}
+
+\begin{answer}
+\boxed{2025}
+\end{answer}
+
+\begin{solution}
+Note that for $2017, 2018$, and $2019$ have sum of digits greater than $9$. The sum of digits of $2020$ is $4$, so we need $9-4 = 5$ more years. Hence $\boxed{2025}$ is the next year with sum of digits equal to $9$.
+\end{solution}
+
+
+\begin{problem}
+Compute $1 + 2 + 3 + \cdots +  63$.
+\end{problem}
+
+\begin{answer}
+$\boxed{2016}$
+\end{answer}
+
+\begin{solution}
+Note that $1 + 63 = 64$, $2 + 62 = 64$, $3 + 61 = 64$, and so forth. Therefore $(1 + 63) + (2 + 62) + (3 + 61) + \cdots (63 + 1) = 63 \cdot 64$ is twice the desired sum. Thus the desired sum is $\frac{1}{2} \cdot 63 \cdot 64 = 63 \cdot 32 = \boxed{2016}$.
+\end{solution}
+
+
+\begin{problem}%[Kyle]
+A certain circle has an area whose value is twice the value of its circumference. Compute the diameter of the circle.
+\end{problem}
+
+\begin{answer}
+$\boxed{8}$
+\end{answer}
+
+\begin{solution}
+The area of a circle with radius $r$ is $\pi r^2$, and its circumference is $2\pi r$. We have that $\pi r^2 = 2 \cdot 2\pi r$. Dividing by $\pi r$ on both sides leaves us with $r = 4$, so the diameter is $\boxed{8}$.
+\end{solution}
+
+
+\begin{problem}
+Polya has 5 shirts, each of a different color: red, green, blue, yellow, and black. He also has 4 pairs of pants of different colors: red, orange, yellow, green. If Polya does not want to wear pants of the same color as his shirt, compute the number of ways he can choose a shirt and a pair of pants.
+\end{problem}
+
+\begin{answer}
+$\boxed{17}$
+\end{answer}
+
+\begin{solution}
+Without the color restriction, there are simply $5 \cdot 4 = 20$ ways to choose a shirt and a pair of pants because there are $4$ pairs of pants from which to choose for each of $5$ shirts. There are $3$ invalid sets: red shirt/pants, yellow shirt/pants, and green shirt/pants. Hence there are $20 - 3 = \boxed{17}$ valid combinations.
+\end{solution}
+
+
+\begin{problem}
+Cantor normally takes $30$ minutes to walk to school at $3$ miles per hour. One day, he left home $10$ minutes later than usual. Compute the speed, in miles per hour, at which he must travel to still get to school on time. Express your answer as a decimal to the nearest tenth.
+\end{problem}
+
+\begin{answer}
+$\boxed{4.5}$ (miles per hour)
+\end{answer}
+
+\begin{solution}
+The distance from Cantor's home to school is $\frac{1}{2} \text{hour} \cdot 3 \text{mph} = 1.5$ miles. If he leaves home $10$ minutes late, then he needs travel the same distance in $20$ minutes, or $\frac{1}{3}$ hour. Therefore he must travel at $\frac{1.5 \text{ miles}}{\frac{1}{3} \text{ hour}} = \boxed{4.5}$ mph.
+\end{solution}
+
+
+\begin{problem}
+Compute the number of positive divisors of $2016$.
+\end{problem}
+
+\begin{answer}
+$\boxed{36}$
+\end{answer}
+
+\begin{solution}
+The prime factorization of $2016$ is $2^5 \cdot 3^2 \cdot 7$. A divisor of $2016$ will have $0, 1, 2, 3, 4$, or $5$ factors of $2$, for $6$ choices. Similarly, there are $3$ choices for the number of factors of $3$, and $2$ for factors of $7$. Therefore there are $6 \cdot 3 \cdot 2 = \boxed{36}$ positive divisors of $2016$.
+\end{solution}
+
+
+\begin{problem} %[NO NAME]
+Fermat is selling his very last and little mat. He decides to give a discount at $10\%$ off of the original price. After 2 weeks, no one bought his mat. Furious, he decided to give an additional $30\%$ off the discounted price. Finally, Andrew Wiles bought the mat for $\$20$. Find, to the nearest cent, the original price of the mat.
+\end{problem}
+
+\begin{answer}
+$\boxed{\$31.75}$
+\end{answer}
+
+\begin{solution}
+Let the original price be $x$. Then, we get the equation $(1-0.1) \cdot (1-0.3) \cdot x = 20$. Then, $x = \frac{20}{0.7 \cdot 0.9}$, so we get the answer of $x = \boxed{\$31.75}$.
+\end{solution}
+
+
+\begin{problem}
+%logic/puzzle question -not sure if this counts?
+%If the midterm and final exams of a TJ chemistry class are each worth $\frac{1}{9}$ of the overall grade, and each quarter grade is worth $\frac{7}{36}$ of the overall grade, and NAME gets an average of 91 across all four of his quarter grades, and gets a 73 on his midterm, what score must he receive on the final exam on the final exam in order to get an A (overall grade $\geq 92.5$)?
+
+Al, Bob, Carl, David, and Edward are standing side by side for a picture. Carl is to the left of Al, Bob is to the right of Edward, David is to the left of Edward, Edward is next to Al, and David is not next to Al. Furthermore, David is complaining that the people on his sides are not giving him enough space. Determine, from left to right, the order in which they are standing.
+%  AD  BCE    BADCE
+\end{problem}
+
+\begin{answer}
+%$122.5$
+$\boxed{\text{Carl, David, Edward, Al, Bob}}$
+\end{answer}
+
+\begin{solution}
+We know that the order for Al and Carl is Carl, Al, and the order for Bob, David, and Edward is David, Edward, Bob. Since David is between two people, Carl must be farthest left, so we have Carl, David, Edward, Bob. Finally, since Edward is next to Al and David is not, Al must go between Edward and Bob, yielding $\boxed{\text{Carl, David, Edward, Al, Bob}}$.
+\end{solution}
+
+
+\begin{problem}
+Compute the units digit of $2017^{2016}$.
+\end{problem}
+
+\begin{answer}
+$\boxed{1}$
+\end{answer}
+
+\begin{solution}
+We may start by simply replacing $2017$ with its units digit $7$. By looking at the first few powers of $7$ (7, 49, 343, 2401, 16807), we see that the units digit cycles every $4$ powers in the pattern $7, 9, 3, 1, 7, 9, 3, 1, \ldots$. Since every fourth power has units digit $1$ and $2016$ is divisible by $4$, our answer is $\boxed{1}$.
+\end{solution}
+
+
+\begin{problem}%[Joie]
+Find the perimeter of the figure below, where $AB = 6$, $AJ = 10$, $GH = 1$, and all interior angles either measure $90^\circ$ or $270^\circ$.
+\begin{figure}[h]
+	\begin{center}
+		\begin{asy}
+		unitsize(10);
+		pair A = (0, 0), B = (0, 6), C = (4, 6), D = (4, 4), E= (6, 4), F = (6, 5), G = (8, 5), H = (8, 4), I = (10, 4), J = (10, 0);
+		draw(A--B--C--D--E--F--G--H--I--J--cycle);
+		label("A", A, S);
+		label("B", B, N);
+		label("C", C, N);
+		label("D", D, S);
+		label("E", E, S);
+		label("F", F, N);
+		label("G", G, N);
+		label("H", H, S);
+		label("I", I, N);
+		label("J", J, S);
+		\end{asy}
+	\end{center}
+\end{figure}
+\end{problem}
+
+\begin{answer}
+$\boxed{34}$
+\end{answer}
+
+\begin{solution}
+The key realization here is that $BC+DE+FG+HI = AJ = 10$ and $CD+IJ = AB = 6$. Thus, the perimeter is $2(10+6) + EF+GH=32 + 1 + 1 = \boxed{34}$.
+\end{solution}
+
+
+\begin{problem}
+At a vending machine, 3 bags of chips and 2 bottles of water cost $\$2.35$, and 2 bags of chips and 3 bottles of water cost $\$2.65$. Compute the cost of 1 bag of chips and 1 bottle of water.
+\end{problem}
+
+\begin{answer}
+$\boxed{\$1}$
+\end{answer}
+
+\begin{solution}
+Let $c$ be the cost of one bag of chips, and $w$ be the cost of one bottle of water. We have: \begin{center}$\begin{cases} 3c + 2w = 2.35 \\ 2c + 3w = 2.65 \end{cases}$\end{center} Adding these equations together gives $5c + 5w = 5$, so $c + w = \boxed{1}$. (Although not necessary, we can also solve for $w$ and $c$ explicitly to find $w = 0.35$ and $c = 0.65$.)
+\end{solution}
+
+
+\begin{problem}
+Lewis has $25$ mL of a $20\%$ acid solution and wants to make a $40\%$ acid solution. However, he accidentally adds $10$ mL of additional pure water before realizing he was supposed to add acid. Determine the amount of pure acid (in mL) he now needs to add in order to make his $40\%$ acid solution.
+\end{problem}
+
+\begin{answer}
+$\boxed{15}$ (mL)
+\end{answer}
+
+\begin{solution}
+The original solution consisted of $20\% \cdot 25 = 5$ mL of acid and $20$ mL water. The additional $10$ mL of water gives a total of $30$ mL of water. Since only pure acid is added, the amount of water remains constant. Thus the final $40\%$ acid solution will contain $30$ mL of water, which forms $60\%$ of the solution. Therefore $40\%$ of the solution will be $20$ mL acid, so $20 - 5 = \boxed{15}$ mL of pure acid needs to be added.
+\end{solution}
+
+
+\begin{problem}
+A scalene triangle has all integer side lengths, with two sides having lengths $1105$ and $2016$. Compute the number of possible lengths for the third side.
+\end{problem}
+
+\begin{answer}
+$\boxed{2207}$ (lengths)
+\end{answer}
+
+\begin{solution}
+If $x$ is the length of the third side, then by the Triangle Inequality we have $1105 + x > 2016$ and $2016 + 1105 > x$, so $x$ must be between $912$ and $3120$, inclusive. There are $3120 - 912 + 1 = 2209$ integers from $912$ through $3120$, but the triangle is scalene, so the third side cannot be $1105$ or $2016$. Hence there are $2209 - 2 = \boxed{2207}$ possible lengths for the third side.
+\end{solution}
+
+
+\begin{problem}
+Two standard six-sided dice are rolled. Compute the probability that the product of the numbers rolled is divisible by $2$ or $3$. Express your answer as a common fraction.
+\end{problem}
+
+\begin{answer} % Fixed problem statmeent i think
+$\boxed{\frac{8}{9}}$
+\end{answer}
+
+\begin{solution}
+We will use complementary counting. That is, we compute the probability that the product of the numbers rolled is not divisible by $2$ or $3$ and subtract that from $1$. In order to not be divisible by $2$ or $3$, each die can either show a $1$ or $5$, for a $\frac{2}{6} = \frac{1}{3}$ chance each. For two independent dice, the probability is $\frac{1}{3} \cdot \frac{1}{3}$. Therefore the probability that the product is divisible by $2$ or $3$ is $1 - \frac{1}{9} = \boxed{\frac{8}{9}}$.
+\end{solution}
+
+
+% I think this problem is incorrectly placed. It should be in the 10-20 range.
+\begin{problem}
+A regular $n$-sided regular polygon has $2015$ diagonals. Compute the number of diagonals in a regular $n+1$-sided polygon.
+\end{problem}
+
+\begin{answer}
+$\boxed{2079}$ (diagonals)
+\end{answer}
+
+\begin{solution}
+When thinking of a diagonal, we have to pick two non-adjacent vertices. Let's consider an $n$-sided regular polygon. To pick the first vertex, we have $n$ choices. For the next vertex, we must pick out of the vertices that are not next to this one, or itself. Thus, we have $n-3$ choices. We must also note that each diagonal has two endpoints, and thus is counted twice. Thus, the number of diagonals in an n-sided regular polygon is $\frac{n(n-3)}{2}$. In this problem, we know that the number of diagonals is $2015$. Thus, $\frac{n(n-3)}{2} = 2015$, so $n(n-3) = 4030$. Now, note that $60^2 = 3600 < 4030$, $70^2 = 4900 > 4030$ and that either $n$ or $n-3$ must be a multiple of 5. Furthermore, we can immediately eliminate $n = 68$ and $n = 63$ since $4030$ is not divisible by $4$. Thus, we see that $n = 65$ (we can plug this in to check). Now, we look at what the question asks for. The number of diagonals in a regular $n+1$-sided polygon is $\frac{(n+1)(n-2)}{2}$, from our previous formula. Thus, we see the answer is $\frac{66 \cdot 63}{2} = 2079$.
+\end{solution}
+
+
+\begin{problem}
+Zermelo, Zorn, and Zsigmondy are in a race. If Zermelo always beats Zsigmondy, but otherwise ties are allowed, find the number of possible results. For example, Zorn and Zermelo at a tie for first and Zsigmondy second is one such result.
+\end{problem}
+
+\begin{answer}
+$\boxed{5}$
+\end{answer}
+
+\begin{solution}
+Suppose only Zermelo is first. Then Zorn can beat, tie, or lose to Zsigmondy, for $3$ possibilities. If only Zorn is first, then Zermelo must be second and Zsigmondy third. Finally, if Zermelo and Zorn are tied for first, then Zsigmondy must be second. This gives a total of $\boxed{5}$ possible results.
+\end{solution}
+
+
+\begin{problem}
+Dr. Os's class can normally be split evenly into equal groups of $7$ when everyone is present. When $2$ people are absent and they try to split into groups of $9$, they are $1$ person short of having equal groups. Find the minimum number of students in the entire class.
+\end{problem}
+
+\begin{answer}
+$\boxed{28}$ (students)
+\end{answer}
+
+\begin{solution}
+If there are $n$ students in the class, then we know that $n$ is divisible by $7$ and $n-1$ is divisible by $9$, or $n$ is $1$ more than a multiple of $9$. Simply listing out multiples of $7$, we have $7, 14, 21, 28, \ldots$. We see that $\boxed{28}$ is the first multiple of $7$ that is $1$ more than a multiple of $9$, so that is our answer.
+\end{solution}
+
+
+\begin{problem}%[Kyle]
+Two tanks are used to collect water to drain a full swimming pool. When only tank A is opened, it takes $2$ hours for the pool to drain completely. When only tank B is opened, it takes $3$ hours for the pool to drain completely. Compute how many \textbf{minutes} it will take to drain the pool if both tanks are opened from the start.
+\end{problem}
+
+\begin{answer}
+$\boxed{72}$ (minutes)
+\end{answer}
+
+\begin{solution}
+We describe tanks A and B in terms of their individual drainage rates. Tank A has a rate of 1 swimming pool/2 hours. Tank B has a rate of 1 swimming pool/3 hours. Thus, the combined rate of tanks A and B working together is $\frac{1}{2} + \frac{1}{3} = \frac{5}{6}$, which can be rewritten in terms of our full pool: $\frac{5}{6} =$ 1 swimming pool/$\frac{6}{5}$ hours. hence it takes $\frac{6}{5}$ hours, or $\boxed{72}$ minutes, for both tanks to drain the pool.
+\end{solution}
+
+
+\begin{problem}%[Michael You]
+Rectangle $CDEF$ is inscribed in right triangle $ABC$ with right angle $C$ such that $D$ is on $AC$, $E$ is on $AB$, and $F$ is on $BC$. If $AD=3, CD=4$, and $DE=5$, find the area of $\triangle ABC$. Express your answer as a common fraction.
+%ADD ASYMPTOTE 
+\end{problem}
+
+\begin{answer}
+$\boxed{\frac{245}{6}}$
+\end{answer}
+
+\begin{solution}
+Since $\triangle AED \sim \triangle ABC$, we see that $BC = \frac{ED}{AD} \cdot AC = \frac{5}{3} \cdot 7 = \frac{35}{3}$. Thus, the area is $\dfrac{7 \cdot \frac{35}{3}}{2} = \boxed{\frac{245}{6}}$
+\end{solution}
+
+
+\begin{problem}
+Alexander and Thomas are in the same history class. They are both on track to get either an A, A-, or B+. The probability that Alexander gets an A is $0.4$, the probability that Thomas gets an A is $0.5$, and the probability that neither gets an $A-$ but at least one gets an $A$ is $0.6$. Compute the probability that at least one of them gets an A but neither gets a B+. Express your answer as a decimal to the nearest tenth.
+\end{problem}
+
+\begin{answer}
+$\boxed{0.3}$
+\end{answer}
+
+\begin{solution}
+Let $P(x, y)$ denote the probability that Alexander gets grade $x$ and Thomas gets grade $y$. From the given information we have: \begin{center}$\begin{cases} P(A, A) + P(A, A-) + P(A, B+) = 0.4 \\ P(A, A) + P(A-, A) + P(B+, A) = 0.5 \\ P(A, A) + P(A, B+) + P(B+, A) = 0.6\end{cases}$\end{center} Adding the first two equations and then subtracting the third gives $P(A, A) + P(A-, A) + P(A, A-) = \boxed{0.3}$.
+\end{solution}
+
+
+\begin{problem}%[Kyle/Fred]
+Compute the smallest positive integer value of $n$ such that $n!$ ($n$ factorial) ends in $16$ consecutive zeros, where $n! = 1 \cdot 2 \cdot \ldots \cdot n$.
+\end{problem}
+
+\begin{answer}
+$\boxed{70}$
+\end{answer}
+
+\begin{solution}
+The number of zeros at the end of a number $n$ is equal to the largest power $k$ such that $10^k$ is a factor of $n$. We solve this by incrementing $n$ until $n$ acquires all $16$ zeros. We will always multiply by a multiple of $2$ more frequently than a multiple of $5$, so every time we multiply our current factorial by a multiple of $5^p$, we increase the number of zeros by $p$. The numbers $5, 10, 15$, and $20$ each add one zero. Next, $25$ adds two zeros, so $25!$ has 6 terminal zeros. We add another $6$ zeros to the end by the time we reach $50!$, with $12$ terminal zeros. We add four more zeros to reach $16$ with the numbers $55, 60, 65$, and $70$. Hence, $70!$ is the smallest factorial ending in $16$ zeros, so $n = \boxed{70}$.
+\end{solution}
+
+
+\begin{problem}%[Michael You]
+Two cars are traveling towards each other, with car A traveling at 70 km/h and car B traveling at 65 km/hr. Initially, they are 15 km apart, and a bird begins to fly from car A to car B. When the bird reaches car B, it immediately starts flying back to car A. The bird continues to do this until the cars collide. Given that the bird flies at a speed of 20 km/h, compute the total distance the bird will fly before stopping. Express your answer as a common fraction.
+\end{problem}
+
+\begin{answer}
+$\boxed{\frac{20}{9}}$ (km)
+\end{answer}
+
+\begin{solution}
+The amount of time the bird flies for is the same amount of time it takes for the cars to collide. The cars will collide in $\frac{15}{70+65}= \frac{1}{9}$ h. Thus, the distance is $20 \cdot \frac{1}{9} = \boxed{\frac{20}{9}}$
+\end{solution}
+
+
+\begin{problem}%[Kyle]
+Two circles with equal radii are placed inside a $16 \times 18$ rectangular box as shown in the diagram. Each circle touches two walls of the box. The two circles are also tangent to each other at one point inside the box. Compute the radius of the circles.
+\begin{figure}[h]
+    \begin{center}
+        \begin{asy}
+        import graph;
+        unitsize(3);
+        draw((0, 0) -- (16, 0) -- (16, 18) -- (0, 18) -- cycle);
+        draw(Circle((5, 5), 5));
+        draw(Circle((11, 13), 5));
+        label("16", (8, 0), S);
+        label("18", (0, 9), W);
+        \end{asy}
+    \end{center}
+\end{figure}
+\end{problem}
+
+\begin{answer}
+$\boxed{5}$
+\end{answer}
+
+\begin{solution}
+The point of tangency of the circles is the center of the rectangle. Therefore, we can compress the original rectangle by a factor of $\frac{1}{2}$ to make one of its corners lie on the tangency point of the two circles, as shown. Then we add in line segments representing the radii of one of our circles, each radius directed toward a different point of tangency.
+
+\begin{figure}[h]
+    \begin{center}
+        \begin{asy}
+        import graph;
+        unitsize(4);
+        draw((0, 0) -- (16, 0) -- (16, 18) -- (0, 18) -- cycle);
+        draw((5, 5) -- (8, 9));
+        draw((5, 5) -- (5, 0));
+        draw((5, 5) -- (0, 5));
+        draw((0, 9) -- (8, 9) -- (8, 0));
+        filldraw((5, 5) -- (8, 5) -- (8, 9) -- cycle, grey);
+        draw(Circle((5, 5), 5));
+        draw(Circle((11, 13), 5));
+        label("8", (4, 0), S);
+        label("9", (0, 4.5), W);
+        \end{asy}
+    \end{center}
+\end{figure} 
+
+Now we consider the shaded right triangle in the diagram. If we let $r$ be the radius of the circle, the right triangle has legs of length $8-r$ and $9-r$ and hypotenuse of length $r$. Thus, by the Pythagorean Theorem, we have $(8-r)^2 + (9-r)^2 = r^2$, which reduces to $r^2 - 34r + 145 = 0$. Factoring this gives us $(r-5)(r-29) = 0$. The radius of the circle cannot be $29$ (the circle needs to fit inside a $16 \times 18$ box), so our only solution is $r = \boxed{5}$.
+\end{solution}
+
+
+\begin{problem}
+Find the least positive integer whose sum of positive divisors is $42$.
+\end{problem}
+
+\begin{answer}
+$\boxed{20}$
+\end{answer}
+
+\begin{solution}
+For a general number whose prime factorization is $p_1^{e_1}p_2^{e_2} \cdots p_k^{e_k}$, the sum of its divisors is $(1 + p_1 + p_1^2 \cdots + p_1^{e_1}) \cdots (1 + p_k + \cdots + p_k^{e_k})$. We have $42 = 2 \cdot 3 \cdot 7$, but $2$ is not workable ($1+1$ is invalid as $1$ is not prime), so the possible groupings are $6 \cdot 7 = (1 + 5)(1 + 2 + 4)$, $3 \cdot 14 = (1 + 2)(1 + 13) $, and $42 = 1 + 41$. Of these, the least option is $(1+5)(1+2+4)$, which corresponds to the number $5 \cdot 4 = \boxed{20}$.
+\end{solution}
+
+
+\begin{problem}
+In the figure below (not to scale), $BD$ bisects $\angle ABX$, $CD$ bisects $\angle ACX$, and $EG$ bisects $\angle AED$. Furthermore, $DE$ is parallel to $CX$. If $AB = 27$, $AC = 36$, and $AE = 12$, compute the length of $AG$.	
+\begin{figure}[h]
+	\begin{center}
+		\begin{asy}
+			unitsize(6);
+			defaultpen(fontsize(10pt));
+			pair A = (5, 10), B = (0, 0), C = (7, 0), D = (-3, 5), E = (6, 5), F = extension(A, B, D, E), G = (3.75, 7.5), X = (-3, 0);
+			draw(A--B--C--cycle);
+			draw(B--D--E--G);
+			draw(C--D);
+			draw(B--X);
+			label("A", A, N);
+			label("B", B, S);
+			label("C", C, S);
+			label("D", D, W);
+			label("E", E, E*0.1);
+			label("F", F, NW);
+			label("G", G, NW);
+			label("X", X, S);
+		\end{asy}
+	\end{center}
+\end{figure}
+\end{problem}
+
+\begin{answer}
+$\boxed{6}$
+\end{answer}
+
+\begin{solution}
+Triangles $AFE$ and $ABC$ are similar, so $\frac{AF}{AB} = \frac{AE}{AC} = \frac{1}{3}$, so $AF = 9$. Since $BC$ and $DE$ are parallel, $\angle XBD \cong \angle BDF$, but $BD$ also bisects $\angle FBX$, so triangle $FDB$ is isosceles with $DF = DB = 18$. Similarly, triangle $CDE$ is isosceles with $CE = DE = 24$, so $FE = DE - DF = 6$. By the angle bisector theorem, $\frac{AG}{FG} = \frac{AE}{FE} = \frac{12}{6} = 2$. Hence we have $AG = \frac{2}{3} AF = \boxed{6}$.
+\end{solution}
+
+
+\begin{problem}%[Lilian]
+If $\frac{1}{x} + \frac{1}{y} = 5$ and $x+y=10$, find the value of $x^2+y^2$.
+\end{problem}
+
+\begin{answer}
+$\boxed{96}$
+\end{answer}
+
+\begin{solution}
+Multiplying the two equations, we get $\frac{x}{y} + \frac{y}{x} + 2 = 50$. Subtracting by 2 and multiplying by $xy$, we see that $x^2+y^2 = 48xy$. Also, note that from squaring the second equation, $x^2+ y^2 +2xy = 100$. We now have a system of equations with $xy$ and $x^2+y^2$. Solving, we get our answer of $\boxed{96}$.
+\end{solution}
+
+
+\begin{problem} %[Aaditya?]
+Aaditya wants to find three positive numbers that sum to a number less than 1. He decides to use a random number generator three times to get three numbers between 0 and 1. If the random number generator has a continuous, uniform distribution, compute the probability that Aaditya finds three numbers that add up to a number less than 1. Express your answer as a common fraction.
+\end{problem}
+
+\begin{answer}
+$\boxed{\frac{1}{6}}$
+\end{answer}
+
+\begin{solution}
+This is a geometry problem in secret. Let the three numbers be $a$, $b$ and $c$. If we put these numbers on the coordinate axes, we see that the possible triplets represent a cube with side length 1. The region where $a + b + c$ is less than 1 ends up being a a tetrahedron with vertices $(0, 0, 0)$, $(0, 0, 1)$, $(1, 0, 0)$ and $(0, 1, 0)$. This tetrahedron has volume $\frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{3} = \frac{1}{6}$, which is the probability we are looking for.
+\end{solution}
+
+
+\begin{problem}%[Josh]
+Quadrilateral $ABCD$ has sides $AB = 1008$, $BC = 2016$, and $CD = 2016$. If $\angle BAD$ is a right angle and $m\angle ADC = \frac{1}{2}m\angle BCD$, compute $m\angle BCD$ in degrees.
+\end{problem}
+
+\begin{answer}
+$\boxed{108}$ (degrees)
+\end{answer}
+
+\begin{solution}
+% INCLUDE DIAGRAM
+Reflect the quadrilateral about side $AD$, and let $B'$ be the reflection of $B$ and $C'$ that of $C$. Then pentagon $BCDC'D'$ is equilateral. Furthermore, $\angle BCD \cong \angle CDC' \cong DC'B'$, and this construction is uniquely defined. Therefore $\angle BCD$ is an angle in a regular pentagon, so it measures $\boxed{108^\circ}$.
+\end{solution}
+
+
+\begin{problem}
+Let $P(n)$ be the probability that two randomly chosen positive integers less than $n$ are relatively prime. As $n$ increases, $P(n)$ approaches a fixed constant. Compute this constant. You may find the fact $\sum\limits_{k = 1}^\infty \frac{1}{k^2} = \frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \cdots = \frac{\pi^2}{6}$ useful. Express your answer in simplest form.
+\end{problem}
+\begin{answer}
+$\boxed{\frac{6}{\pi^2}}$
+\end{answer}
+\begin{solution}
+If two numbers are relatively prime, then there is no prime that divides both of them. The probability that both numbers are divisible by $2$ is $\frac{1}{2} \cdot \frac{1}{2}$, so the probability that $2$ does not divide both of them is $1 - \frac{1}{2^2}$. Continuing in this manner, we find the probability to be $\left(1 - \frac{1}{2^2}\right)\left(1 - \frac{1}{3^2}\right)\left(1 - \frac{1}{5^2}\right) \cdots$. Multiplying $\frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \cdots$ by $1 - \frac{1}{2^2}$, we get $(\frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \cdots) - \left(\frac{1}{2^2} + \frac{1}{4^2} + \frac{1}{6^2} + \cdots\right)$, canceling out all the terms with even denominators. Similarly, multiplying the result by $1 - \frac{1}{3^2}$ cancels out the remaining terms with denominators divisible by $3$, and so forth. In the end, we will be left with $1$. Thus, our desired answer is simply the reciprocal of $\sum\limits_{k = 1}^\infty \frac{1}{k^2} = \frac{\pi^2}{6}$, which is $\boxed{\frac{6}{\pi^2}}$.
+\end{solution}
+
+\end{document}

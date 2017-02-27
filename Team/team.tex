@@ -21,10 +21,10 @@
 If the prime factorization of $60^6$ is  $2^a \cdot 3^b \cdot 5^c$, where $a,b,c$ are positive integers, find $a+b+c$.
 \end{problem}
 \begin{answer}
-33
+$\boxed{24}$
 \end{answer}
 \begin{solution}
-Notice $60^6 = (2^2 \cdot 3 \cdot 5)^6 = 2^{12} \cdot 3^6 \cdot 5^6$. Thus our answer is $12 + 6 + 6 = 24$.
+Notice $60^6 = (2^2 \cdot 3 \cdot 5)^6 = 2^{12} \cdot 3^6 \cdot 5^6$. Thus our answer is $12 + 6 + 6 = \boxed{24}$.
 \end{solution}
 
 
@@ -32,118 +32,148 @@ Notice $60^6 = (2^2 \cdot 3 \cdot 5)^6 = 2^{12} \cdot 3^6 \cdot 5^6$. Thus our a
 A bag contains marbles of three colors: 10 red marbles, p green marbles, and 55 blue marbles. The probability of randomly selecting a green marble from the bag is $\dfrac{p}{90}$. Find the probability of selecting a blue marble.
 \end{problem}
 \begin{answer}
-$\dfrac{11}{18}$
+$\boxed{\dfrac{11}{18}}$
 \end{answer}
 \begin{solution}
- Notice the probability of selecting a green marble from the bag is $\dfrac{p}{55 + 10 + p} = \dfrac{p}{65 + p}$. If this is equal to $\dfrac{p}{90}$, then $65 + p = 90$ and $p = 25$, so the probability of selecting a blue marble is $\dfrac{55}{10 + 25 + 55} = \dfrac{55}{90} = \dfrac{11}{18}$.
+ Notice the probability of selecting a green marble from the bag is $\dfrac{p}{55 + 10 + p} = \dfrac{p}{65 + p}$. If this is equal to $\dfrac{p}{90}$, then $65 + p = 90$ and $p = 25$, so the probability of selecting a blue marble is $\dfrac{55}{10 + 25 + 55} = \dfrac{55}{90} = \boxed{\dfrac{11}{18}}$.
 \end{solution}
 
-
 \begin{problem}
-Joe lists all the three digit positive integers on a sheet of paper, starting with $100$ and ending with $999$. However, he skips all the integers that are divisible by three and all the integers that are divisible by five. How many positive integers does he count?
-\end{problem}
-\begin{answer}
-\boxed{480}
-\end{answer}
-\begin{solution}
- We use the Principle of Inclusion-Exclusion (PIE). There are $900$ total positive integers. We subtract off the $300$ multiples of three and $180$ multiples of five, and add the $60$ multiples of $15$ to obtain $900 - 300 - 180 + 60 = \boxed{480}$.
-\end{solution}
-
-
-\begin{problem}
-Given that $x,y$ are positive real numbers satisfying $x + \dfrac{1}{y} = 5$ and $y + \dfrac{1}{x} = 7$, find $xy + \dfrac{1}{xy}$.
-\end{problem}
-\begin{answer}
-$33$
-\end{answer}
-\begin{solution}
- Notice $\left(x + \dfrac{1}{y}\right)\left(y + \dfrac{1}{x}\right) = xy + 2 + \dfrac{1}{xy}$ which is also equal to $5 \cdot 7 = 35$, so $xy + \dfrac{1}{xy} = 35-2 = \boxed{33}$.
-\end{solution}
-
-
-\begin{problem}
-For how many positive integers $1 \le x \le 143$ is $x^2 + x^3$ the square of an integer? 
-\end{problem}
-\begin{answer}
-$\boxed{11}$
-\end{answer}
-\begin{solution}
-If $x^2 + x^3 = x^2(x+1)$ is the square of an integer, then $(x+1)$ must be the square of an integer. We also know $2 \le x+1 \le 144$. Thus $x+1 \in \{2^2, 3^2, \cdots, 12^2\}$, so there are $11$ possible values of $x$.
-\end{solution}
-
-
-\begin{problem}
-Let triangle ABC have $AB = 7$, $BC = 24$, and $CA = 25$. Let $X$ be the midpoint of $AB$, let $Y$ be the midpoint of $BC$, and let $Z$ be the midpoint of $CA$. Find the area of $XYZ$. 
-\end{problem}
-\begin{answer}
-$28$. 
-\end{answer}
-\begin{solution}
-The area of the middle triangle is $\dfrac{1}{4}$ the area of the outer triangle, so our answer is $\dfrac{1}{4} \cdot \dfrac{1}{2} \cdot 7 \cdot 24 = 21$. 
-\end{solution}
-
-
-\begin{problem}
-How many distinct ways are there to place the positive integers $1, 2, 3, 4, 5$ into the squares below such that every integer is used exactly once, each square contains exactly one integer, the horizontal row of three integers is in either increasing or decreasing order, and the vertical column of three integers is in either increasing or decreasing order?
+The area of equilateral triangle $ABC$ (AB = BC = CA) is $300$. $O$ is the center of the triangle, as shown below. 
 \begin{figure}[H]
-	\begin{center}
-	\begin{asy}
-	size(40);
-	draw((0,0)--(0,1)--(1,1)--(1,2)--(2,2)--(2,1)--(3,1)--(3,0)--(2,0)--(2,-1)--(1,-1)--(1,0)--(0,0));
-	draw((1,1)--(1,0)--(2,0)--(2,1)--(1,1));
-	\end{asy}
-	\end{center}
-\end{figure}
-\end{problem}
-
-\begin{answer}
-16
-\end{answer}
-\begin{solution}
-It is easy to deduce the middle square must be $3$. Then the left and right squares must be one of ${1,2}$ and one of ${4,5}$ in some order, and then the top and bottom must be the remaining two in some order. This gives a total of $2 \cdot 2 \cdot 2 \cdot 2 = 16$ possibilities.
-\end{solution}
-
-
-\begin{problem}
-If $x,y$ are distinct real numbers such that \[ x^2 + 4y = 25 \] \[y^2 + 4x = 25\] find $x+y$.
-\end{problem}
-\begin{answer}
-4
-\end{answer}
-\begin{solution}
-Subtracting the equations gives $x^2 - y^2 + 4y - 4x = 0$ or $(x-y)(x+y-4) = 0$. Since $x \ne y$, we see $x+y -4 = 0$ or $x+y = 4$. 
-\end{solution}
-
-
-\begin{problem}
-Suppose the area of this L-shaped figure is $300$. Find the radius of the largest circle that can fit inside this figure. Express your answer in the form $a - b\sqrt{2}$.
-\begin{figure}[H]
-	\begin{center}
-		\begin{asy}
-		import graph;
-		size(60);
-		draw((0,0)--(0,2)--(1,2)--(1,1)--(2,1)--(2,0)--(0,0));
-		draw(Circle((0.58578,0.58578),0.58578));
+\begin{center}
+\begin{asy}
+import graph;
+size(80);
+draw((0,0)--(1,1.732)--(2,0)--(0,0));
+draw((0,0)--(1, 0.5897)--(2,0));
+defaultpen(fontsize(10pt));
+label("A", (0, 0), SW);
+label("B", (1, 1.732), N);
+label("C", (2, 0), SE);
+label("O", (1, 0.5773), N);
+dot((1, 0.5773));
 \end{asy}
-	\end{center}
-\end{figure}  
+\end{center}
+\end{figure}
+Find the area of triangle $AOC$. 
 \end{problem}
-
 \begin{answer}
-$20-10\sqrt2$
+$\boxed{100}$
 \end{answer}
 \begin{solution}
-If the radius of the circle is $r$, notice the diagonal of the middle of the three squares is $r + \sqrt2 r$. The side length satisfies $3s^2 = 300$ so $s = 10$. Thus $r(1 + \sqrt2) = 10\sqrt2$ and $r = 10\sqrt2 (\sqrt2 - 1) = 20 - 10\sqrt{2}$. 
+Notice by symmetry $[AOB] = [BOC] = [COA]$ and they sum to $300$ so our answer is $\boxed{100}$.
+\end{solution}
+
+
+\begin{problem}
+Given that $x,y$ are positive real numbers satisfying $x + \dfrac{1}{y} = 5$ and $y + \dfrac{1}{x} = 7$, find $\dfrac{x}{y}$.
+\end{problem}
+\begin{answer}
+$\boxed{\dfrac{5}{7}}$
+\end{answer}
+\begin{solution}
+ We can clear denominators in both equations to obtain $xy + 1 = 5y$ and $xy + 1 = 7x$. Thus, $5y = 7x$ and we see $\dfrac{x}{y} = \boxed{\dfrac{5}{7}}$.
+\end{solution}
+
+
+\begin{problem}
+Let right triangle ABC have $AB = 6$, $BC = 8$, and $CA = 10$. Let $X$ be the midpoint of $AB$, let $Y$ be the midpoint of $BC$, and let $Z$ be the midpoint of $CA$. Find the area of $XYZ$. 
+\end{problem}
+\begin{answer}
+$\boxed{6}$ 
+\end{answer}
+\begin{solution}
+The area of the middle triangle is $\dfrac{1}{4}$ the area of the outer triangle, so our answer is $\dfrac{1}{4} \cdot \dfrac{1}{2} \cdot 6 \cdot 8 = \boxed{6}$. 
 \end{solution}
 
 \begin{problem}
-In a regular tetrahedron $ABCD$ with volume $400$, we inscribe a sphere tangent to all four sides. Let $R$ be the center of the sphere. Find the volume of $[RABC]$.
+Alex the ant is at point A on the below grid.
+\begin{figure}[H]
+\begin{center}
+\begin{asy}
+size(70);
+defaultpen(fontsize(8pt));
+draw((0,0)--(0,2)--(2,2)--(2,0)--(0,0));
+draw((2,2)--(2,4)--(4,4)--(4,2)--(2,2));
+draw((1,0)--(1,2));
+draw((0,1)--(2,1));
+draw((3,2)--(3,4));
+draw((2,3)--(4,3));
+label("A", (0, 0), SW);
+label("B", (4, 4), NE);
+\end{asy}
+\end{center}
+\end{figure}
+ If he can only move up or to the right on the grid, find the number of distinct paths Alex can take to go from point A to B.
 \end{problem}
+ 
 \begin{answer}
-100
+$\boxed{36}$ (paths)
 \end{answer}
 \begin{solution}
-Notice by symmetry $[RABC] = [RBCD] = [RACD] = [RABD]$ and they sum to $400$ so our answer is $100$.
+Label the middle point as $C$. We can count $6$ paths to go from $A$ to $C$. (Alternatively, we notice that to go from $A$ to $C$, we must move up twice and move to the right twice. Then there are $\dbinom{4}{2}$ ways to choose the order in which to make the moves) Then similarly there are $6$ paths to go from $C$ to $B$. Thus, there are $6 \cdot 6 = \boxed{36}$ total paths to go from $A$ to $B$.
 \end{solution}
+
+\begin{problem}
+If $x,y$ are distinct positive integers such that \[ x^2 + 2xy = 40 \] \[y^2 + 2xy = 33\] find $x+y$.
+\end{problem}
+\begin{answer}
+\boxed{7}
+\end{answer}
+\begin{solution}
+Subtracting the equations gives $x^2 - y^2 = 7$ or $(x-y)(x+y) = 7$. We see $x+y = \boxed{7}$. 
+\end{solution}
+
+\begin{problem}
+Suppose square $ABCD$ has side length of $10$ and circle $O$ is inscribed in the square, as shown below.
+\begin{figure}[H]
+\begin{center}
+\begin{asy}
+import graph;
+size(80);
+draw((0,0)--(0,2)--(2,2)--(2,0)--(0,0));
+draw(Circle((1,1),1));
+draw((0, 0) -- (2, 2));
+defaultpen(fontsize(10pt));
+label("A", (0, 2), NW);
+label("B", (2, 2), NE);
+label("C", (2, 0), SE);
+label("D", (0, 0), SW);
+label("O", (1, 1), S);
+label("X", (1.707, 1.707), S);
+dot((1, 1));
+\end{asy}
+\end{center}
+\end{figure} Segment $BO$ intersects the circle again at $X$. Find the length of $BX$.
+\end{problem}
+\begin{answer}
+$\boxed{5\sqrt{2} - 5}$
+\end{answer}
+\begin{solution}
+Let the other intersection of $BD$ and circle $O$ be $Y$. Notice by symmetry, $BX = DY$. Also, $BX + XY + YD = BD = 10\sqrt{2}$. We know $XY$ is the diameter of circle $O$, so $XY = 10$. Thus $BX + YD = 10\sqrt{2} - 10$, so $BX = \boxed{5\sqrt{2} - 5}$.
+\end{solution}
+
+
+\begin{problem}
+Joe lists all the three digit positive integers on a sheet of paper. However, he skips all the integers that are divisible by three and all the integers that are divisible by five. Determine how many integers Joe counts.
+\end{problem}
+\begin{answer}
+\boxed{480} (integers)
+\end{answer}
+\begin{solution}
+ We use the Principle of Inclusion-Exclusion (PIE). There are $900$ total three-digit positive integers. We subtract off the $300$ multiples of three and $180$ multiples of five, and add the $60$ multiples of $15$ to obtain $900 - 300 - 180 + 60 = \boxed{480}$.
+\end{solution}
+
+\begin{problem}
+Compute the number of positive integers $1 \le x \le 143$ such that $x^2 + x^3$ is a perfect square.
+\end{problem}
+\begin{answer}
+$\boxed{11}$ (integers)
+\end{answer}
+\begin{solution}
+If $x^2 + x^3 = x^2(x+1)$ is the square of an integer, then $(x+1)$ must be the square of an integer. We also know $2 \le x+1 \le 144$. Thus $x+1 \in \{2^2, 3^2, \cdots, 12^2\}$, so there are $\boxed{11}$ possible values of $x$.
+\end{solution}
+
 
 \end{document}
