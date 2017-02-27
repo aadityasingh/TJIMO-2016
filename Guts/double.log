@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.25)  24 FEB 2017 22:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.25)  27 FEB 2017 01:01
 entering extended mode
 **./double.tex
 (double.tex
@@ -181,317 +181,130 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)) <guts.pdf, id=1, 597.50829pt x 421.10124pt>
-File: guts.pdf Graphic file (type pdf)
+)) <practiceguts.pdf, id=1, 597.50829pt x 421.10124pt>
+File: practiceguts.pdf Graphic file (type pdf)
 
-<use guts.pdf>
-Package pdftex.def Info: guts.pdf used on input line 6.
+<use practiceguts.pdf>
+Package pdftex.def Info: practiceguts.pdf used on input line 6.
 (pdftex.def)             Requested size: 597.50682pt x 421.1002pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf>
-Package pdftex.def Info: guts.pdf used on input line 6.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf>
+Package pdftex.def Info: practiceguts.pdf used on input line 6.
 (pdftex.def)             Requested size: 597.50682pt x 421.1002pt.
- <guts.pdf, id=4, page=1, 597.50829pt x 421.10124pt>
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 1>
-Package pdftex.def Info: guts.pdf, page1 used on input line 6.
-(pdftex.def)             Requested size: 597.50682pt x 421.1002pt.
-File: guts.pdf Graphic file (type pdf)
+ <practiceguts.pdf, id=4, page=1, 597.50829pt x 421.10124pt>
+File: practiceguts.pdf Graphic file (type pdf)
 
-<use guts.pdf, page 1>
-Package pdftex.def Info: guts.pdf, page1 used on input line 6.
+<use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 597.50682pt x 421.1002pt.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 1>
-Package pdftex.def Info: guts.pdf, page1 used on input line 6.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 1>
-Package pdftex.def Info: guts.pdf, page1 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 1>
-Package pdftex.def Info: guts.pdf, page1 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 1>
-Package pdftex.def Info: guts.pdf, page1 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
+File: practiceguts.pdf Graphic file (type pdf)
 
-<use guts.pdf, page 1>
-Package pdftex.def Info: guts.pdf, page1 used on input line 6.
+<use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 1>
-Package pdftex.def Info: guts.pdf, page1 used on input line 6.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+
+<use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
+(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 1>
+Package pdftex.def Info: practiceguts.pdf, page1 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
  [1
 
- <./guts.pdf{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}>]
-<guts.pdf, id=45, page=2, 597.50829pt x 421.10124pt>
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 2>
-Package pdftex.def Info: guts.pdf, page2 used on input line 6.
+ <./practiceguts.pdf{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}>] <practiceguts.pdf, id=55, page=2, 597.50829pt
+ x 421.10124pt>
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 2>
+Package pdftex.def Info: practiceguts.pdf, page2 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 2>
-Package pdftex.def Info: guts.pdf, page2 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
+File: practiceguts.pdf Graphic file (type pdf)
 
-<use guts.pdf, page 2>
-Package pdftex.def Info: guts.pdf, page2 used on input line 6.
+<use practiceguts.pdf, page 2>
+Package pdftex.def Info: practiceguts.pdf, page2 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 2>
-Package pdftex.def Info: guts.pdf, page2 used on input line 6.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 2>
+Package pdftex.def Info: practiceguts.pdf, page2 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 2>
-Package pdftex.def Info: guts.pdf, page2 used on input line 6.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 2>
+Package pdftex.def Info: practiceguts.pdf, page2 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 2>
-Package pdftex.def Info: guts.pdf, page2 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
- [2 <./guts.pdf>]
-<guts.pdf, id=69, page=3, 597.50829pt x 421.10124pt>
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 3>
-Package pdftex.def Info: guts.pdf, page3 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 3>
-Package pdftex.def Info: guts.pdf, page3 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
+File: practiceguts.pdf Graphic file (type pdf)
 
-<use guts.pdf, page 3>
-Package pdftex.def Info: guts.pdf, page3 used on input line 6.
+<use practiceguts.pdf, page 2>
+Package pdftex.def Info: practiceguts.pdf, page2 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 3>
-Package pdftex.def Info: guts.pdf, page3 used on input line 6.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 2>
+Package pdftex.def Info: practiceguts.pdf, page2 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 3>
-Package pdftex.def Info: guts.pdf, page3 used on input line 6.
+ [2 <./practiceguts.pdf>]
+<practiceguts.pdf, id=74, page=3, 597.50829pt x 421.10124pt>
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 3>
+Package pdftex.def Info: practiceguts.pdf, page3 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 3>
-Package pdftex.def Info: guts.pdf, page3 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
- [3 <./guts.pdf>]
-<guts.pdf, id=73, page=4, 597.50829pt x 421.10124pt>
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 4>
-Package pdftex.def Info: guts.pdf, page4 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 4>
-Package pdftex.def Info: guts.pdf, page4 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
+File: practiceguts.pdf Graphic file (type pdf)
 
-<use guts.pdf, page 4>
-Package pdftex.def Info: guts.pdf, page4 used on input line 6.
+<use practiceguts.pdf, page 3>
+Package pdftex.def Info: practiceguts.pdf, page3 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 4>
-Package pdftex.def Info: guts.pdf, page4 used on input line 6.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 3>
+Package pdftex.def Info: practiceguts.pdf, page3 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 4>
-Package pdftex.def Info: guts.pdf, page4 used on input line 6.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 3>
+Package pdftex.def Info: practiceguts.pdf, page3 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 4>
-Package pdftex.def Info: guts.pdf, page4 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
- [4 <./guts.pdf>]
-<guts.pdf, id=77, page=5, 597.50829pt x 421.10124pt>
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 5>
-Package pdftex.def Info: guts.pdf, page5 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 5>
-Package pdftex.def Info: guts.pdf, page5 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
+File: practiceguts.pdf Graphic file (type pdf)
 
-<use guts.pdf, page 5>
-Package pdftex.def Info: guts.pdf, page5 used on input line 6.
+<use practiceguts.pdf, page 3>
+Package pdftex.def Info: practiceguts.pdf, page3 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 5>
-Package pdftex.def Info: guts.pdf, page5 used on input line 6.
+File: practiceguts.pdf Graphic file (type pdf)
+ <use practiceguts.pdf, page 3>
+Package pdftex.def Info: practiceguts.pdf, page3 used on input line 6.
 (pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 5>
-Package pdftex.def Info: guts.pdf, page5 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 5>
-Package pdftex.def Info: guts.pdf, page5 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
- [5 <./guts.pdf>]
-<guts.pdf, id=86, page=6, 597.50829pt x 421.10124pt>
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 6>
-Package pdftex.def Info: guts.pdf, page6 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 6>
-Package pdftex.def Info: guts.pdf, page6 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
-
-<use guts.pdf, page 6>
-Package pdftex.def Info: guts.pdf, page6 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 6>
-Package pdftex.def Info: guts.pdf, page6 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 6>
-Package pdftex.def Info: guts.pdf, page6 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 6>
-Package pdftex.def Info: guts.pdf, page6 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
- [6 <./guts.pdf>]
-<guts.pdf, id=90, page=7, 597.50829pt x 421.10124pt>
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 7>
-Package pdftex.def Info: guts.pdf, page7 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 7>
-Package pdftex.def Info: guts.pdf, page7 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
-
-<use guts.pdf, page 7>
-Package pdftex.def Info: guts.pdf, page7 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 7>
-Package pdftex.def Info: guts.pdf, page7 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 7>
-Package pdftex.def Info: guts.pdf, page7 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 7>
-Package pdftex.def Info: guts.pdf, page7 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
- [7 <./guts.pdf>]
-<guts.pdf, id=95, page=8, 597.50829pt x 421.10124pt>
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 8>
-Package pdftex.def Info: guts.pdf, page8 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 8>
-Package pdftex.def Info: guts.pdf, page8 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
-
-<use guts.pdf, page 8>
-Package pdftex.def Info: guts.pdf, page8 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 8>
-Package pdftex.def Info: guts.pdf, page8 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 8>
-Package pdftex.def Info: guts.pdf, page8 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 8>
-Package pdftex.def Info: guts.pdf, page8 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
- [8 <./guts.pdf>]
-<guts.pdf, id=99, page=9, 597.50829pt x 421.10124pt>
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 9>
-Package pdftex.def Info: guts.pdf, page9 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 9>
-Package pdftex.def Info: guts.pdf, page9 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
-
-<use guts.pdf, page 9>
-Package pdftex.def Info: guts.pdf, page9 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 9>
-Package pdftex.def Info: guts.pdf, page9 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 9>
-Package pdftex.def Info: guts.pdf, page9 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 9>
-Package pdftex.def Info: guts.pdf, page9 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
- [9 <./guts.pdf>]
-<guts.pdf, id=103, page=10, 597.50829pt x 421.10124pt>
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 10>
-Package pdftex.def Info: guts.pdf, page10 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 10>
-Package pdftex.def Info: guts.pdf, page10 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
-
-<use guts.pdf, page 10>
-Package pdftex.def Info: guts.pdf, page10 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 10>
-Package pdftex.def Info: guts.pdf, page10 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 10>
-Package pdftex.def Info: guts.pdf, page10 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
-File: guts.pdf Graphic file (type pdf)
- <use guts.pdf, page 10>
-Package pdftex.def Info: guts.pdf, page10 used on input line 6.
-(pdftex.def)             Requested size: 564.12863pt x 397.57652pt.
- [10 <./guts.pdf>]
-(double.aux) ) 
+ [3 <./practiceguts.pdf>] (double.aux) ) 
 Here is how much of TeX's memory you used:
- 2805 strings out of 493333
- 40115 string characters out of 3139188
+ 2784 strings out of 493333
+ 39868 string characters out of 3139188
  104825 words of memory out of 3000000
- 6317 multiletter control sequences out of 15000+200000
+ 6296 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,18n,46p,239b,427s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on double.pdf (10 pages, 160764 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss1
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on double.pdf (3 pages, 128134 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
