@@ -1,27 +1,23 @@
 \documentclass[11pt]{article}
-%\usepackage[paperwidth=8.5in, paperheight=11in]{geometry}
-\usepackage[landscape, a5paper]{geometry}
+\usepackage[paperwidth=8.5in, paperheight=11in]{geometry}
+%\usepackage[landscape, a5paper]{geometry}
 
 \usepackage{../tjimo}
 %\usepackage[pdftex]{graphicx}
 %\usepackage[doublepages]{pdfpages}
 \usepackage{asymptote}
 
-%\begin{comment}
+\begin{comment}
 \def\answer{\comment}
 \def\solution{\comment}
 \def\solutionone{\comment}
 \def\solutiontwo{\comment}
-%\end{comment}
+\end{comment}
 
 \newcommand{\sevenpoints}{}
 \newcommand{\righthead}{\fdbox{Round}{Practice Guts}}
 
 \begin{document}
-
-\end{solution}
-
-\newpage
 
 \section*{Set 1}
 
@@ -94,7 +90,7 @@ The average is $\frac{47 + 51 + 43 + 64 + 35 + 42}{6} = \boxed{47}$.
 
 
 \begin{problem}%[Lilian]
-There are $30$ people in one of the math-team trailers. $25$ of them like geometry, $14$ of them like algebra, and $20$ of them like number theory. If $10$ of them like algebra and geometry, $12$ of them like algebra and number theory, and $8$ of them like geometry and number theory, how many of them like all $3$ subjects?
+There are $30$ people in one of the math-team trailers. $18$ of them like geometry, $21$ of them like algebra, and $20$ of them like number theory. If $10$ of them like algebra and geometry, $12$ of them like algebra and number theory, and $8$ of them like geometry and number theory, how many of them like all $3$ subjects?
 \end{problem}
 
 \begin{answer}
@@ -102,7 +98,7 @@ $\boxed{1}$ (person)
 \end{answer}
 
 \begin{solution}
-If we add the number of people who like one subject together, $25 + 14 + 20 = 59$, we overcount the students who like two or more subjects. If we subtract the number of people who like $2$ subjects from the previous sum, $59 - 10 - 12 - 8 = 29$, we oversubtract the students who like all $3$, so $29$ plus the number of students who like all $3$ should equal the number of total students, or $30$, so there is $\boxed{1}$ person who likes all three subjects.
+If we add the number of people who like one subject together, $18 + 21 + 20 = 59$, we overcount the students who like two or more subjects. If we subtract the number of people who like $2$ subjects from the previous sum, $59 - 10 - 12 - 8 = 29$, we oversubtract the students who like all $3$, so $29$ plus the number of students who like all $3$ should equal the number of total students, or $30$, so there is $\boxed{1}$ person who likes all three subjects.
 \end{solution}
 
 
@@ -120,7 +116,7 @@ Note that $2^3 = 8 \equiv 1 \pmod{7}$ is $1$ more than a multiple of $7$, and $2
 
 
 \begin{problem}%[Kyle]
-In quadrilateral $ABCD$, $\angle DAC = 75^\circ$, $\angle ACB = 40^\circ$, $\angle DBC = 75^\circ$, and $\angle BDC = 25^\circ$. Find the measure of angle $\angle ABD$.
+In quadrilateral $ABCD$, $\angle DAC = 75^\circ$, $\angle ACB = 40^\circ$, $\angle DBC = 75^\circ$, and $\angle BDC = 25^\circ$. Find the measure of angle $\angle DCA$.
 \end{problem}
 
 \begin{answer}
@@ -128,7 +124,7 @@ $\boxed{40^\circ}$
 \end{answer}
 
 \begin{solution}
-We observe that $\angle DCA = 180^\circ - \angle DBC - \angle ACB - \angle BDC = 40^\circ$. We also have that $\angle DAC \equiv \angle DBC$, so quadrilateral $ABCD$ is cyclic (i.e. its four vertices lie on exactly one circle). Therefore, by properties of cyclic quadrilaterals, $\angle DCA \equiv \angle DBA$, so $\angle ABD = \boxed{40^\circ}$.
+We observe that $\angle DCA = 180^\circ - \angle DBC - \angle ACB - \angle BDC = 40^\circ$.
 \end{solution}
 
 \newpage
